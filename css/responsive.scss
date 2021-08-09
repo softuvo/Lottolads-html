@@ -188,14 +188,37 @@
         }
     }
     .nextDraw{
+        h5{
+            font-size: 12px;
+        }
+        &__badge{
+            font-size: 12px;
+        }
+        .col-md-7, .col-md-5{
+            width: 100%;
+        }
         &__btn-yellow{
             padding: 6px 12px;
         }
-        h2{
-            font-size: 15px;
+        &__text{
+            text-align: center;
+        }
+        &__img{
+            text-align: center;
+            margin-top: 15px;
+            img{
+                margin: 0;
+            }
+        }
+        &__btn-yellow{
+            font-size: 14px;
         }
     }
     .jackpot{
+        img{
+            width: 60%;
+        }
+        padding: 15px;
         .col-md-3, .col-md-9{
             width: 100%;
         }
@@ -206,6 +229,7 @@
         }
         &__price{
             text-align: center;
+            font-size: 18px;
         }
     }
     .kenoNextGame{
@@ -230,6 +254,37 @@
             }
         }
     }
+    .divisions{
+        display: block;
+        margin: 0;
+        &__inner{
+            width: 100%;
+            margin: 0 0 15px 0;
+            h6{
+                font-size: 14px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        &--headingBig{
+            font-size: 14px !important;
+        }
+    }
+    .downloadApp{
+        padding: 15px;
+        .col-md-3, .col-md-5, .col-md-4{
+            width: 100%;
+        }
+        &__button{
+            font-size: 24px;
+            line-height: 32px;
+            span{
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -237,6 +292,15 @@
         &--leftColumn{
             width: 100%;
         }
+        &--rightColumn{
+            width: 100%;
+        }
+        &--columnSix{
+            width: 100%;
+        }
+    }
+    .pr-0{
+        padding-right: calc(var(--bs-gutter-x) * .5);
     }
     .ageLimit{
         margin-top: 35px;
@@ -288,6 +352,37 @@
 
 
 @media only screen and (max-width: 575px){
-
+    .header-top{
+        &__navigation{
+            display: block;
+            ul{
+                margin: 15px 0;
+            }
+        }
+        &__right{
+            display: block;
+        }
+        &__button{
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
+    .footer{
+        &__paymentMethods{
+            ul{
+                display: block;
+                li{
+                    a{
+                        padding: 0 0 10px 0;
+                    }
+                }
+            }
+        }
+    }
+    .main-content{
+        &__rightInner{
+            padding: 15px;
+        }
+    }
 }
 

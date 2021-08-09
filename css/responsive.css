@@ -134,11 +134,36 @@
     font-size: 24px;
     margin: 20px 0 35px 0;
   }
+  .nextDraw h5 {
+    font-size: 12px;
+  }
+  .nextDraw__badge {
+    font-size: 12px;
+  }
+  .nextDraw .col-md-7, .nextDraw .col-md-5 {
+    width: 100%;
+  }
   .nextDraw__btn-yellow {
     padding: 6px 12px;
   }
-  .nextDraw h2 {
-    font-size: 15px;
+  .nextDraw__text {
+    text-align: center;
+  }
+  .nextDraw__img {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .nextDraw__img img {
+    margin: 0;
+  }
+  .nextDraw__btn-yellow {
+    font-size: 14px;
+  }
+  .jackpot {
+    padding: 15px;
+  }
+  .jackpot img {
+    width: 60%;
   }
   .jackpot .col-md-3, .jackpot .col-md-9 {
     width: 100%;
@@ -150,6 +175,7 @@
   }
   .jackpot__price {
     text-align: center;
+    font-size: 18px;
   }
   .kenoNextGame__winningDetails {
     font-size: 30px;
@@ -168,11 +194,51 @@
   .jackpotsGuaranteed__inner h2 {
     line-height: 35px;
   }
+  .divisions {
+    display: block;
+    margin: 0;
+  }
+  .divisions__inner {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .divisions__inner h6 {
+    font-size: 14px;
+  }
+  .divisions__inner p {
+    font-size: 14px;
+  }
+  .divisions--headingBig {
+    font-size: 14px !important;
+  }
+  .downloadApp {
+    padding: 15px;
+  }
+  .downloadApp .col-md-3, .downloadApp .col-md-5, .downloadApp .col-md-4 {
+    width: 100%;
+  }
+  .downloadApp__button {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .downloadApp__button span {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .main-content--leftColumn {
     width: 100%;
+  }
+  .main-content--rightColumn {
+    width: 100%;
+  }
+  .main-content--columnSix {
+    width: 100%;
+  }
+  .pr-0 {
+    padding-right: calc(var(--bs-gutter-x) * .5);
   }
   .ageLimit {
     margin-top: 35px;
@@ -215,5 +281,30 @@
   }
   .signinSection__terms {
     margin: 50px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header-top__navigation {
+    display: block;
+  }
+  .header-top__navigation ul {
+    margin: 15px 0;
+  }
+  .header-top__right {
+    display: block;
+  }
+  .header-top__button {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .footer__paymentMethods ul {
+    display: block;
+  }
+  .footer__paymentMethods ul li a {
+    padding: 0 0 10px 0;
+  }
+  .main-content__rightInner {
+    padding: 15px;
   }
 }
