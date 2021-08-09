@@ -870,6 +870,9 @@ a{
             background-size: 92%;
         }
     }
+    &--signupForm{
+        margin-left: 35px;
+    }
     &--password{
         &::before{
             background: url('../images/lock-icon.svg') no-repeat;
@@ -891,7 +894,14 @@ a{
             background: url('../images/email-icon.svg') no-repeat;  
             background-size: 100%;
             width: 34px;
-            height: 28px;
+            height: 25px;
+        }
+    }
+    &--email2{
+        &::before{
+            background: url('../images/email-icon2.svg') no-repeat;  
+            width: 27px;
+            height: 30px;
         }
     }
     &--currency{
