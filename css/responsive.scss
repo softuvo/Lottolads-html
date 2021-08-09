@@ -1,0 +1,293 @@
+@media only screen and (max-width: 1440px){
+    .downloadApp{
+        &__button{
+            font-size: 24px;
+            line-height: 30px;
+            span{
+                font-size: 18px;
+                line-height: 20px;  
+            }
+        }
+    }
+    .kenoNextGame{
+        margin: 50px 0;
+    }
+    .jackpot{
+        &--priceBig{
+            font-size: 27px;
+        }
+        &--badgeBig{
+            margin-right: 10px;
+            font-size: 14px;
+            padding: 6px 14px;
+        }
+        &--textBig{
+            p{
+                margin-right: 10px;
+            }
+        }
+        &--timeBig{
+            font-size: 14px;
+            padding: 8px 10px;
+            padding: 6px 10px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1366px){
+
+    .kenoNextGame{
+        &__badge{
+            font-size: 15px;
+        }
+    }
+    .sidebar{
+        &__myAccount-button{
+            font-size: 20px;
+        }
+    }
+    .main-content{
+        &--leftColumn{
+            width: 25%;
+        }
+        &--rightColumn{
+            width: 75%;
+        }
+    }
+    
+    .footer{
+        &__column{
+            padding: 0 15px;
+        }
+        &__inner{
+            padding: 0 30px;
+        }
+        &__padding{
+            padding: 0 30px;
+        }
+        &__paymentMethod{
+            ul{
+                li{
+                    a{
+                        padding: 0 7px;
+                    }
+                }
+            }
+        }
+    }
+    .divisions{
+        &__diviPriceBig{
+            font-size: 15px !important;
+            line-height: 15px !important;
+        }
+        &--headingBig{
+            margin-bottom: 15px !important;
+        }
+    }
+    .nextDraw{
+        h2{
+            font-size: 18px;
+        }
+        h5{
+            font-size: 10px;
+        }
+        &__text{
+            padding: 15px 0 0 15px;
+        }
+        &__img{
+            img{
+                margin-left: -25px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1199px){
+    .signinSection{
+        &__terms{
+            margin: 50px 20px 0 20px;
+        }
+        &__googleLogin{
+            min-width: 230px;
+            min-height: 90px;
+        }
+        &__facebookLogin{
+            min-width: 230px;
+            min-height: 90px;
+        }
+    }
+    .downloadApp{
+        &__button{
+            font-size: 18px;
+            line-height: 24px;
+            span{
+                font-size: 15px;
+                line-height: 17px;
+            }
+        }
+    }
+    .divisions{
+        &__inner{
+            padding: 10px;
+        }
+        &--innerBig{
+            padding: 10px;
+        }
+        &--marginBottom{
+            margin-bottom: 50px;
+        }
+    }
+    .main-content{
+        &__rightInner{
+            padding: 30px;
+        }
+    }
+    .main-content{
+        &__heading{
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px)
+{
+.main-content{
+    &__offset{
+        margin-left: 3.333333%;
+    }
+}
+
+}
+
+
+@media only screen and (max-width: 991px){
+    .header-top{
+        &__inner{
+            display: block;
+        }
+        &__navigation{
+            ul{
+                padding-left: 0;
+            }
+        }
+    }
+    .signinSection{
+        .col-md-5, .col-md-2{
+            width: 100%;
+        }
+        &__or{
+            width: 65px;
+            height: 65px;
+            line-height: 72px;
+            font-size: 24px;
+            margin: 20px 0 35px 0;
+        }
+    }
+    .nextDraw{
+        &__btn-yellow{
+            padding: 6px 12px;
+        }
+        h2{
+            font-size: 15px;
+        }
+    }
+    .jackpot{
+        .col-md-3, .col-md-9{
+            width: 100%;
+        }
+        &__text{
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+        }
+        &__price{
+            text-align: center;
+        }
+    }
+    .kenoNextGame{
+        &__winningDetails{
+            font-size: 30px;
+            line-height: 35px;
+            span{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__winningMessage{
+            text-align: center;
+        }
+    }
+    
+    .jackpotsGuaranteed{
+        &__inner{
+            padding: 10px;
+            h2{
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .main-content{
+        &--leftColumn{
+            width: 100%;
+        }
+    }
+    .ageLimit{
+        margin-top: 35px;
+    }
+    .footer{
+        h6{
+            text-align: left;
+        }
+        &__languagePreference{
+            margin-top: 35px;
+            text-align: left;
+        }
+        &__appDownload{
+            margin-top: 35px;
+            ul{
+                justify-content: flex-start;
+            }
+        }
+        &__paymentMethods{
+            margin-top: 35px;
+            text-align: left;
+            ul{
+                justify-content: flex-start;
+            }
+        }
+        &__social{
+            margin-top: 35px;
+            ul{
+                justify-content: flex-start;
+            }
+        }
+        &__inner{
+            display: block;
+        }
+        &__column{
+            width: 100%;
+            margin-bottom: 35px;
+            h5{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .signinSection{
+        &__terms{
+            margin: 50px 0 0 0;
+        }
+    }    
+}
+
+
+@media only screen and (max-width: 575px){
+
+}
+

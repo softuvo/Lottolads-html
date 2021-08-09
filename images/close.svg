@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <filter id="Oval" x="0" y="0" width="120" height="120" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#356e9e" flood-opacity="0.082"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_897" data-name="Group 897" transform="translate(-404.887 -73.54)">
+    <g id="Oval-2" data-name="Oval" transform="translate(428.887 89.54)">
+      <g transform="matrix(1, 0, 0, 1, -24, -16)" filter="url(#Oval)">
+        <circle id="Oval-3" data-name="Oval" cx="36" cy="36" r="36" transform="translate(24 16)" fill="none"/>
+      </g>
+      <circle id="Oval-4" data-name="Oval" cx="36" cy="36" r="36" fill="#fff" stroke="#e6e4fd" stroke-width="1"/>
+    </g>
+    <g id="Close" transform="translate(456.137 116.79)">
+      <path id="close-2" data-name="close" d="M1.215.2l7.1,7.1L15.42.2A.692.692,0,0,1,16.4.2l.033.033a.692.692,0,0,1,0,.979l-7.1,7.1,7.1,7.1a.692.692,0,0,1,0,.979l-.033.033a.692.692,0,0,1-.979,0l-7.1-7.1-7.1,7.1a.692.692,0,0,1-.979,0L.2,16.4a.692.692,0,0,1,0-.979l7.1-7.1L.2,1.215A.692.692,0,0,1,.2.236L.236.2A.692.692,0,0,1,1.215.2Z" stroke="#1a0d49" stroke-miterlimit="10" stroke-width="0.75"/>
+    </g>
+  </g>
+</svg>
