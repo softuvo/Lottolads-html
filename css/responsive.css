@@ -7,6 +7,16 @@
     font-size: 18px;
     line-height: 20px;
   }
+  .footer__paymentMethods ul {
+    display: block;
+  }
+  .footer__paymentMethods ul li {
+    display: inline-block;
+  }
+  .footer__paymentMethods ul li a {
+    margin-bottom: 10px;
+    padding: 0 10px 0 0;
+  }
   .kenoNextGame {
     margin: 50px 0;
   }
@@ -124,6 +134,9 @@
   .header-top__navigation ul {
     padding-left: 0;
   }
+  .signinSection {
+    padding-top: 0;
+  }
   .signinSection .col-md-5, .signinSection .col-md-2 {
     width: 100%;
   }
@@ -132,7 +145,23 @@
     height: 65px;
     line-height: 72px;
     font-size: 24px;
-    margin: 20px 0 35px 0;
+    margin: 10px 0 30px 0;
+  }
+  .signinSection--signupForm {
+    margin-left: 0;
+  }
+  .signinSection__googleLogin {
+    min-height: 80px;
+    min-width: none;
+    width: 100%;
+  }
+  .signinSection__facebookLogin {
+    min-height: 80px;
+    min-width: none;
+    width: 100%;
+  }
+  .signinSection__terms {
+    margin: 35px 0 0 0;
   }
   .nextDraw h5 {
     font-size: 12px;
@@ -145,19 +174,18 @@
   }
   .nextDraw__btn-yellow {
     padding: 6px 12px;
+    width: 100%;
+    font-size: 15px;
   }
   .nextDraw__text {
     text-align: center;
+    padding: 15px;
   }
   .nextDraw__img {
     text-align: center;
-    margin-top: 15px;
   }
   .nextDraw__img img {
     margin: 0;
-  }
-  .nextDraw__btn-yellow {
-    font-size: 14px;
   }
   .jackpot {
     padding: 15px;
@@ -201,6 +229,7 @@
   .divisions__inner {
     width: 100%;
     margin: 0 0 15px 0;
+    text-align: center;
   }
   .divisions__inner h6 {
     font-size: 14px;
@@ -224,6 +253,24 @@
   .downloadApp__button span {
     font-size: 18px;
     line-height: 18px;
+  }
+  .availableGames .col-md-8, .availableGames .col-md-4 {
+    width: 100%;
+  }
+  .availableGames h3 {
+    font-size: 30px;
+  }
+  .availableGames p {
+    font-size: 18px;
+  }
+  .availableGames__note {
+    padding: 20px;
+  }
+  .availableGames__note p {
+    font-size: 20px;
+  }
+  .availableGames__downloadButton {
+    margin-top: 50px;
   }
 }
 
@@ -260,9 +307,6 @@
     margin-top: 35px;
     text-align: left;
   }
-  .footer__paymentMethods ul {
-    justify-content: flex-start;
-  }
   .footer__social {
     margin-top: 35px;
   }
@@ -298,13 +342,52 @@
     width: 100%;
     margin: 0 0 10px 0;
   }
-  .footer__paymentMethods ul {
-    display: block;
-  }
-  .footer__paymentMethods ul li a {
-    padding: 0 0 10px 0;
-  }
   .main-content__rightInner {
     padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .signinSection__loginButton {
+    min-width: auto;
+    width: 100%;
+  }
+  .signinSection p {
+    font-size: 16px;
+  }
+  .signinSection a {
+    font-size: 16px;
+  }
+  .modal-body {
+    padding: 0 1.3rem;
+  }
+  .modal-header {
+    top: 0;
+    left: 0;
+  }
+  .btn-close {
+    background-size: 100%;
+  }
+  .termsSection {
+    margin-top: 70px;
+  }
+  .termsSection h2 {
+    font-size: 35px;
+  }
+  .termsSection p {
+    font-size: 16px;
+  }
+  .paymentOptions {
+    margin: 70px 0 20px 0;
+  }
+  .paymentOptions h2 {
+    font-size: 35px;
+  }
+  .paymentOptions__description h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+  .paymentOptions__description p {
+    font-size: 16px;
   }
 }

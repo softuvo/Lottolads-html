@@ -9,6 +9,20 @@
             }
         }
     }
+    .footer{
+        &__paymentMethods{
+            ul{
+                display: block;
+                li{
+                    display: inline-block;
+                    a{
+                        margin-bottom: 10px;
+                        padding: 0 10px 0 0;
+                    }
+                }
+            }
+        }
+    }
     .kenoNextGame{
         margin: 50px 0;
     }
@@ -176,6 +190,7 @@
         }
     }
     .signinSection{
+        padding-top: 0;
         .col-md-5, .col-md-2{
             width: 100%;
         }
@@ -184,7 +199,23 @@
             height: 65px;
             line-height: 72px;
             font-size: 24px;
-            margin: 20px 0 35px 0;
+            margin: 10px 0 30px 0;
+        }
+        &--signupForm{
+            margin-left: 0;
+        }
+        &__googleLogin{
+            min-height: 80px;
+            min-width: none;
+            width: 100%;
+        }
+        &__facebookLogin{
+            min-height: 80px;
+            min-width: none;
+            width: 100%;
+        }
+        &__terms{
+            margin: 35px 0 0 0;
         }
     }
     .nextDraw{
@@ -199,19 +230,18 @@
         }
         &__btn-yellow{
             padding: 6px 12px;
+            width: 100%;
+            font-size: 15px;
         }
         &__text{
             text-align: center;
+            padding: 15px;
         }
         &__img{
             text-align: center;
-            margin-top: 15px;
             img{
                 margin: 0;
             }
-        }
-        &__btn-yellow{
-            font-size: 14px;
         }
     }
     .jackpot{
@@ -260,6 +290,7 @@
         &__inner{
             width: 100%;
             margin: 0 0 15px 0;
+            text-align: center;
             h6{
                 font-size: 14px;
             }
@@ -283,6 +314,26 @@
                 font-size: 18px;
                 line-height: 18px;
             }
+        }
+    }
+    .availableGames{
+        .col-md-8, .col-md-4{
+            width: 100%;
+        }
+        h3{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+        }
+        &__note{
+            padding: 20px;
+            p{
+                font-size: 20px;
+            }
+        }
+        &__downloadButton{
+            margin-top: 50px;
         }
     }
 }
@@ -322,9 +373,6 @@
         &__paymentMethods{
             margin-top: 35px;
             text-align: left;
-            ul{
-                justify-content: flex-start;
-            }
         }
         &__social{
             margin-top: 35px;
@@ -367,18 +415,6 @@
             margin: 0 0 10px 0;
         }
     }
-    .footer{
-        &__paymentMethods{
-            ul{
-                display: block;
-                li{
-                    a{
-                        padding: 0 0 10px 0;
-                    }
-                }
-            }
-        }
-    }
     .main-content{
         &__rightInner{
             padding: 15px;
@@ -386,3 +422,51 @@
     }
 }
 
+@media only screen and (max-width: 480px){
+    .signinSection{
+        &__loginButton{
+            min-width: auto;
+            width: 100%;
+        }
+        p{
+            font-size: 16px;
+        }
+        a{
+            font-size: 16px;
+        }
+    }
+    .modal-body{
+        padding: 0 1.3rem;
+    }
+    .modal-header{
+        top: 0;
+        left: 0;
+    }
+    .btn-close{
+        background-size: 100%;
+    }
+    .termsSection{
+        margin-top: 70px;
+        h2{
+            font-size: 35px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .paymentOptions{
+        margin: 70px 0 20px 0;
+        h2{
+            font-size: 35px;
+        }
+        &__description{
+            h3{
+                font-size: 27px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}

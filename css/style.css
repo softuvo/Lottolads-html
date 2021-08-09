@@ -65,6 +65,7 @@ a {
   padding-right: 0;
 }
 
+/* Variable */
 /* Top Header */
 .header-top {
   padding: 6px 0;
@@ -862,17 +863,22 @@ a {
   opacity: 1;
 }
 
+.modal-header {
+  padding: 0;
+  position: absolute;
+  z-index: 999;
+  left: 1rem;
+  top: 1rem;
+  border: 0;
+}
+
 .modal-content {
   background-color: #F6F8FF;
   border-radius: 40px;
 }
 
-.modal-header {
-  border: 0;
-}
-
 .modal-body {
-  padding: 1rem 3rem;
+  padding: 0 3rem 1rem 3rem;
 }
 
 .modalLogo {
@@ -880,8 +886,12 @@ a {
   margin-bottom: 60px;
 }
 
+.mt-130 {
+  margin-top: 130px;
+}
+
 .signinSection {
-  padding-bottom: 80px;
+  padding: 40px 0 80px 0;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -894,7 +904,6 @@ a {
 
 .signinSection a {
   color: #603BEE;
-  margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -935,7 +944,7 @@ a {
 }
 
 .signinSection__formGroup {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
   padding-left: 60px;
 }
@@ -976,7 +985,7 @@ a {
   background: url("../images/email-icon.svg") no-repeat;
   background-size: 100%;
   width: 34px;
-  height: 25px;
+  height: 28px;
 }
 
 .signinSection--email2::before {
@@ -1025,7 +1034,8 @@ a {
   font-size: 21px;
   text-transform: uppercase;
   margin: 20px 0;
-  padding: 14px 168px;
+  padding: 14px 25px;
+  min-width: 400px;
   color: #fff;
   border-radius: 60px;
   font-weight: 700;
@@ -1033,6 +1043,7 @@ a {
 
 .signinSection__loginButton:hover {
   color: #fff;
+  background-color: #5129E8;
 }
 
 .signinSection--resetButton {
@@ -1045,4 +1056,104 @@ a {
 
 .signinSection__terms {
   margin: 100px 200px 0 200px;
+}
+
+/* Terms & Conditions Popup */
+.termsSection {
+  margin-top: 45px;
+}
+
+.termsSection h2 {
+  color: #643EF1;
+  font-size: 52px;
+  font-family: HKGrotesk-Medium;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.termsSection p {
+  color: #6D7278;
+  font-size: 18px;
+  font-family: HKGrotesk-Medium;
+  margin-bottom: 25px;
+}
+
+/* Available Games */
+.availableGames {
+  margin-top: 120px;
+}
+
+.availableGames__best {
+  background-color: #DDE5FF;
+  padding: 20px 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.availableGames h3 {
+  font-size: 36px;
+  font-family: HKGrotesk-Medium;
+  margin-bottom: 40px;
+  color: #1A0F54;
+  text-align: center;
+}
+
+.availableGames p {
+  color: #1A0F54;
+  font-size: 24px;
+  font-family: HKGrotesk-Medium;
+  text-align: center;
+  margin: 0;
+}
+
+.availableGames__note {
+  padding: 25px;
+  border: 6px solid #6236FF;
+  border-radius: 20px;
+}
+
+.availableGames__note p {
+  color: #1A0F54;
+  font-size: 27px;
+  font-family: HKGrotesk-Medium;
+}
+
+.availableGames__downloadButton {
+  margin: 100px 0 50px 0;
+}
+
+/* Payment Options */
+.paymentOptions {
+  margin: 45px 0 20px 0;
+}
+
+.paymentOptions h2 {
+  color: #643EF1;
+  font-size: 52px;
+  font-family: HKGrotesk-Medium;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.paymentOptions__description {
+  background-color: #DDE5FF;
+  padding: 25px 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.paymentOptions__description h3 {
+  font-size: 32px;
+  font-family: HKGrotesk-Medium;
+  margin-bottom: 40px;
+  color: #1A0F54;
+  text-align: center;
+}
+
+.paymentOptions__description p {
+  color: #1A0F54;
+  font-size: 20px;
+  font-family: HKGrotesk-Medium;
+  text-align: center;
+  margin: 0;
 }
