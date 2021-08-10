@@ -77,7 +77,7 @@
         &__inner{
             padding: 0 30px;
         }
-        &__padding{
+        &__bottom{
             padding: 0 30px;
         }
         &__paymentMethod{
@@ -165,6 +165,11 @@
             }
         }
     }
+    .jackpot{
+        &__price{
+            font-size: 18px;
+        }
+    }
 }
 
 @media (min-width: 768px)
@@ -206,12 +211,12 @@
         }
         &__googleLogin{
             min-height: 80px;
-            min-width: none;
+            min-width: auto;
             width: 100%;
         }
         &__facebookLogin{
             min-height: 80px;
-            min-width: none;
+            min-width: auto;
             width: 100%;
         }
         &__terms{
@@ -336,6 +341,53 @@
             margin-top: 50px;
         }
     }
+    .footer{
+        &__bottom{
+            padding: 0 10px;
+            .col-md-4, .col-md-3, .col-md-2, .col-md-3{
+                width: 50%;
+            } 
+        }
+        &__social{
+            ul{
+                li{
+                    a{
+                        padding: 0 7px;
+                    }
+                }
+            }
+        }
+        &__inner{
+            padding: 0 15px;
+        }
+        &__paymentMethods{
+            margin-top: 40px;
+            text-align: left;
+        }
+        &__social{
+            margin-top: 40px; 
+            text-align: left;
+            ul{
+                justify-content: flex-start;
+                li{
+                    a{
+                        padding: 0 12px 0 0;
+                    }
+                }
+            }
+        }
+        &__appDownload{
+            margin-top: 40px; 
+            text-align: left;
+            ul{
+                justify-content: flex-start;
+            }
+        }
+        &__languagePreference{
+            margin-top: 40px;
+            text-align: left;
+        }
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -388,6 +440,11 @@
             margin-bottom: 35px;
             h5{
                 margin-bottom: 20px;
+            }
+        }
+        &__bottom{
+            .col-md-4, .col-md-3, .col-md-2, .col-md-3{
+                width: 100%;
             }
         }
     }

@@ -57,7 +57,7 @@
   .footer__inner {
     padding: 0 30px;
   }
-  .footer__padding {
+  .footer__bottom {
     padding: 0 30px;
   }
   .footer__paymentMethod ul li a {
@@ -119,6 +119,9 @@
   .main-content__heading h2 {
     font-size: 20px;
   }
+  .jackpot__price {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -152,12 +155,12 @@
   }
   .signinSection__googleLogin {
     min-height: 80px;
-    min-width: none;
+    min-width: auto;
     width: 100%;
   }
   .signinSection__facebookLogin {
     min-height: 80px;
-    min-width: none;
+    min-width: auto;
     width: 100%;
   }
   .signinSection__terms {
@@ -272,6 +275,43 @@
   .availableGames__downloadButton {
     margin-top: 50px;
   }
+  .footer__bottom {
+    padding: 0 10px;
+  }
+  .footer__bottom .col-md-4, .footer__bottom .col-md-3, .footer__bottom .col-md-2, .footer__bottom .col-md-3 {
+    width: 50%;
+  }
+  .footer__social ul li a {
+    padding: 0 7px;
+  }
+  .footer__inner {
+    padding: 0 15px;
+  }
+  .footer__paymentMethods {
+    margin-top: 40px;
+    text-align: left;
+  }
+  .footer__social {
+    margin-top: 40px;
+    text-align: left;
+  }
+  .footer__social ul {
+    justify-content: flex-start;
+  }
+  .footer__social ul li a {
+    padding: 0 12px 0 0;
+  }
+  .footer__appDownload {
+    margin-top: 40px;
+    text-align: left;
+  }
+  .footer__appDownload ul {
+    justify-content: flex-start;
+  }
+  .footer__languagePreference {
+    margin-top: 40px;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -322,6 +362,9 @@
   }
   .footer__column h5 {
     margin-bottom: 20px;
+  }
+  .footer__bottom .col-md-4, .footer__bottom .col-md-3, .footer__bottom .col-md-2, .footer__bottom .col-md-3 {
+    width: 100%;
   }
   .signinSection__terms {
     margin: 50px 0 0 0;

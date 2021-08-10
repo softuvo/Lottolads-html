@@ -148,6 +148,16 @@ a {
   color: #1A0D49;
 }
 
+.header-top--user {
+  cursor: auto;
+}
+
+.header-top--user:hover {
+  background-color: #DDE5FF;
+  border-color: #DDE5FF;
+  color: #1A0D49;
+}
+
 .header-top--btnDropdown {
   border: 1px solid #DDE5FF;
   background-color: transparent;
@@ -446,7 +456,6 @@ a {
 /* Main Content */
 .main-content__rightInner {
   padding: 40px 65px 28px 65px;
-  border-top: 2px solid #623DEF;
   background-color: #F3F2FE;
 }
 
@@ -492,7 +501,7 @@ a {
 .nav-tabs__link {
   display: block;
   padding: .5rem 1rem;
-  color: #616161;
+  color: #928EA1;
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   background: 0 0;
@@ -509,6 +518,7 @@ a {
 .nav-tabs .active {
   color: #000000;
   font-family: HKGrotesk-Bold;
+  border-bottom: 2px solid #623DEF;
 }
 
 .downloadApp {
@@ -727,7 +737,7 @@ a {
   -o-transform: translate(0, -7px);
 }
 
-.footer__padding {
+.footer__bottom {
   padding: 0 115px;
 }
 
@@ -746,7 +756,7 @@ a {
 
 .footer__social ul li a {
   display: block;
-  padding: 0 3px;
+  padding: 0 10px;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -941,6 +951,10 @@ a {
   font-size: 24px;
   min-width: 260px;
   min-height: 100px;
+}
+
+.signinSection__facebookLogin img {
+  margin-right: 5px;
 }
 
 .signinSection__formGroup {
@@ -1156,4 +1170,95 @@ a {
   font-family: HKGrotesk-Medium;
   text-align: center;
   margin: 0;
+}
+
+/* Next Game */
+.nextGame {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nextGame__text {
+  font-size: 22px;
+  font-family: HKGrotesk-Medium;
+  color: #9C55BB;
+}
+
+.nextGame__time {
+  color: #1A0F54;
+  font-size: 22px;
+  font-family: HKGrotesk-Medium;
+}
+
+/* Numbers */
+.numbers {
+  background-color: #5A34EA;
+  border-radius: 8px;
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 16px 0 rgba(53, 110, 158, 0.2);
+}
+
+.numbers__text {
+  color: #fff;
+  font-size: 22px;
+  font-family: HKGrotesk-Medium;
+  margin-right: auto;
+}
+
+.numbers__icon {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.numbers--lightBg {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.numbers--yellowBg {
+  background-color: #F6C358;
+}
+
+/* Numbers List */
+.numbersList {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbersList__badge {
+  background-color: #5A34EA;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.numbersList--badgeYellow {
+  background-color: #F6C358;
+}
+
+.numbersList--badgeOrange {
+  background-color: #F17108;
+}
+
+.numbersList--badgePink {
+  background-color: #EE476F;
 }

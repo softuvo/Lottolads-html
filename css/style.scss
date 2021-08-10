@@ -142,6 +142,14 @@ a{
             color: #1A0D49;
         }
     }
+    &--user{
+        cursor: auto;
+        &:hover{
+            background-color: #DDE5FF;
+            border-color: #DDE5FF;
+            color: #1A0D49;
+        }
+    }
     &--btnDropdown{
         border: 1px solid #DDE5FF;
         background-color: transparent;
@@ -413,7 +421,6 @@ a{
 
     &__rightInner{
         padding: 40px 65px 28px 65px;
-        border-top: 2px solid #623DEF;
         background-color: #F3F2FE;
     }
     &__heading{
@@ -453,7 +460,7 @@ a{
     &__link{
         display: block;
         padding: .5rem 1rem;
-        color: #616161;
+        color: #928EA1;
         text-decoration: none;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
         background: 0 0;
@@ -468,6 +475,7 @@ a{
     .active{
         color: #000000;
         font-family:HKGrotesk-Bold;
+        border-bottom: 2px solid #623DEF;
     }
 }
 
@@ -669,7 +677,7 @@ a{
             }
         }
     }
-    &__padding{
+    &__bottom{
         padding: 0 115px;
     }
     &__social{
@@ -684,7 +692,7 @@ a{
             li{
                 a{
                     display: block;
-                    padding: 0 3px;
+                    padding: 0 10px;
                     transition: all .3s ease-in-out;
                     -webkit-transition: all .3s ease-in-out;
                     -moz-transition: all .3s ease-in-out;
@@ -865,6 +873,9 @@ a{
         font-size: 24px;
         min-width: 260px;
         min-height: 100px;
+        img{
+            margin-right: 5px;
+        }
     }
     &__formGroup{
         margin-bottom: 30px;
@@ -1062,5 +1073,89 @@ a{
             text-align: center;
             margin: 0;
         }
+    }
+}
+
+/* Next Game */
+
+.nextGame{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    &__text{
+        font-size: 22px;
+        font-family:HKGrotesk-Medium;
+        color: #9C55BB;
+    }
+    &__time{
+        color: #1A0F54;
+        font-size: 22px;
+        font-family:HKGrotesk-Medium;
+    }
+}
+
+/* Numbers */
+
+.numbers{
+    background-color: #5A34EA;
+    border-radius: 8px;
+    padding: 10px 10px 10px 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 16px 0 rgba($color: #356E9E, $alpha: 0.20);
+    &__text{
+        color: #fff;
+        font-size: 22px;
+        font-family:HKGrotesk-Medium;
+        margin-right: auto;
+    }
+    &__icon{
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        border-radius: 6px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.20);
+        text-align: center;
+        color: #fff;
+        margin-left: 10px;
+    }
+    &--lightBg{
+        background-color: rgba($color: #FFFFFF, $alpha: 0.05);
+    }
+    &--yellowBg{
+        background-color: #F6C358;
+    }
+}
+
+/* Numbers List */
+
+.numbersList{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    &__badge{
+        background-color: #5A34EA;
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 4px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    &--badgeYellow{
+        background-color: #F6C358;
+    }
+    &--badgeOrange{
+        background-color: #F17108;
+    }
+    &--badgePink{
+        background-color: #EE476F;
     }
 }
