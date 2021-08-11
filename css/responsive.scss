@@ -46,6 +46,27 @@
             padding: 6px 10px;
         }
     }
+    .numbers{
+        &__text{
+            font-size: 16px;
+        }
+        &__icon{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+    .numbersList{
+        padding: 20px 20px 0px 20px;
+    }
+    .nextGame{
+        &__text{
+            font-size: 18px;
+        }
+        &__time{
+            font-size: 18px;
+        }
+    }
 }
 
 
@@ -115,6 +136,25 @@
             }
         }
     }
+    .numbers{
+        &__text{
+            font-size: 14px;
+        }
+        &__icon{
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+        }
+    }
+    .playGameButtons{
+        text-align: center;
+        .col-md-8{
+            width: 100%;
+        }
+        .offset-md-4{
+            margin-left: 0;
+        }
+    }
 }
 
 
@@ -164,12 +204,39 @@
                 font-size: 20px;
             }
         }
+        &__innerPadding{
+            padding: 0 30px 7px 30px;
+        }
     }
     .jackpot{
         &__price{
             font-size: 18px;
         }
     }
+    .numbers{
+        display: block;
+        a{
+            display: inline-block;
+        }
+        &__text{
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        &__icon{
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    .numbersList{
+        ul{
+            li{
+                a{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    
 }
 
 @media (min-width: 768px)
@@ -388,6 +455,40 @@
             text-align: left;
         }
     }
+    .numbers{
+        display: flex;
+        &__icon{
+            margin-right: 5px;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+        }
+        &__text{
+            margin-bottom: 0;
+        }
+    }
+    .main-content{
+        &__innerPadding{
+            .col-md-4{
+                width: 100%;
+            }
+        }
+    }
+    .gameMatches{
+        ul{
+            display: block;
+            text-align: center;
+            li{
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .playGameButtons{
+        &__button{
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -452,7 +553,8 @@
         &__terms{
             margin: 50px 0 0 0;
         }
-    }    
+    }  
+      
 }
 
 
@@ -475,6 +577,30 @@
     .main-content{
         &__rightInner{
             padding: 15px;
+        }
+    }
+    .playGameButtons{
+        &__button{
+            min-width: auto;
+            width: 100%;
+        }
+    }
+    .numbersList{
+        padding: 15px 15px 0 15px;
+    }
+    .pickNumber{
+        p{
+            padding: 20px 10px;
+        }
+    }
+    .logo{
+        img{
+            max-width: 100%;
+        }
+    }
+    .main-content{
+        &__innerPadding{
+            padding: 0 10px 7px 10px;
         }
     }
 }

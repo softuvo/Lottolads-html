@@ -36,6 +36,23 @@
     padding: 8px 10px;
     padding: 6px 10px;
   }
+  .numbers__text {
+    font-size: 16px;
+  }
+  .numbers__icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .numbersList {
+    padding: 20px 20px 0px 20px;
+  }
+  .nextGame__text {
+    font-size: 18px;
+  }
+  .nextGame__time {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -82,6 +99,23 @@
   .nextDraw__img img {
     margin-left: -25px;
   }
+  .numbers__text {
+    font-size: 14px;
+  }
+  .numbers__icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .playGameButtons {
+    text-align: center;
+  }
+  .playGameButtons .col-md-8 {
+    width: 100%;
+  }
+  .playGameButtons .offset-md-4 {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -119,8 +153,28 @@
   .main-content__heading h2 {
     font-size: 20px;
   }
+  .main-content__innerPadding {
+    padding: 0 30px 7px 30px;
+  }
   .jackpot__price {
     font-size: 18px;
+  }
+  .numbers {
+    display: block;
+  }
+  .numbers a {
+    display: inline-block;
+  }
+  .numbers__text {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .numbers__icon {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .numbersList ul li a {
+    margin-right: 15px;
   }
 }
 
@@ -312,6 +366,32 @@
     margin-top: 40px;
     text-align: left;
   }
+  .numbers {
+    display: flex;
+  }
+  .numbers__icon {
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .numbers__text {
+    margin-bottom: 0;
+  }
+  .main-content__innerPadding .col-md-4 {
+    width: 100%;
+  }
+  .gameMatches ul {
+    display: block;
+    text-align: center;
+  }
+  .gameMatches ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .playGameButtons__button {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -387,6 +467,22 @@
   }
   .main-content__rightInner {
     padding: 15px;
+  }
+  .playGameButtons__button {
+    min-width: auto;
+    width: 100%;
+  }
+  .numbersList {
+    padding: 15px 15px 0 15px;
+  }
+  .pickNumber p {
+    padding: 20px 10px;
+  }
+  .logo img {
+    max-width: 100%;
+  }
+  .main-content__innerPadding {
+    padding: 0 10px 7px 10px;
   }
 }
 

@@ -214,13 +214,16 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="heading1" role="tabpanel"
                                 aria-labelledby="heading1-tab">
-                                <div class="main-content__rightInner">
+                                <div class="main-content__rightInner px-0 pb-0">
+                                    <div class="main-content__innerPadding">
                                     <div class="row">
                                         <div class="col-md-4">
+
                                             <div class="nextGame">
                                                 <div class="nextGame__text">Next Game</div>
                                                 <div class="nextGame__time">1m 18s</div>
                                             </div>
+                                            <!-- Next Game section ends here -->
                                         </div>
                                         <div class="col-md-4">
                                             <div class="numbers">
@@ -228,40 +231,498 @@
                                                     10 Numbers
                                                 </div>
                                                 <a href="#"><div class="numbers__icon">
-                                                    <i class="fas fa-minus"></i>
+                                                    <img src="images/minus.svg" alt="Minus Icon">
                                                 </div></a>
                                                 <a href="#"><div class="numbers__icon numbers--lightBg">
-                                                    <i class="fas fa-plus"></i>
+                                                    <img src="images/plus.svg" alt="Plus Icon">
                                                 </div></a>
                                                 <a href="#"><div class="numbers__icon numbers--yellowBg">
-                                                    <i class="fas fa-sync-alt"></i>
+                                                    <img src="images/repeat.svg" alt="Repeat Icon">
                                                 </div></a>
                                             </div>
+                                            <!-- Numbers section ends here -->
 
                                             <div class="numbersList">
-                                                <div class="numbersList__badge numbersList--badgeYellow">
-                                                    8
-                                                </div>
-                                                <div class="numbersList__badge numbersList--badgeOrange">
-                                                    15
-                                                </div>
-                                                <div class="numbersList__badge numbersList--badgeOrange">
-                                                    16
-                                                </div>
-                                                <div class="numbersList__badge numbersList--badgePink">
-                                                    37
-                                                </div>
-                                                <div class="numbersList__badge">
-                                                    44
-                                                </div>
+                                                <ul>
+                                                <li>
+                                                   <a href="#" class="numbersList--bgYellow">8</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="numbersList--bgOrange">15</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgOrange">16</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgPink">37</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#">44</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgPink">34</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgGray">22</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgGray">23</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgPurple">80</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgGreen">77</a>
+                                                 </li>
+                                                </ul>
                                             </div>
+                                            <!-- Numbers List ends here -->
+
+                                            <div class="pickNumber">
+                                            <p>Pick numbers or shuffle them</p>
+                                            </div>
+
+                                            <div class="spendPerDraw">
+                                                <h3>Spend per DRAW</h3>
+
+                                                <ul>
+                                                    <li><a href="#">$1</a></li>
+                                                    <li><a href="#" class="spendPerDraw--active">$2</a></li>
+                                                    <li><a href="#">$10</a></li>
+                                                    <li><a href="#">$20</a></li>
+                                                    <li><a href="#" class="spendPerDraw--w100">Other</a></li>
+                                                </ul>
+
+                                            </div>
+                                            <!-- Spend per draw section ends here -->
+
+                                            <div class="spendPerDraw">
+                                                <h3>Number of Draws</h3>
+
+                                                <ul>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">20</a></li>
+                                                    <li><a href="#" class="spendPerDraw--active spendPerDraw--w100">55</a></li>
+                                                </ul>
+
+                                            </div>
+                                            <!-- Number of Draws section ends here -->
+
+                                            
+
                                         </div>
                                         <div class="col-md-4"></div>
                                     </div>
                                 </div>
-    
+                                <div class="gameMatches">
+                                    <ul>
+                                        <li>
+                                            MATCH 4: <span>$1</span>
+                                        </li>
+                                        <li>
+                                            · MATCH 5: <span>$2</span>
+                                        </li>
+                                        <li>
+                                            · MATCH 5: <span>$2</span>
+                                        </li>
+                                        <li>
+                                            · MATCH 5: <span>$2</span>
+                                        </li>
+                                        <li>
+                                            · MATCH 5: $2
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <!-- Game Matches end here -->
+
+                                <div class="pickNumber">
+                                    <p>Note: No cancellation on tickets once payment<br> is confirmed</p>
+                                </div>
+
+                                
                             </div>
-                            <div class="tab-pane fade" id="heading2" role="tabpanel" aria-labelledby="heading2-tab">...
+
+                                <div class="playGameButtons row">
+                             
+                                    <div class="col-md-8 offset-md-4">
+                                        
+                                <button class="playGameButtons__button">
+                                    Play for $110
+                                </button>
+                                <button class="playGameButtons__bonusButton">
+                                        <img src="images/bonus-icon.svg" alt="">
+                                    Bonus Bet</button>
+                                    </div>
+                                
+                            
+                        </div>
+
+                            <!-- Play Game Buttons end here -->
+
+                            </div>
+                            <div class="tab-pane fade" id="heading2" role="tabpanel" aria-labelledby="heading2-tab">
+
+                                <div class="main-content__rightInner px-0 pb-0">
+                                    <div class="main-content__innerPadding2">
+                                    <div class="row">
+                                        <div class="col-md-3">
+
+                                            <div class="nextGame">
+                                                <div class="nextGame__text nextGame--colorRed">Draw</div>
+                                                <div class="nextGame__time">740</div>
+                                            </div>
+                                            <!-- Draw section ends here -->
+
+                                            <div class="nextGame">
+                                                <div class="nextGame__text">Next Game</div>
+                                                <div class="nextGame__time">00.00</div>
+                                            </div>
+                                            <!-- Next Game section ends here -->
+
+                                            <div class="nextGame nextGame--bgGreen">
+                                                <div class="nextGame__text nextGame--textWhite">Pick Numbers</div>
+                                                <div class="nextGame__time">
+                                                    <img src="images/pick.svg" alt="Pick Icon">
+                                                </div>
+                                            </div>
+                                            <!-- Pick Numbers section ends here -->
+
+                                        </div>
+                                        <div class="col-md-6">
+
+
+                                            <div class="heads">
+                                                <div class="heads__header">
+                                                <h3>Heads</h3>
+                                                <h4>9</h4>
+                                                </div>
+
+                                                <ul>
+                                                <li>
+                                                   <a href="#" class="heads--bgYellow">1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgYellow">3</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgYellow">8</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgOrange">15</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgOrange">18</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgGreen">22</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgGreen">23</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgPink">35</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgPink">37</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 
+                                                </ul>
+                                            </div>
+                                            <!-- Heads section ends here -->
+
+                                            <div class="heads">
+                                                <div class="heads__header">
+                                                <h3>Tails</h3>
+                                                <h4>8</h4>
+                                                </div>
+
+                                                <ul>
+                                                <li>
+                                                   <a href="#" class="heads--bgYellow">41</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgYellow">43</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgYellow">48</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgOrange">55</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgOrange">58</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgGreen">62</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgPink">75</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="heads--bgPink">77</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#"></a>
+                                                 </li>
+                                                 
+                                                </ul>
+                                            </div>
+                                            <!-- Tails section ends here -->
+                                          
+
+                                        </div>
+                                        <div class="col-md-3">
+
+                                            <div class="numbersList numbersList--padding">
+                                                <div class="numbersList__header">
+                                                    <h3>Number of Draws</h3>
+                                                    <h4>5</h4>
+                                                </div>
+                                                <ul>
+                                                <li>
+                                                   <a href="#" class="numbersList--bgYellow">8</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="numbersList--bgOrange">15</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgOrange">16</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgPink">37</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#">44</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgPink">34</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgGray">22</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgGray">23</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgPurple">80</a>
+                                                 </li>
+                                                 <li>
+                                                    <a href="#" class="numbersList--bgGreen">77</a>
+                                                 </li>
+                                                </ul>
+                                            </div>
+                                            <!-- Numbers List ends here -->
+
+                                            <div class="numbersList numbersList--padding">
+                                                <div class="numbersList__header">
+                                                    <h3>Number of Draws</h3>
+                                                    <h4>1</h4>
+                                                </div>
+                                                <ul>
+                                                <li>
+                                                   <a href="#">37</a>
+                                                </li>
+
+                                                </ul>
+                                            </div>
+                                            <!-- Numbers List ends here -->
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
                             </div>
                             <div class="tab-pane fade" id="heading3" role="tabpanel" aria-labelledby="heading3-tab">...
                             </div>
@@ -348,31 +809,31 @@
                 <h6>Payment Methods</h6>
                 <ul>
                     <li><a href="#">
-                        <img src="images/visa-logo.png" alt="Visa Logo">
+                        <img src="images/visa-logo.svg" alt="Visa Logo">
                     </a></li>
                     <li><a href="#">
-                        <img src="images/mastercard.png" alt="Mastercard Logo">
+                        <img src="images/mastercard.svg" alt="Mastercard Logo">
                     </a></li>
                     <li><a href="#">
-                        <img src="images/amex.png" alt="Amex Logo">
+                        <img src="images/amex.svg" alt="Amex Logo">
                     </a></li>
                     <li><a href="#">
-                        <img src="images/paypal.png" alt="Paypal Logo">
+                        <img src="images/paypal.svg" alt="Paypal Logo">
                     </a></li>
                     <li><a href="#">
-                        <img src="images/Bitcoin.png" alt="Bitcoin Logo">
+                        <img src="images/Bitcoin.svg" alt="Bitcoin Logo">
                     </a></li>
                     <li><a href="#">
-                        <img src="images/Etherium.png" alt="Etherium Logo">
+                        <img src="images/Etherium.svg" alt="Etherium Logo">
                     </a></li>
                     <li><a href="#">
-                        <img src="images/Bitcoin-cash.png" alt="Bitcoin Cash Logo">
+                        <img src="images/Bitcoin-cash.svg" alt="Bitcoin Cash Logo">
                     </a></li>
                     <li><a href="#">
-                        <img src="images/xrp.png" alt="Xrp Logo">
+                        <img src="images/xrp.svg" alt="Xrp Logo">
                     </a></li>
                     <li><a href="#">
-                        <img src="images/Image-2.png" alt="Logo">
+                        <img src="images/D.svg" alt="D Logo">
                     </a></li>
                 </ul>
             </div>

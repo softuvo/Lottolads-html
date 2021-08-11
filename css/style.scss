@@ -55,6 +55,9 @@ body{
     color: #1A0F54;
     font-family:HKGrotesk-Regular;
 }
+ul{
+    list-style: none;
+}
 a{
     text-decoration: none;
 }
@@ -64,6 +67,7 @@ a{
 .pr-0{
     padding-right: 0;
 }
+
 
 /* Variable */
 
@@ -441,6 +445,12 @@ a{
     &--columnSix{
         width: 55%;
     }
+    &__innerPadding{
+        padding: 0 65px 7px 65px;
+    }
+    &__innerPadding2{
+        padding: 20px 20px 80px 20px;
+    }
 }
 
 /* Nav Tabs */
@@ -452,6 +462,7 @@ a{
     margin-bottom: 0;
     list-style: none;
     border-top: 1px solid #F3F2FE;
+    border-bottom: 0;
     &__item{
         flex-basis: 0;
         flex-grow: 1;
@@ -1083,7 +1094,9 @@ a{
     padding: 15px;
     border-radius: 8px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
     &__text{
         font-size: 22px;
         font-family:HKGrotesk-Medium;
@@ -1093,6 +1106,16 @@ a{
         color: #1A0F54;
         font-size: 22px;
         font-family:HKGrotesk-Medium;
+    }
+    &--colorRed{
+        color: #EB2D67;
+    }
+    &--bgGreen{
+        background-color: #06D6A0;
+        padding: 9px 15px;
+    }
+    &--textWhite{
+        color: #fff;
     }
 }
 
@@ -1119,7 +1142,6 @@ a{
         border-radius: 6px;
         background-color: rgba($color: #FFFFFF, $alpha: 0.20);
         text-align: center;
-        color: #fff;
         margin-left: 10px;
     }
     &--lightBg{
@@ -1135,27 +1157,248 @@ a{
 .numbersList{
     background-color: #fff;
     border-radius: 8px;
-    padding: 35px;
-    display: flex;
-    flex-wrap: wrap;
-    &__badge{
-        background-color: #5A34EA;
-        width: 46px;
-        height: 46px;
-        line-height: 46px;
-        color: #fff;
-        font-size: 18px;
-        border-radius: 4px;
+    padding: 40px 40px 20px 40px;
+    margin-bottom: 15px;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        h3{
+            color: #FFBA03;
+            font-size: 22px;
+            font-family:HKGrotesk-SemiBold;
+        }
+        h4{
+            color: #1A0F54;
+            font-size: 22px;
+            font-family:HKGrotesk-SemiBold;
+        }
+    }
+    &--padding{
+        padding: 30px 25px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        li{
+            a{
+                background-color: #5A34EA;
+                display: block;
+                width: 46px;
+                height: 46px;
+                line-height: 46px;
+                color: #fff;
+                font-size: 19px;
+                border-radius: 5px;
+                text-align: center;
+                margin: 0 10px;
+                margin-bottom: 20px;
+                font-family:HKGrotesk-SemiBold;
+            }
+        }
+    }
+    &--bgYellow{
+        background-color: #F6C358 !important;
+    }
+    &--bgOrange{
+        background-color: #F17108 !important;
+    }
+    &--bgPink{
+        background-color: #EE476F !important;
+    }
+    &--bgGray{
+        background-color: #7E809B !important;
+    }
+    &--bgPurple{
+        background-color: #9C55BB !important;
+    }
+    &--bgGreen{
+        background-color: #06D6A0 !important;
+    }
+}
+
+/* Pick Number */
+
+.pickNumber{
+
+    p{
+        color: #928EA1;
+        font-size: 13px;
         text-align: center;
-        margin-right: 20px;
+        padding: 20px 0;
+        margin: 0;
     }
-    &--badgeYellow{
+}
+
+/* Spend per Draw*/
+
+.spendPerDraw{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px 25px 5px 25px;
+    margin-bottom: 15px;
+    h3{
+        font-size: 16px;
+        font-family:HKGrotesk-SemiBold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #928EA1;
+    }
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        li{
+            a{
+                border: 1px solid #F3F2FE;
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+                color: #1A0D49;
+                font-size: 17px;
+                border-radius: 9px;
+                text-align: center;
+                margin-right: 10px;
+                font-family:HKGrotesk-SemiBold;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &--w100{
+        width: 100px !important;
+        color: #928EA1 !important;
+    }
+    &--active{
+        background-color: #5A34EA;
+        color: #fff !important;
+    }
+}
+
+/* Game Matches */
+
+.gameMatches{
+    background-color: #fff;
+    padding: 20px;
+    ul{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        li{
+            color: #9D99AB;
+            padding: 0 5px;
+            span{
+                color: #664AF3;
+            }
+        }
+    }
+}
+
+/* Play Game Buttons */
+
+.playGameButtons{
+    margin: 20px 0 40px 0;
+    &__button{
         background-color: #F6C358;
+        border: 1px solid #F6C358;
+        border-radius: 8px;
+        padding: 14px 30px;
+        min-width: 393px;
+        color: #1A0F54;
+        font-size: 18px;
+        font-family:HKGrotesk-Bold;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        &:hover{
+            background-color: #5A34EA;
+            border-color: #5A34EA;
+            color: #fff;
+        }
     }
-    &--badgeOrange{
-        background-color: #F17108;
+    &__bonusButton{
+        border: 1px solid #F6C358;
+        border-radius: 18px;
+        font-size: 20px;
+        color: #F6C358;
+        background-color: transparent;
+        padding: 6px 20px 6px 45px;
+        position: relative;
+        margin-left: 30px;
+        img{
+            position: absolute;
+            left: -30px;
+            top: -9px;
+        }
     }
-    &--badgePink{
-        background-color: #EE476F;
+}
+
+/* Heads */
+
+.heads{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+    h3{
+        color: #F07007;
+        font-size: 28px;
+        font-family: HKGrotesk-SemiBold;
+    }
+    h4{
+        color: #1A0F54;
+        font-size: 28px;
+        font-family: HKGrotesk-SemiBold;
+        margin-bottom: 15px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        li{
+            a{
+                background-color: transparent;
+                border: 1px solid #E6E4FD;
+                display: block;
+                width: 52px;
+                height: 52px;
+                line-height: 52px;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 5px;
+                text-align: center;
+                margin: 0 5px;
+                margin-bottom: 9px;
+                font-family: HKGrotesk-SemiBold;
+            }
+        }
+    }
+    &--bgYellow{
+        background-color: #F6C358 !important;
+        border-color: #F6C358 !important;
+    }
+    &--bgOrange{
+        background-color: #F17108 !important;
+        border-color: #F17108 !important;
+    }
+    &--bgGreen{
+        background-color: #06D6A0 !important;
+        border-color: #06D6A0 !important;
+    }
+    &--bgPink{
+        background-color: #EE476F !important;
+        border-color: #EE476F !important;
     }
 }

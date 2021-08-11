@@ -53,6 +53,10 @@ body {
   font-family: HKGrotesk-Regular;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -482,6 +486,14 @@ a {
   width: 55%;
 }
 
+.main-content__innerPadding {
+  padding: 0 65px 7px 65px;
+}
+
+.main-content__innerPadding2 {
+  padding: 20px 20px 80px 20px;
+}
+
 /* Nav Tabs */
 .nav-tabs {
   display: flex;
@@ -490,6 +502,7 @@ a {
   margin-bottom: 0;
   list-style: none;
   border-top: 1px solid #F3F2FE;
+  border-bottom: 0;
 }
 
 .nav-tabs__item {
@@ -1178,7 +1191,9 @@ a {
   padding: 15px;
   border-radius: 8px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .nextGame__text {
@@ -1191,6 +1206,19 @@ a {
   color: #1A0F54;
   font-size: 22px;
   font-family: HKGrotesk-Medium;
+}
+
+.nextGame--colorRed {
+  color: #EB2D67;
+}
+
+.nextGame--bgGreen {
+  background-color: #06D6A0;
+  padding: 9px 15px;
+}
+
+.nextGame--textWhite {
+  color: #fff;
 }
 
 /* Numbers */
@@ -1218,7 +1246,6 @@ a {
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
-  color: #fff;
   margin-left: 10px;
 }
 
@@ -1234,31 +1261,267 @@ a {
 .numbersList {
   background-color: #fff;
   border-radius: 8px;
-  padding: 35px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 40px 40px 20px 40px;
+  margin-bottom: 15px;
 }
 
-.numbersList__badge {
+.numbersList__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.numbersList__header h3 {
+  color: #FFBA03;
+  font-size: 22px;
+  font-family: HKGrotesk-SemiBold;
+}
+
+.numbersList__header h4 {
+  color: #1A0F54;
+  font-size: 22px;
+  font-family: HKGrotesk-SemiBold;
+}
+
+.numbersList--padding {
+  padding: 30px 25px;
+}
+
+.numbersList ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.numbersList ul li a {
   background-color: #5A34EA;
+  display: block;
   width: 46px;
   height: 46px;
   line-height: 46px;
   color: #fff;
-  font-size: 18px;
-  border-radius: 4px;
+  font-size: 19px;
+  border-radius: 5px;
   text-align: center;
-  margin-right: 20px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  font-family: HKGrotesk-SemiBold;
 }
 
-.numbersList--badgeYellow {
+.numbersList--bgYellow {
+  background-color: #F6C358 !important;
+}
+
+.numbersList--bgOrange {
+  background-color: #F17108 !important;
+}
+
+.numbersList--bgPink {
+  background-color: #EE476F !important;
+}
+
+.numbersList--bgGray {
+  background-color: #7E809B !important;
+}
+
+.numbersList--bgPurple {
+  background-color: #9C55BB !important;
+}
+
+.numbersList--bgGreen {
+  background-color: #06D6A0 !important;
+}
+
+/* Pick Number */
+.pickNumber p {
+  color: #928EA1;
+  font-size: 13px;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* Spend per Draw*/
+.spendPerDraw {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px 25px 5px 25px;
+  margin-bottom: 15px;
+}
+
+.spendPerDraw h3 {
+  font-size: 16px;
+  font-family: HKGrotesk-SemiBold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #928EA1;
+}
+
+.spendPerDraw ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.spendPerDraw ul li a {
+  border: 1px solid #F3F2FE;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  color: #1A0D49;
+  font-size: 17px;
+  border-radius: 9px;
+  text-align: center;
+  margin-right: 10px;
+  font-family: HKGrotesk-SemiBold;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.spendPerDraw--w100 {
+  width: 100px !important;
+  color: #928EA1 !important;
+}
+
+.spendPerDraw--active {
+  background-color: #5A34EA;
+  color: #fff !important;
+}
+
+/* Game Matches */
+.gameMatches {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.gameMatches ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.gameMatches ul li {
+  color: #9D99AB;
+  padding: 0 5px;
+}
+
+.gameMatches ul li span {
+  color: #664AF3;
+}
+
+/* Play Game Buttons */
+.playGameButtons {
+  margin: 20px 0 40px 0;
+}
+
+.playGameButtons__button {
   background-color: #F6C358;
+  border: 1px solid #F6C358;
+  border-radius: 8px;
+  padding: 14px 30px;
+  min-width: 393px;
+  color: #1A0F54;
+  font-size: 18px;
+  font-family: HKGrotesk-Bold;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.numbersList--badgeOrange {
-  background-color: #F17108;
+.playGameButtons__button:hover {
+  background-color: #5A34EA;
+  border-color: #5A34EA;
+  color: #fff;
 }
 
-.numbersList--badgePink {
-  background-color: #EE476F;
+.playGameButtons__bonusButton {
+  border: 1px solid #F6C358;
+  border-radius: 18px;
+  font-size: 20px;
+  color: #F6C358;
+  background-color: transparent;
+  padding: 6px 20px 6px 45px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.playGameButtons__bonusButton img {
+  position: absolute;
+  left: -30px;
+  top: -9px;
+}
+
+/* Heads */
+.heads {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.heads__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.heads h3 {
+  color: #F07007;
+  font-size: 28px;
+  font-family: HKGrotesk-SemiBold;
+}
+
+.heads h4 {
+  color: #1A0F54;
+  font-size: 28px;
+  font-family: HKGrotesk-SemiBold;
+  margin-bottom: 15px;
+}
+
+.heads ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.heads ul li a {
+  background-color: transparent;
+  border: 1px solid #E6E4FD;
+  display: block;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 5px;
+  margin-bottom: 9px;
+  font-family: HKGrotesk-SemiBold;
+}
+
+.heads--bgYellow {
+  background-color: #F6C358 !important;
+  border-color: #F6C358 !important;
+}
+
+.heads--bgOrange {
+  background-color: #F17108 !important;
+  border-color: #F17108 !important;
+}
+
+.heads--bgGreen {
+  background-color: #06D6A0 !important;
+  border-color: #06D6A0 !important;
+}
+
+.heads--bgPink {
+  background-color: #EE476F !important;
+  border-color: #EE476F !important;
 }
