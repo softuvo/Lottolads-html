@@ -7,6 +7,12 @@
     font-size: 18px;
     line-height: 20px;
   }
+  .main-content--leftColumn {
+    width: 25%;
+  }
+  .main-content--rightColumn {
+    width: 75%;
+  }
   .footer__paymentMethods ul {
     display: block;
   }
@@ -62,12 +68,6 @@
   .sidebar__myAccount-button {
     font-size: 20px;
   }
-  .main-content--leftColumn {
-    width: 25%;
-  }
-  .main-content--rightColumn {
-    width: 75%;
-  }
   .footer__column {
     padding: 0 15px;
   }
@@ -116,6 +116,12 @@
   .playGameButtons .offset-md-4 {
     margin-left: 0;
   }
+  .heads h3, .heads h4 {
+    font-size: 24px;
+  }
+  .numbersList__header h3, .numbersList__header h4 {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -153,8 +159,14 @@
   .main-content__heading h2 {
     font-size: 20px;
   }
-  .main-content__innerPadding {
+  .main-content__kenoPlay {
     padding: 0 30px 7px 30px;
+  }
+  .main-content__kenoDraw {
+    padding: 20px 20px 30px 20px;
+  }
+  .main-content__kenoDraw .col-md-3, .main-content__kenoDraw .col-md-6 {
+    width: 100%;
   }
   .jackpot__price {
     font-size: 18px;
@@ -176,6 +188,9 @@
   .numbersList ul li a {
     margin-right: 15px;
   }
+  .header-top__navigation ul {
+    padding-left: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -185,11 +200,18 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .header-top {
+    text-align: center;
+    margin-top: 8px;
+  }
   .header-top__inner {
     display: block;
   }
   .header-top__navigation ul {
     padding-left: 0;
+  }
+  .header-top--btnDropdown {
+    margin: 0 0 0 10px;
   }
   .signinSection {
     padding-top: 0;
@@ -378,7 +400,7 @@
   .numbers__text {
     margin-bottom: 0;
   }
-  .main-content__innerPadding .col-md-4 {
+  .main-content__kenoPlay .col-md-4 {
     width: 100%;
   }
   .gameMatches ul {
@@ -449,6 +471,9 @@
   .signinSection__terms {
     margin: 50px 0 0 0;
   }
+  .sidebar__myAccount-button {
+    padding: 8px 20px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -465,8 +490,21 @@
     width: 100%;
     margin: 0 0 10px 0;
   }
+  .header-top--dropdownMenu {
+    margin: 0 auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: -7px !important;
+    width: 50%;
+  }
   .main-content__rightInner {
     padding: 15px;
+  }
+  .main-content__kenoPlay {
+    padding: 0 10px 7px 10px;
+  }
+  .main-content__kenoDraw {
+    padding: 0 10px 20px 10px;
   }
   .playGameButtons__button {
     min-width: auto;
@@ -481,8 +519,8 @@
   .logo img {
     max-width: 100%;
   }
-  .main-content__innerPadding {
-    padding: 0 10px 7px 10px;
+  .heads {
+    padding: 15px;
   }
 }
 
