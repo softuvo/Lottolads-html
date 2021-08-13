@@ -75,6 +75,9 @@
             font-size: 18px;
         }
     }
+    .kenoResults{
+        padding: 15px 20px 80px 20px;
+    }
 }
 
 
@@ -222,6 +225,9 @@
             .col-md-3, .col-md-6{
                 width: 100%;
             }
+        }
+        &__kenoResultsPadding{
+            padding: 0 30px;
         }
     }
     .jackpot{
@@ -586,7 +592,15 @@
             padding: 8px 20px;
         }
     }
-      
+    .kenoResults{
+        &__list{
+            li{
+                a{
+                    margin: 0 10px 10px 0;
+                }
+            }
+        }
+    }  
 }
 
 
@@ -623,6 +637,9 @@
         &__kenoDraw{
             padding: 0 10px 20px 10px;
         }
+        &__kenoResultsPadding{
+            padding: 0 12px;
+        }
     }
     .playGameButtons{
         &__button{
@@ -646,6 +663,12 @@
     .heads{
         padding: 15px;
     }
+}
+
+@media (min-width: 576px){
+.modal-funds {
+    max-width: 365px;
+}
 }
 
 @media only screen and (max-width: 480px){
@@ -693,6 +716,17 @@
             p{
                 font-size: 16px;
             }
+        }
+    }
+    .kenoResults{
+        ul{
+            li{
+                display: block;
+            }
+        }
+        &__date{
+            padding: 10px;
+            margin-right: 0;
         }
     }
 }

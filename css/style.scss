@@ -1004,6 +1004,65 @@ a{
         margin: 100px 200px 0 200px;
     }
 }
+.fundsModalContent{
+    background-color: #fff;
+    border-radius: 25px;
+    .modal-body{
+        padding: 4.5rem 2rem 2rem 2rem;
+        p{
+            margin: 0;
+            font-size: 22px;
+            color: #1A0D49;
+            font-family:HKGrotesk-Bold;
+            text-align: center;
+        }
+    }
+    .modal-footer{
+        justify-content: center;
+        border: 0;
+        margin-bottom: 25px;
+    }
+    &__btnDeposit{
+        background-color: #6236FF;
+        color: #fff;
+        border-radius: 27px;
+        font-size: 17px;
+        font-family:HKGrotesk-Bold;
+        padding: 13px 50px;
+        transition:all .3s ease-in;
+        -webkit-transition:all .3s ease-in;
+        -moz-transition:all .3s ease-in;
+        -o-transition:all .3s ease-in;
+        &:hover{
+            color: #fff;
+            box-shadow: 0px 3px 10px 0 rgba($color: #000000, $alpha: 0.15);
+            transform: translate(0, -7px);
+            -webkit-transform: translate(0, -5px);
+            -moz-transform: translate(0, -5px);
+            -o-transform: translate(0, -5px);
+        }
+    }
+    &__btnOkay{
+        background-color: #F6C358;
+        color: #1A0D49;
+        border-radius: 27px;
+        font-size: 17px;
+        font-family:HKGrotesk-Bold;
+        padding: 13px 50px;
+        transition:all .3s ease-in;
+        -webkit-transition:all .3s ease-in;
+        -moz-transition:all .3s ease-in;
+        -o-transition:all .3s ease-in;
+        &:hover{
+            color: #1A0D49;
+            box-shadow: 0px 3px 10px 0 rgba($color: #000000, $alpha: 0.15);
+            transform: translate(0, -7px);
+            -webkit-transform: translate(0, -5px);
+            -moz-transform: translate(0, -5px);
+            -o-transform: translate(0, -5px);
+        }
+    }
+}
 
 
 /* Terms & Conditions Popup */
@@ -1152,12 +1211,19 @@ a{
         background-color: rgba($color: #FFFFFF, $alpha: 0.20);
         text-align: center;
         margin-left: 10px;
+        font-size: 20px;
+        font-family:HKGrotesk-SemiBold;
+        color: #191161;
     }
     &--lightBg{
         background-color: rgba($color: #FFFFFF, $alpha: 0.05);
     }
     &--yellowBg{
         background-color: #F6C358;
+    }
+    &--padding{
+        padding: 2px 25px;
+        width: auto;
     }
 }
 
@@ -1520,8 +1586,7 @@ a{
                 font-size: 11px;
                 border-radius: 5px;
                 text-align: center;
-                margin: 0 4px 0 0;
-                margin-bottom: 20px;
+                margin: 0 4px 5px 0;
                 font-family: HKGrotesk-SemiBold;
                 transition: all .3s ease-in;
                 -webkit-transition: all .3s ease-in;

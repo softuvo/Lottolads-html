@@ -59,6 +59,9 @@
   .nextGame__time {
     font-size: 18px;
   }
+  .kenoResults {
+    padding: 15px 20px 80px 20px;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -167,6 +170,9 @@
   }
   .main-content__kenoDraw .col-md-3, .main-content__kenoDraw .col-md-6 {
     width: 100%;
+  }
+  .main-content__kenoResultsPadding {
+    padding: 0 30px;
   }
   .jackpot__price {
     font-size: 18px;
@@ -474,6 +480,9 @@
   .sidebar__myAccount-button {
     padding: 8px 20px;
   }
+  .kenoResults__list li a {
+    margin: 0 10px 10px 0;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -506,6 +515,9 @@
   .main-content__kenoDraw {
     padding: 0 10px 20px 10px;
   }
+  .main-content__kenoResultsPadding {
+    padding: 0 12px;
+  }
   .playGameButtons__button {
     min-width: auto;
     width: 100%;
@@ -521,6 +533,12 @@
   }
   .heads {
     padding: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-funds {
+    max-width: 365px;
   }
 }
 
@@ -566,5 +584,12 @@
   }
   .paymentOptions__description p {
     font-size: 16px;
+  }
+  .kenoResults ul li {
+    display: block;
+  }
+  .kenoResults__date {
+    padding: 10px;
+    margin-right: 0;
   }
 }
