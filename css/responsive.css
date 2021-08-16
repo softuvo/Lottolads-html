@@ -50,6 +50,9 @@
     height: 50px;
     line-height: 50px;
   }
+  .numbers--padding {
+    width: auto;
+  }
   .numbersList {
     padding: 20px 20px 0px 20px;
   }
@@ -59,8 +62,14 @@
   .nextGame__time {
     font-size: 18px;
   }
-  .kenoResults {
+  .gameResults {
     padding: 15px 20px 80px 20px;
+  }
+  .gamesCategory ul li {
+    width: 29%;
+  }
+  .addGame {
+    margin: 20px 0;
   }
 }
 
@@ -110,6 +119,9 @@
     height: 35px;
     line-height: 35px;
   }
+  .numbers--padding {
+    width: auto;
+  }
   .playGameButtons {
     text-align: center;
   }
@@ -124,6 +136,12 @@
   }
   .numbersList__header h3, .numbersList__header h4 {
     font-size: 18px;
+  }
+  .gamesCategory ul {
+    display: block;
+  }
+  .gamesCategory ul li {
+    width: 100%;
   }
 }
 
@@ -171,7 +189,7 @@
   .main-content__kenoDraw .col-md-3, .main-content__kenoDraw .col-md-6 {
     width: 100%;
   }
-  .main-content__kenoResultsPadding {
+  .main-content__gameResultsPadding {
     padding: 0 30px;
   }
   .jackpot__price {
@@ -196,6 +214,39 @@
   }
   .header-top__navigation ul {
     padding-left: 2rem;
+  }
+  .lotteryDivision__header {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  .lotteryDivision__header h3 {
+    margin-bottom: 10px;
+  }
+  .lotteryDivision__prize {
+    display: block;
+    text-align: center;
+  }
+  .lotteryDivision__prize p {
+    margin-bottom: 10px;
+  }
+  .lotteryDivision__badge {
+    width: 100%;
+  }
+  .lotteryGames__inner {
+    flex-wrap: wrap;
+  }
+  .lotteryGames__numbers {
+    margin-bottom: 15px;
+  }
+  .lotteryGames__button {
+    margin-left: 25px;
+  }
+  .lotteryGames--button2 {
+    margin-left: 0;
+  }
+  .repeat ul li a {
+    width: 95px;
   }
 }
 
@@ -406,7 +457,13 @@
   .numbers__text {
     margin-bottom: 0;
   }
+  .numbers--padding {
+    width: auto;
+  }
   .main-content__kenoPlay .col-md-4 {
+    width: 100%;
+  }
+  .main-content__lotteryPlay .col-md-5, .main-content__lotteryPlay .col-md-4, .main-content__lotteryPlay .col-md-3 {
     width: 100%;
   }
   .gameMatches ul {
@@ -419,6 +476,33 @@
   }
   .playGameButtons__button {
     margin-bottom: 20px;
+  }
+  .lotteryGames__numbers {
+    margin-bottom: 0;
+  }
+  .lotteryGames__button {
+    margin-left: 38px;
+  }
+  .lotteryGames--button2 {
+    margin-left: 13px;
+  }
+  .gamesCategory ul {
+    display: flex;
+  }
+  .gamesCategory ul li {
+    width: 31%;
+  }
+  .lotteryDivision__header {
+    display: flex;
+    text-align: left;
+    padding: 0 15px;
+  }
+  .lotteryDivision__badge {
+    width: 90px;
+  }
+  .lotteryDivision__prize {
+    display: flex;
+    text-align: left;
   }
 }
 
@@ -480,7 +564,7 @@
   .sidebar__myAccount-button {
     padding: 8px 20px;
   }
-  .kenoResults__list li a {
+  .gameResults__list li a {
     margin: 0 10px 10px 0;
   }
 }
@@ -515,7 +599,7 @@
   .main-content__kenoDraw {
     padding: 0 10px 20px 10px;
   }
-  .main-content__kenoResultsPadding {
+  .main-content__gameResultsPadding {
     padding: 0 12px;
   }
   .playGameButtons__button {
@@ -533,6 +617,28 @@
   }
   .heads {
     padding: 15px;
+  }
+  .lotteryGames__numbers {
+    margin-bottom: 15px;
+  }
+  .lotteryGames__button {
+    margin-left: 25px;
+  }
+  .lotteryGames--button2 {
+    margin-left: 0;
+  }
+  .gamesCategory ul {
+    display: block;
+  }
+  .gamesCategory ul li {
+    width: 100%;
+  }
+  .numbers--padding {
+    padding: 2px 12px;
+    font-size: 16px;
+  }
+  .addGame__button {
+    font-size: 20px;
   }
 }
 
@@ -585,11 +691,45 @@
   .paymentOptions__description p {
     font-size: 16px;
   }
-  .kenoResults ul li {
+  .gameResults ul li {
     display: block;
   }
-  .kenoResults__date {
+  .gameResults__date {
     padding: 10px;
     margin-right: 0;
+  }
+  .repeat ul li {
+    width: 100%;
+    margin-right: 0;
+  }
+  .repeat ul li a {
+    width: 100%;
+  }
+  .nextGame {
+    display: block;
+  }
+  .nextGame__text {
+    margin-bottom: 7px;
+  }
+  .lotteryDivision__header {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  .lotteryDivision__header h3 {
+    margin-bottom: 10px;
+  }
+  .lotteryDivision__prize {
+    display: block;
+    text-align: center;
+  }
+  .lotteryDivision__prize p {
+    margin-bottom: 10px;
+  }
+  .lotteryDivision__badge {
+    width: 100%;
+  }
+  .nav-tabs__item {
+    flex-basis: 100%;
   }
 }

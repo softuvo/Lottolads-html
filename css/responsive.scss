@@ -63,6 +63,9 @@
             height: 50px;
             line-height: 50px;
         }
+        &--padding{
+            width: auto;
+        }
     }
     .numbersList{
         padding: 20px 20px 0px 20px;
@@ -75,8 +78,18 @@
             font-size: 18px;
         }
     }
-    .kenoResults{
+    .gameResults{
         padding: 15px 20px 80px 20px;
+    }
+    .gamesCategory{
+        ul{
+            li{
+                width: 29%;
+            }
+        }
+    }
+    .addGame{
+        margin: 20px 0;
     }
 }
 
@@ -148,6 +161,9 @@
             height: 35px;
             line-height: 35px;
         }
+        &--padding{
+            width: auto;
+        }
     }
     .playGameButtons{
         text-align: center;
@@ -167,6 +183,14 @@
         &__header{
             h3, h4{
                 font-size: 18px;
+            }
+        }
+    }
+    .gamesCategory{
+        ul{
+            display: block;
+            li{
+                width: 100%;
             }
         }
     }
@@ -226,7 +250,7 @@
                 width: 100%;
             }
         }
-        &__kenoResultsPadding{
+        &__gameResultsPadding{
             padding: 0 30px;
         }
     }
@@ -262,6 +286,49 @@
         &__navigation{
             ul{
                 padding-left: 2rem;
+            }
+        }
+    }
+    .lotteryDivision{
+        &__header{
+            padding: 0;
+            display: block;
+            text-align: center;
+            h3{
+                margin-bottom: 10px;
+            }
+        }
+        &__prize{
+            display: block;
+            text-align: center;
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        &__badge{
+            width: 100%;
+        }
+    }
+    .lotteryGames{
+        &__inner{
+            flex-wrap: wrap;
+        }
+        &__numbers{
+            margin-bottom: 15px;
+        }
+        &__button{
+            margin-left: 25px;
+        }
+        &--button2{
+            margin-left: 0;
+        }
+    }
+    .repeat{
+        ul{
+            li{
+                a{
+                    width: 95px;
+                }
             }
         }
     }
@@ -499,10 +566,18 @@
         &__text{
             margin-bottom: 0;
         }
+        &--padding{
+            width: auto;
+        }
     }
     .main-content{
         &__kenoPlay{
             .col-md-4{
+                width: 100%;
+            }
+        }
+        &__lotteryPlay{
+            .col-md-5, .col-md-4, .col-md-3{
                 width: 100%;
             }
         }
@@ -520,6 +595,39 @@
     .playGameButtons{
         &__button{
             margin-bottom: 20px;
+        }
+    }
+    .lotteryGames{
+        &__numbers{
+            margin-bottom: 0;
+        }
+        &__button{
+            margin-left: 38px;
+        }
+        &--button2{
+            margin-left: 13px;
+        }
+    }
+    .gamesCategory{
+        ul{
+            display: flex;
+            li{
+                width: 31%;
+            }
+        }
+    }
+    .lotteryDivision{
+        &__header{
+            display: flex;
+            text-align: left;
+            padding: 0 15px;
+        }
+        &__badge{
+            width: 90px;
+        }
+        &__prize{
+            display: flex;
+            text-align: left;
         }
     }
 }
@@ -592,7 +700,7 @@
             padding: 8px 20px;
         }
     }
-    .kenoResults{
+    .gameResults{
         &__list{
             li{
                 a{
@@ -637,7 +745,7 @@
         &__kenoDraw{
             padding: 0 10px 20px 10px;
         }
-        &__kenoResultsPadding{
+        &__gameResultsPadding{
             padding: 0 12px;
         }
     }
@@ -662,6 +770,36 @@
     }
     .heads{
         padding: 15px;
+    }
+    .lotteryGames{
+        &__numbers{
+            margin-bottom: 15px;
+        }
+        &__button{
+            margin-left: 25px;
+        }
+        &--button2{
+            margin-left: 0;
+        }
+    }
+    .gamesCategory{
+        ul{
+            display: block;
+            li{
+                width: 100%;
+            }
+        }
+    }
+    .numbers{
+        &--padding{
+            padding: 2px 12px;
+            font-size: 16px;
+        }
+    }
+    .addGame{
+        &__button{
+            font-size: 20px;
+        }
     }
 }
 
@@ -718,7 +856,7 @@
             }
         }
     }
-    .kenoResults{
+    .gameResults{
         ul{
             li{
                 display: block;
@@ -727,6 +865,48 @@
         &__date{
             padding: 10px;
             margin-right: 0;
+        }
+    }
+    .repeat{
+        ul{
+            li{
+                width: 100%;
+                margin-right: 0;
+                a{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .nextGame{
+        display: block;
+        &__text{
+            margin-bottom: 7px;
+        }
+    }
+    .lotteryDivision{
+        &__header{
+            padding: 0;
+            display: block;
+            text-align: center;
+            h3{
+                margin-bottom: 10px;
+            }
+        }
+        &__prize{
+            display: block;
+            text-align: center;
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        &__badge{
+            width: 100%;
+        }
+    }
+    .nav-tabs{
+        &__item{
+            flex-basis: 100%;
         }
     }
 }
