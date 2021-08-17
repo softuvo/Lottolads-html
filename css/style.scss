@@ -51,9 +51,19 @@
     font-display:swap
 }
 
+/* Variables */
+
+$primary-color: #1A0F54;
+$HK-regular: HKGrotesk-Regular;
+$HK-medium: HKGrotesk-Medium;
+$HK-semibold: HKGrotesk-SemiBold;
+$HK-Bold: HKGrotesk-Bold;
+
+
+/* Pages CSS */
 body{
-    color: #1A0F54;
-    font-family:HKGrotesk-Regular;
+    color: $primary-color;
+    font-family:$HK-regular;
 }
 ul{
     list-style: none;
@@ -68,10 +78,6 @@ a{
     padding-right: 0;
 }
 
-
-/* Variable */
-
-// @primary-color: #1A0F54;
 
 /* Top Header */
 
@@ -91,9 +97,9 @@ a{
     padding-left: 150px;
     li{
         a{
-            color: #1A0F54;
+            color: $primary-color;
             font-size: 24px;
-            font-family:HKGrotesk-SemiBold;
+            font-family:$HK-semibold;
         }
     }
         }
@@ -110,7 +116,7 @@ a{
         li{
             a{
                 font-size: 15px !important;
-                font-family:HKGrotesk-Medium !important;
+                font-family:$HK-medium !important;
                 text-align: center;
                 text-transform: uppercase;
                 padding: 3px 6px !important;
@@ -130,7 +136,7 @@ a{
     color: #1A0D49;
     padding: 10px 34px;
     border: 4px solid #DDE5FF;
-    font-family:HKGrotesk-SemiBold;
+    font-family:$HK-semibold;
     margin-left: 10px;
     &:hover{
         background-color: #5A34EA;
@@ -184,9 +190,9 @@ a{
 
     &__myAccount-button{
         background-color: #F6C358;
-        color: #1A0F54;
+        color: $primary-color;
         font-size: 25px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         border-radius: 12px;
         border: 6px solid #FCDB95;
         padding: 4px 20px;
@@ -211,7 +217,7 @@ a{
         h2{
             color: #fff;
             font-size: 27px;
-            font-family:HKGrotesk-SemiBold;
+            font-family:$HK-semibold;
             margin-bottom: 5px;
         }
         h5{
@@ -240,13 +246,13 @@ a{
         display: inline-block;
         border-radius: 8px;
         margin-bottom: 15px;
-        font-family:HKGrotesk-SemiBold;
+        font-family:$HK-semibold;
         }
         &__btn-yellow{
         background-color: #F6C358;
         color: #1A0D49;
         font-size: 12px;
-        font-family:HKGrotesk-Bold;
+        font-family:$HK-Bold;
         padding: 6px 24px;
         border-radius: 8px;
         &:hover{
@@ -277,7 +283,7 @@ a{
         p{
             font-size: 10px;
             text-transform: uppercase;
-            font-family:HKGrotesk-Medium;
+            font-family:$HK-medium;
             color: #F6F8FF;
             opacity: 0.5;
             margin-right: 8px;
@@ -286,7 +292,7 @@ a{
         }
     &--textYellow{
         p{
-            color: #1A0F54;
+            color: $primary-color;
             opacity: 0.5;
         }
     }
@@ -299,13 +305,13 @@ a{
     &__badge{
         background-color: #F6C358;
         padding: 4px 8px;
-        color: #1A0F54;
+        color: $primary-color;
         font-size: 14px;
         text-transform: uppercase;
         display: inline-block;
         border-radius: 8px;
         margin-bottom: 12px;
-        font-family:HKGrotesk-Bold;
+        font-family:$HK-Bold;
         margin-right: 8px;
         }
         &--badgeBig{
@@ -322,7 +328,7 @@ a{
         display: inline-block;
         border-radius: 8px;
         margin-bottom: 12px;
-        font-family:HKGrotesk-SemiBold;
+        font-family:$HK-semibold;
         }
     &--timeBig{
         font-size: 18px;
@@ -333,11 +339,11 @@ a{
     }
     &--timeYellow{
         background-color: rgba($color: #6A48EF, $alpha: 0.10);
-        color: #1A0F54;
+        color: $primary-color;
     }
     &__price{
         font-size: 24px;
-        font-family:HKGrotesk-SemiBold;
+        font-family:$HK-semibold;
         color: #FFF;
     }
     &--priceBig{
@@ -345,7 +351,7 @@ a{
         margin-top: 10px;
     }
     &--priceBlack{
-        color: #1A0F54;
+        color: $primary-color;
     }
     &--matches{
         background-color: #EA1D5A;
@@ -385,12 +391,12 @@ a{
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 10px;
-            font-family:HKGrotesk-Bold;
+            font-family:$HK-Bold;
         }
         p{
             color: #1A0D49;
             font-size: 12px;
-            font-family:HKGrotesk-Medium;;
+            font-family:$HK-medium;;
             margin: 0;
         }
     }
@@ -429,16 +435,21 @@ a{
 /* Main Content */
 .main-content{
 
+    &__rightSection{
+        position: relative;
+        padding-bottom: 20px;
+    }
     &__rightInner{
         padding: 40px 65px 28px 65px;
-        background-color: #F3F2FE;
+        background-color: #f6f8ff;
+        position: relative;
     }
     &__heading{
         margin-top: 20px;
     h2{
         color: #928EA1;
         font-size: 27px;
-        font-family:HKGrotesk-SemiBold;
+        font-family:$HK-semibold;
         text-transform: uppercase;
     }
     }
@@ -489,15 +500,15 @@ a{
         background: 0 0;
         border: 0;
         font-size: 18px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         width: 100%;
         &:hover{
-            color: #1A0F54;
+            color: $primary-color;
         }
     }
     .active{
         color: #000000;
-        font-family:HKGrotesk-Bold;
+        font-family:$HK-Bold;
         border-bottom: 2px solid #623DEF;
     }
 }
@@ -513,7 +524,7 @@ a{
         background-color: rgba($color: #6236FF, $alpha: 0.17);
         color: #fff;
         font-size: 38px;
-        font-family:HKGrotesk-Bold;
+        font-family:$HK-Bold;
         border-radius: 12px;
         padding: 6px 20px;
         text-transform: uppercase;
@@ -523,7 +534,7 @@ a{
             font-size: 28px;
             line-height: 28px;
             display: block;
-            font-family:HKGrotesk-Medium;
+            font-family:$HK-medium;
         }
         &:hover{
             color: #fff;
@@ -535,13 +546,13 @@ a{
         font-size: 21px;
         padding: 4px 20px;
         line-height: 21px;
-        font-family:HKGrotesk-SemiBold;
+        font-family:$HK-semibold;
         img{
             float: left;
         }
         span{
             font-size: 14px;
-            font-family:HKGrotesk-Medium;
+            font-family:$HK-medium;
         }
     }
 }
@@ -563,7 +574,7 @@ a{
         display: inline-block;
         border-radius: 8px;
         margin-bottom: 25px;
-        font-family: HKGrotesk-SemiBold;
+        font-family: $HK-semibold;
         margin-right: 8px;
     }
     &__winningDetails{
@@ -574,19 +585,19 @@ a{
         color: #FFF;
         font-size: 48px;
         line-height: 55px;
-        font-family:HKGrotesk-Bold;
+        font-family:$HK-Bold;
         text-align: center;
         margin: 5px 0 30px 0;
         span{
             font-size: 26px;
             line-height: 30px;
             display: block;
-            font-family:HKGrotesk-Regular;
+            font-family:$HK-regular;
         }
     }
     &__winningMessage{
         font-size: 20px;
-        color: #1A0F54;
+        color: $primary-color;
         text-align: right;
         opacity: 0.6;
     }
@@ -612,11 +623,11 @@ a{
             font-size: 30px;
             line-height: 55px;
             text-transform: uppercase;
-            font-family:HKGrotesk-Bold;
+            font-family:$HK-Bold;
             span{
                 font-size: 22px;
                 line-height: 30px;
-                font-family:HKGrotesk-Regular;
+                font-family:$HK-regular;
                 display: block;
             }
         }
@@ -646,13 +657,13 @@ a{
         h5{
             color: #fff;
             font-size: 22px;
-            font-family:HKGrotesk-Bold;
+            font-family:$HK-Bold;
             margin-bottom: 30px;
         }
         p{  
             color: #FFF;
             font-size: 15px;
-            font-family:HKGrotesk-Medium;
+            font-family:$HK-medium;
             line-height: 20px;
             margin-bottom: 15px;
         }
@@ -664,7 +675,7 @@ a{
                     display: block;
                     color: #fff;
                     font-size: 15px;
-                    font-family:HKGrotesk-Medium;
+                    font-family:$HK-medium;
                     line-height: 20px;
                     margin-bottom: 20px;
                     &:hover{
@@ -768,7 +779,7 @@ a{
                     display: inline-block;
                     color: #E5E5E5;
                     font-size: 16px;
-                    font-family:HKGrotesk-Medium;
+                    font-family:$HK-medium;
                     text-align: center;
                     padding: 3px 15px;
                     border-radius: 35px;
@@ -810,7 +821,7 @@ a{
         text-align: center;
         display: inline-block;
         border-radius: 8px;
-        font-family: HKGrotesk-Bold;
+        font-family: $HK-Bold;
     }
 }
 
@@ -1016,7 +1027,7 @@ a{
             margin: 0;
             font-size: 22px;
             color: #1A0D49;
-            font-family:HKGrotesk-Bold;
+            font-family:$HK-Bold;
             text-align: center;
         }
     }
@@ -1030,7 +1041,7 @@ a{
         color: #fff;
         border-radius: 27px;
         font-size: 17px;
-        font-family:HKGrotesk-Bold;
+        font-family:$HK-Bold;
         padding: 13px 50px;
         transition:all .3s ease-in;
         -webkit-transition:all .3s ease-in;
@@ -1050,7 +1061,7 @@ a{
         color: #1A0D49;
         border-radius: 27px;
         font-size: 17px;
-        font-family:HKGrotesk-Bold;
+        font-family:$HK-Bold;
         padding: 13px 50px;
         transition:all .3s ease-in;
         -webkit-transition:all .3s ease-in;
@@ -1074,14 +1085,14 @@ a{
     h2{
         color: #643EF1;
         font-size: 52px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         margin-bottom: 20px;
         text-align: center;
     }
     p{
         color: #6D7278;
         font-size: 18px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         margin-bottom: 25px;
     }
 }
@@ -1097,15 +1108,15 @@ a{
     }
     h3{
         font-size: 36px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         margin-bottom: 40px;
-        color: #1A0F54;
+        color: $primary-color;
         text-align: center;
     }
     p{
-        color: #1A0F54;
+        color: $primary-color;
         font-size: 24px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         text-align: center;
         margin: 0;
     }
@@ -1114,9 +1125,9 @@ a{
         border: 6px solid #6236FF;
         border-radius: 20px;
         p{
-            color: #1A0F54;
+            color: $primary-color;
             font-size: 27px;
-            font-family:HKGrotesk-Medium;
+            font-family:$HK-medium;
         }
     }
     &__downloadButton{
@@ -1132,7 +1143,7 @@ a{
     h2{
         color: #643EF1;
         font-size: 52px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         margin-bottom: 30px;
         text-align: center;
     }
@@ -1143,15 +1154,15 @@ a{
         margin-bottom: 30px;
         h3{
             font-size: 32px;
-            font-family:HKGrotesk-Medium;
+            font-family:$HK-medium;
             margin-bottom: 40px;
-            color: #1A0F54;
+            color: $primary-color;
             text-align: center;
         }
         p{
-            color: #1A0F54;
+            color: $primary-color;
             font-size: 20px;
-            font-family:HKGrotesk-Medium;
+            font-family:$HK-medium;
             text-align: center;
             margin: 0;
         }
@@ -1170,18 +1181,18 @@ a{
     margin-bottom: 15px;
     &__text{
         font-size: 22px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         color: #9C55BB;
     }
     &__time{
-        color: #1A0F54;
+        color: $primary-color;
         font-size: 22px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
     }
     &--colorRed{
         color: #EB2D67;
         span{
-            color: #1A0F54;
+            color: $primary-color;
         }
     }
     &--colorPurple{
@@ -1212,7 +1223,7 @@ a{
     &__text{
         color: #fff;
         font-size: 22px;
-        font-family:HKGrotesk-Medium;
+        font-family:$HK-medium;
         margin-right: auto;
     }
     &__icon{
@@ -1224,7 +1235,7 @@ a{
         text-align: center;
         margin-left: 10px;
         font-size: 20px;
-        font-family:HKGrotesk-SemiBold;
+        font-family:$HK-semibold;
         color: #191161;
     }
     &--lightBg{
@@ -1254,12 +1265,12 @@ a{
         h3{
             color: #FFBA03;
             font-size: 22px;
-            font-family:HKGrotesk-SemiBold;
+            font-family:$HK-semibold;
         }
         h4{
-            color: #1A0F54;
+            color: $primary-color;
             font-size: 22px;
-            font-family:HKGrotesk-SemiBold;
+            font-family:$HK-semibold;
         }
     }
     &--padding{
@@ -1284,7 +1295,7 @@ a{
                 text-align: center;
                 margin: 0 10px;
                 margin-bottom: 20px;
-                font-family:HKGrotesk-SemiBold;
+                font-family:$HK-semibold;
                 transition:all .3s ease-in;
                 -webkit-transition:all .3s ease-in;
                 -moz-transition:all .3s ease-in;
@@ -1338,7 +1349,7 @@ a{
     margin-bottom: 15px;
     h3{
         font-size: 16px;
-        font-family:HKGrotesk-SemiBold;
+        font-family:$HK-semibold;
         text-transform: uppercase;
         margin-bottom: 20px;
         color: #928EA1;
@@ -1359,7 +1370,7 @@ a{
                 border-radius: 9px;
                 text-align: center;
                 margin-right: 10px;
-                font-family:HKGrotesk-SemiBold;
+                font-family:$HK-semibold;
                 display: block;
                 margin-bottom: 20px;
                 transition: all .3s ease-in;
@@ -1412,9 +1423,9 @@ a{
         border-radius: 8px;
         padding: 14px 30px;
         min-width: 393px;
-        color: #1A0F54;
+        color: $primary-color;
         font-size: 18px;
-        font-family:HKGrotesk-Bold;
+        font-family:$HK-Bold;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         &:hover{
             background-color: #5A34EA;
@@ -1455,13 +1466,13 @@ a{
     h3{
         color: #F07007;
         font-size: 28px;
-        font-family: HKGrotesk-SemiBold;
+        font-family: $HK-semibold;
         margin: 0;
     }
     h4{
-        color: #1A0F54;
+        color: $primary-color;
         font-size: 28px;
-        font-family: HKGrotesk-SemiBold;
+        font-family: $HK-semibold;
         margin-bottom: 15px;
         margin: 0;
     }
@@ -1485,7 +1496,7 @@ a{
                 text-align: center;
                 margin: 0 5px;
                 margin-bottom: 9px;
-                font-family: HKGrotesk-SemiBold;
+                font-family: $HK-semibold;
                 transition: all .3s ease-in;
                 -webkit-transition: all .3s ease-in;
                 -moz-transition: all .3s ease-in;
@@ -1545,13 +1556,16 @@ a{
         h3{
             color: #928EA1;
             text-transform: uppercase;
-            font-family: HKGrotesk-SemiBold;
+            font-family: $HK-semibold;
             font-size: 20px;
             margin: 0 0 0 15px;
         }
         img{
             width: 50px;
         }
+    }
+    &--padding{
+        padding: 25px 180px 40px 180px;
     }
     ul{
         margin: 0;
@@ -1571,11 +1585,18 @@ a{
         text-align: center;
         margin-right: 15px;
         color: #928EA1;
-        font-family: HKGrotesk-Medium;
+        font-family: $HK-medium;
         text-transform: uppercase;
+        font-size: 17px;
         span{
             color: #6546FC;
             font-size: 27px;
+        }
+    }
+    &--dateBig{
+        font-size: 21px;
+        span{
+            font-size: 32px;
         }
     }
     &__list{
@@ -1599,7 +1620,7 @@ a{
                 border-radius: 5px;
                 text-align: center;
                 margin: 0 4px 5px 0;
-                font-family: HKGrotesk-SemiBold;
+                font-family: $HK-semibold;
                 transition: all .3s ease-in;
                 -webkit-transition: all .3s ease-in;
                 -moz-transition: all .3s ease-in;
@@ -1608,20 +1629,21 @@ a{
         }
     }
     &--big{
+        margin-left: 12px !important;
         a{
             border-radius: 100% !important;
             width: 54px !important;
             height: 54px !important;
             line-height: 54px !important;
-            font-size: 21px !important;
-            margin: 0 8px 5px 0 !important;
+            font-size: 20px !important;
+            margin: 0 8px 4px 0 !important;
         }
     }
     &__result{
         p{
             color: #928EA1;
             font-size: 16px;
-            font-family: HKGrotesk-Medium;
+            font-family: $HK-medium;
             margin: 12px 0 7px 0;
         }
     }
@@ -1660,6 +1682,36 @@ a{
         background-color: #9C55BB !important;
         border-color: #9C55BB !important;
     }
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    &__button{
+        border: 1px solid #F6C358;
+        border-radius: 14px;
+        font-size: 14px;
+        color: #F6C358;
+        background-color: transparent;
+        padding: 4px 12px 4px 22px;
+        position: relative;
+        margin-left: 38px;
+        img{
+            position: absolute;
+            left: -26px;
+            top: -6px;
+        }
+    }
+    &--button2{
+        margin-left: 15px;
+        margin-right: 22px;
+        padding: 4px 22px 4px 12px;
+        color: #1A0D49;
+        background-color: #F6C358;
+        img{
+            right: -26px;
+            left: auto;
+        }
+    }
 }
 
 /* Repeat */
@@ -1673,7 +1725,7 @@ a{
     h2{
         color: #928EA1;
         font-size: 20px;
-        font-family: HKGrotesk-SemiBold;
+        font-family: $HK-semibold;
         margin-bottom: 20px;
         text-transform: uppercase;
     }
@@ -1698,14 +1750,14 @@ a{
                 text-align: center;
                 padding: 22px 10px;
                 line-height: 25px;
-                font-family: HKGrotesk-Medium;
+                font-family: $HK-medium;
                 transition: all .3s ease-in;
                 -webkit-transition: all .3s ease-in;
                 -moz-transition: all .3s ease-in;
                 -o-transition: all .3s ease-in;
                 span{
                     font-size: 15px;
-                    font-family: HKGrotesk-Regular;
+                    font-family: $HK-regular;
                 }
                 &:hover{
                     border: 1.5px solid #5D35F6;
@@ -1751,7 +1803,7 @@ a{
         border-radius: 8px;
         padding: 5px;
         font-size: 14px;
-        font-family: HKGrotesk-Regular;
+        font-family: $HK-regular;
         background-color: rgba($color: #3DABFF, $alpha: 0.10);
         margin-bottom: 5px;
         color: #3DABFF;
@@ -1793,7 +1845,7 @@ a{
         width: 90px;
         color: #663FF9;
         font-size: 13px;
-        font-family: HKGrotesk-Medium;
+        font-family: $HK-medium;
         text-align: center;
     }
     &__prize{
@@ -1807,7 +1859,7 @@ a{
         margin-bottom: 5px;
         p{
             font-size: 15px;
-            font-family: HKGrotesk-Medium;
+            font-family: $HK-medium;
             margin: 0;
         }
     }
@@ -1893,7 +1945,7 @@ a{
                     margin-right: 5px;
                     margin-bottom: 5px;
                     font-size: 15px;
-                    font-family: HKGrotesk-SemiBold;
+                    font-family: $HK-semibold;
                     text-align: center;
                     color: #fff;
                     transition: all .3s ease-in;
@@ -1950,9 +2002,94 @@ a{
     &__button{
         color: #5D35F6;
         font-size: 23px;
-        font-family: HKGrotesk-Bold;
+        font-family: $HK-Bold;
         &:hover{
             color: #5D35F6;
         }
     }
+}
+
+/* Year */
+.year{
+    h3{
+        color: #A0A8BE;
+        font-size: 24px;
+        text-align: center;
+        font-family: $HK-medium;
+        padding: 0 0 25px 0;
+        position: relative;
+        &::before{
+            background-color: rgba($color: #969DB5, $alpha: 0.20);
+            width: 46%;
+            height: 1px;
+            content: '';
+            position: absolute;
+            top: 25%;
+            left: 0;
+        }
+        &::after{
+            background-color: rgba($color: #969DB5, $alpha: 0.20);
+            width: 46%;
+            height: 1px;
+            content: '';
+            position: absolute;
+            top: 25%;
+            right: 0;
+        }
+    }
+}
+
+
+/* Months Slider */
+
+.slider-wrapper {
+    width: 100%;
+    margin: 3em auto;
+    max-width: 1500px;
+    margin-top: 0;
+  
+    .slider {
+      .slide {
+        position: relative;
+        display: inline-block;
+        width: 136px;
+        height: 68px;
+        line-height: 68px;
+        margin: 0 0.5em;
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid rgba(150,157,181,0.2);
+        background-color: #fff;
+        color: #928EA1;
+        a{
+            display: block;
+            color: #928EA1;
+            &:hover{
+                color: #fff;
+            }
+        }
+        &:hover{
+            background-color: #6A46F5 !important;
+            border-color: #6A46F5 !important;
+            color: #fff !important;
+        }
+      }
+      .active{
+        background-color: #6A46F5 !important;
+        border-color: #6A46F5 !important;
+        color: #fff !important;
+        a{
+            color: #fff;
+        }
+      }
+    }
+  }
+  
+
+
+.modal, .modal-backdrop {
+    position: absolute !important;
+}
+.modal-backdrop{
+    height: 100% !important;
 }

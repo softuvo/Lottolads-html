@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1600px) {
+  .gameResults--padding {
+    padding: 25px 50px 40px 50px;
+  }
+  .gameResults--big {
+    margin-left: 0 !important;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .downloadApp__button {
     font-size: 24px;
@@ -165,8 +174,14 @@
     font-size: 15px;
     line-height: 17px;
   }
+  .divisions {
+    display: block;
+    margin: 0;
+  }
   .divisions__inner {
     padding: 10px;
+    width: 100%;
+    margin: 0 0 10px 0;
   }
   .divisions--innerBig {
     padding: 10px;
@@ -195,6 +210,9 @@
   .jackpot__price {
     font-size: 18px;
   }
+  .jackpot__text {
+    display: block;
+  }
   .numbers {
     display: block;
   }
@@ -205,9 +223,15 @@
     margin-bottom: 10px;
     font-size: 16px;
   }
+  .numbers__text p {
+    margin-bottom: 10px;
+  }
   .numbers__icon {
     margin-right: 10px;
     margin-left: 0;
+  }
+  .numbers__badge {
+    margin-bottom: 10px;
   }
   .numbersList ul li a {
     margin-right: 15px;
@@ -504,6 +528,9 @@
     display: flex;
     text-align: left;
   }
+  .year h3::before, .year h3::after {
+    width: 44%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -566,6 +593,21 @@
   }
   .gameResults__list li a {
     margin: 0 10px 10px 0;
+  }
+  .gameResults--dateBig {
+    font-size: 18px;
+  }
+  .gameResults--dateBig span {
+    font-size: 27px;
+  }
+  .gameResults--big a {
+    width: 45px !important;
+    height: 45px !important;
+    line-height: 47px !important;
+    font-size: 16px !important;
+  }
+  .modal, .modal-backdrop {
+    position: fixed !important;
   }
 }
 
@@ -639,6 +681,22 @@
   }
   .addGame__button {
     font-size: 20px;
+  }
+  .gameResults__inner {
+    display: block;
+  }
+  .gameResults--big {
+    margin-bottom: 10px !important;
+    justify-content: flex-start;
+  }
+  .gameResults--button2 {
+    margin-left: 0 !important;
+  }
+  .gameResults__button {
+    margin-left: 25px;
+  }
+  .year {
+    margin-top: 15px;
   }
 }
 
@@ -731,5 +789,21 @@
   }
   .nav-tabs__item {
     flex-basis: 100%;
+  }
+  .year h3::before, .year h3::after {
+    width: 39%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .monthsSliders {
+    padding: 0 10px;
+  }
+  .monthsSliders ul li {
+    width: 100%;
+  }
+  .monthsSliders ul li a {
+    width: 100%;
+    margin: 4px 0;
   }
 }

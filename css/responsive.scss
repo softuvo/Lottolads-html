@@ -1,3 +1,14 @@
+@media only screen and (max-width: 1600px){
+    .gameResults{
+        &--padding{
+            padding: 25px 50px 40px 50px;
+        }
+        &--big{
+            margin-left: 0 !important;
+        }
+    }
+}
+
 @media only screen and (max-width: 1440px){
     .downloadApp{
         &__button{
@@ -222,8 +233,12 @@
         }
     }
     .divisions{
+        display: block;
+        margin: 0;
         &__inner{
             padding: 10px;
+            width: 100%;
+            margin: 0 0 10px 0;
         }
         &--innerBig{
             padding: 10px;
@@ -258,6 +273,9 @@
         &__price{
             font-size: 18px;
         }
+        &__text{
+            display: block;
+        }
     }
     .numbers{
         display: block;
@@ -267,10 +285,16 @@
         &__text{
             margin-bottom: 10px;
             font-size: 16px;
+            p{
+                margin-bottom: 10px;
+            }
         }
         &__icon{
             margin-right: 10px;
             margin-left: 0;
+        }
+        &__badge{
+            margin-bottom: 10px;
         }
     }
     .numbersList{
@@ -332,6 +356,7 @@
             }
         }
     }
+
 }
 
 @media (min-width: 768px)
@@ -630,6 +655,13 @@
             text-align: left;
         }
     }
+    .year{
+        h3{
+            &::before, &::after{
+                width: 44%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -708,7 +740,24 @@
                 }
             }
         }
+        &--dateBig{
+            font-size: 18px;
+            span{
+                font-size: 27px;
+            }
+        }
+        &--big{
+            a{
+                width: 45px !important;
+                height: 45px !important;
+                line-height: 47px !important;
+                font-size: 16px !important;
+            }
+        }
     }  
+    .modal, .modal-backdrop{
+        position: fixed !important;
+    }
 }
 
 
@@ -800,6 +849,24 @@
         &__button{
             font-size: 20px;
         }
+    }
+    .gameResults{
+        &__inner{
+            display: block;
+        }
+        &--big{
+            margin-bottom: 10px !important;
+            justify-content: flex-start;
+        }
+        &--button2{
+            margin-left: 0 !important;
+        }
+        &__button{
+            margin-left: 25px;
+        }
+    }
+    .year{
+        margin-top: 15px;
     }
 }
 
@@ -907,6 +974,28 @@
     .nav-tabs{
         &__item{
             flex-basis: 100%;
+        }
+    }
+    .year{
+        h3{
+            &::before, &::after{
+                width: 39%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .monthsSliders{
+        padding: 0 10px;
+        ul{
+            li{
+                width: 100%;
+                a{
+                    width: 100%;
+                    margin: 4px 0;
+                }
+            }
         }
     }
 }

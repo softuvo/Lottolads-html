@@ -48,6 +48,8 @@
   font-display: swap;
 }
 
+/* Variables */
+/* Pages CSS */
 body {
   color: #1A0F54;
   font-family: HKGrotesk-Regular;
@@ -69,7 +71,6 @@ a {
   padding-right: 0;
 }
 
-/* Variable */
 /* Top Header */
 .header-top {
   padding: 6px 0;
@@ -466,9 +467,15 @@ a {
 }
 
 /* Main Content */
+.main-content__rightSection {
+  position: relative;
+  padding-bottom: 20px;
+}
+
 .main-content__rightInner {
   padding: 40px 65px 28px 65px;
-  background-color: #F3F2FE;
+  background-color: #f6f8ff;
+  position: relative;
 }
 
 .main-content__heading {
@@ -1703,6 +1710,10 @@ a {
   width: 50px;
 }
 
+.gameResults--padding {
+  padding: 25px 180px 40px 180px;
+}
+
 .gameResults ul {
   margin: 0;
   padding: 0;
@@ -1725,11 +1736,20 @@ a {
   color: #928EA1;
   font-family: HKGrotesk-Medium;
   text-transform: uppercase;
+  font-size: 17px;
 }
 
 .gameResults__date span {
   color: #6546FC;
   font-size: 27px;
+}
+
+.gameResults--dateBig {
+  font-size: 21px;
+}
+
+.gameResults--dateBig span {
+  font-size: 32px;
 }
 
 .gameResults__list {
@@ -1764,13 +1784,17 @@ a {
   -o-transition: all .3s ease-in;
 }
 
+.gameResults--big {
+  margin-left: 12px !important;
+}
+
 .gameResults--big a {
   border-radius: 100% !important;
   width: 54px !important;
   height: 54px !important;
   line-height: 54px !important;
-  font-size: 21px !important;
-  margin: 0 8px 5px 0 !important;
+  font-size: 20px !important;
+  margin: 0 8px 4px 0 !important;
 }
 
 .gameResults__result p {
@@ -1822,6 +1846,41 @@ a {
 .gameResults--bgPurpleLight {
   background-color: #9C55BB !important;
   border-color: #9C55BB !important;
+}
+
+.gameResults__inner {
+  display: flex;
+  align-items: center;
+}
+
+.gameResults__button {
+  border: 1px solid #F6C358;
+  border-radius: 14px;
+  font-size: 14px;
+  color: #F6C358;
+  background-color: transparent;
+  padding: 4px 12px 4px 22px;
+  position: relative;
+  margin-left: 38px;
+}
+
+.gameResults__button img {
+  position: absolute;
+  left: -26px;
+  top: -6px;
+}
+
+.gameResults--button2 {
+  margin-left: 15px;
+  margin-right: 22px;
+  padding: 4px 22px 4px 12px;
+  color: #1A0D49;
+  background-color: #F6C358;
+}
+
+.gameResults--button2 img {
+  right: -26px;
+  left: auto;
 }
 
 /* Repeat */
@@ -2146,4 +2205,89 @@ a {
 
 .addGame__button:hover {
   color: #5D35F6;
+}
+
+/* Year */
+.year h3 {
+  color: #A0A8BE;
+  font-size: 24px;
+  text-align: center;
+  font-family: HKGrotesk-Medium;
+  padding: 0 0 25px 0;
+  position: relative;
+}
+
+.year h3::before {
+  background-color: rgba(150, 157, 181, 0.2);
+  width: 46%;
+  height: 1px;
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+
+.year h3::after {
+  background-color: rgba(150, 157, 181, 0.2);
+  width: 46%;
+  height: 1px;
+  content: '';
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+/* Months Slider */
+.slider-wrapper {
+  width: 100%;
+  margin: 3em auto;
+  max-width: 1500px;
+  margin-top: 0;
+}
+
+.slider-wrapper .slider .slide {
+  position: relative;
+  display: inline-block;
+  width: 136px;
+  height: 68px;
+  line-height: 68px;
+  margin: 0 0.5em;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid rgba(150, 157, 181, 0.2);
+  background-color: #fff;
+  color: #928EA1;
+}
+
+.slider-wrapper .slider .slide a {
+  display: block;
+  color: #928EA1;
+}
+
+.slider-wrapper .slider .slide a:hover {
+  color: #fff;
+}
+
+.slider-wrapper .slider .slide:hover {
+  background-color: #6A46F5 !important;
+  border-color: #6A46F5 !important;
+  color: #fff !important;
+}
+
+.slider-wrapper .slider .active {
+  background-color: #6A46F5 !important;
+  border-color: #6A46F5 !important;
+  color: #fff !important;
+}
+
+.slider-wrapper .slider .active a {
+  color: #fff;
+}
+
+.modal, .modal-backdrop {
+  position: absolute !important;
+}
+
+.modal-backdrop {
+  height: 100% !important;
 }
