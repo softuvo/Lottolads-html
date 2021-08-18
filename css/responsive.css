@@ -272,6 +272,9 @@
   .repeat ul li a {
     width: 95px;
   }
+  .tab-content {
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -703,6 +706,9 @@
 @media (min-width: 576px) {
   .modal-funds {
     max-width: 365px;
+  }
+  .kenoNumberSelectionDialog {
+    max-width: 470px;
   }
 }
 

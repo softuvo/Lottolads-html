@@ -7,10 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="css/responsive.min.css" rel="stylesheet">
 
-    <title>Lottolads | Homepage</title>
+    <title>Lottolads | My Account</title>
   </head>
   <body>
     
@@ -22,15 +23,14 @@
               <a class="logo" href="index.html">
                   <img src="images/lottolads-logo2.svg" alt="Lottolads Logo" width="300">
               </a>
-                
+               
               <div class="header-top__navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+                <ul> 
+                    <li><a href="index.html">My Account & Settings</a></li>
                 </ul>
 
                 <div class="header-top__right">
-                    <button class="btn header-top__button header-top--outline" type="button" data-bs-toggle="modal" data-bs-target="#signupPopup">Signup</button>
-                    <button class="btn header-top__button" type="button" data-bs-toggle="modal" data-bs-target="#signinPopup">Login</button>
+                    <div class="btn header-top__button header-top--user">Hi username</div>
                     <div class="dropdown">
                     <button class="btn header-top__button header-top--btnDropdown dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/coin.svg" alt="Coin Icon" class="img-fluid"> $50.00 <img src="images/arrow-down.svg" alt="Down Arrow" class="img-fluid"></button>
                     <ul class="dropdown-menu header-top--dropdownMenu" aria-labelledby="dropdownMenuLink">
@@ -186,194 +186,74 @@
                     </div>
                     <!-- Divisions end here -->
     
-                    <a href="my-account.html" class="btn sidebar__myAccount-button">My Account & Settings</a>
+                    <a href="javascript:void(0)" class="btn sidebar__myAccount-button">My Account & Settings</a>
                 </div>
                 </div>
-                <div class="col-md-9 pr-0 main-content--rightColumn">
+                <div class="col-md-9 pr-0 main-content--rightColumn">                    
     
-                    <div class="main-content__rightSection">
-    
-                        <ul class="nav nav-tabs">
-                            <li class="nav-tabs__item" role="presentation">
-                                <button class="nav-tabs__link active" id="heading1-tab" data-bs-toggle="tab"
-                                    data-bs-target="#heading1" type="button" role="tab" aria-controls="heading1"
-                                    aria-selected="true">Heading 1</button>
-                            </li>
-                            <li class="nav-tabs__item">
-                                <button class="nav-tabs__link" id="heading2-tab" data-bs-toggle="tab"
-                                    data-bs-target="#heading2" type="button" role="tab" aria-controls="heading2"
-                                    aria-selected="true">Heading 2</button>
-                            </li>
-                            <li class="nav-tabs__item">
-                                <button class="nav-tabs__link" id="heading3-tab" data-bs-toggle="tab"
-                                    data-bs-target="#heading3" type="button" role="tab" aria-controls="heading3"
-                                    aria-selected="true">Heading 3</button>
-                            </li>
-                        </ul>
-    
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="heading1" role="tabpanel"
-                                aria-labelledby="heading1-tab">
-                                <div class="main-content__rightInner">
-                                    <div class="row">
-                                        <div class="col-md-5">
-    
-                                            <div class="main-content__heading">
-                                                <h2>Magic millions lottery</h2>
-                                            </div>
-                                            <!-- Magic Millions Lottery -->
-    
-                                            <div class="jackpot jackpot--big jackpot--magicBg">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-3 text-center">
-                                                        <img src="images/magic-millions.svg" alt="Magic Millions" width="100%">
-                                                    </div>
-                                                    <div class="col-md-9">
-                                                        <div class="jackpot__text jackpot--textBig">
-                                                            <div class="jackpot__badge jackpot--badgeBig">Jackpot</div>
-                                                            <p>Next Game</p>
-                                                            <div class="jackpot__time jackpot--timeBig">
-                                                                2D 3H
-                                                            </div>
-                                                        </div>
-                                                        <div class="jackpot__price jackpot--priceBig">
-                                                            $10,256,743
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Jackpot ends here -->
-    
-                                            <div class="divisions divisions--marginBottom">
-                                                <div class="divisions__inner divisions--innerBig">
-                                                    <h6 class="divisions__heading-orange divisions--headingBig">Division 2</h6>
-                                                    <p class="divisions__diviPriceBig">$20,000</p>
-                                                </div>
-                                                <div class="divisions__inner divisions--innerBig">
-                                                    <h6 class="divisions__heading-blue divisions--headingBig">Division 3</h6>
-                                                    <p class="divisions__diviPriceBig">$5,000</p>
-                                                </div>
-                                                <div class="divisions__inner divisions--innerBig">
-                                                    <h6 class="divisions__heading-purple divisions--headingBig">Division 4</h6>
-                                                    <p class="divisions__diviPriceBig">$100</p>
-                                                </div>
-                                            </div>
-                                            <!-- Divisions end here -->
-    
-                                            <div class="main-content__heading">
-                                                <h2>Keno</h2>
-                                            </div>
-    
-                                            <div class="jackpot jackpot--matches jackpot--big jackpot--kenoBg">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-3 text-center">
-                                                        <img src="images/keno.svg" alt="Keno" width="100%">
-                                                    </div>
-                                                    <div class="col-md-9">
-                                                        <div class="jackpot__text jackpot--textBig">
-                                                            <div class="jackpot__badge jackpot--badgeBig">10 matches</div>
-                                                            <p>Next Game</p>
-                                                            <div class="jackpot__time jackpot--timePink jackpot--timeBig">
-                                                                2m 37s
-                                                            </div>
-                                                        </div>
-                                                        <div class="jackpot__price jackpot--priceBig">
-                                                            $1,203,472
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Matches end here -->
-    
-                                            <div class="divisions">
-                                                <div class="divisions__inner divisions--innerBig">
-                                                    <h6 class="divisions__heading-orange divisions--headingBig">9 Matches</h6>
-                                                    <p class="divisions__diviPriceBig">$1,232,658</p>
-                                                </div>
-                                                <div class="divisions__inner divisions--innerBig">
-                                                    <h6 class="divisions__heading-blue divisions--headingBig">8 Matches</h6>
-                                                    <p class="divisions__diviPriceBig">$61,773</p>
-                                                </div>
-                                                <div class="divisions__inner divisions--innerBig">
-                                                    <h6 class="divisions__heading-purple divisions--headingBig">7 Matches</h6>
-                                                    <p class="divisions__diviPriceBig">$1,232,658</p>
-                                                </div>
-                                            </div>
-                                            <!-- Divisions end here -->
-    
-                                        </div>
-    
-                                        <div class="col-md-6 main-content__offset main-content--columnSix">
-    
-                                            <div class="downloadApp">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-3 text-center">
-                                                        <img src="images/app-screenshots2.svg" alt="App Screens" width="115" class="img-fluid">
-                                                    </div>
-                                                    <div class="col-md-5 text-center">
-                                                        <button class="btn downloadApp__button">
-                                                            Download
-                                                            <span>Our New App</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-md-4 text-center">
-                                                        <a href="javascript:void(0)">
-                                                        <img src="images/download-for-android.svg" alt="Download For Android" class="img-fluid">
-                                                        </a>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Download App ends here -->
-    
-                                            <div class="kenoNextGame">
-                                                <div class="kenoNextGame__badge">
-                                                    KENO Next Game
-                                                </div>
-                                                <div class="kenoNextGame__badge">
-                                                    2m 37s
-                                                </div>
-    
-                                                <div class="row">
-                                                    <div class="col-md-12 text-center">
-                                                        <div class="kenoNextGame__winningDetails">
-                                                            $1 MILLION USD
-                                                            <span>TO BE WON EVERY 3 MIUNTES
-                                                            </span>
-                                                        </div>
-    
-                                                        <div class="kenoNextGame__winningMessage">
-                                                            Where dreams become reality!
-                                                        </div>
-                                                    </div>
-                                                </div>
-    
-                                            </div>
-                                            <!-- Keno Next Game ends here -->
-    
-                                            <div class="jackpotsGuaranteed">
-                                                <div class="jackpotsGuaranteed__inner">
-                                                    <h2>
-                                                        JACKPOTS GUARANTEED
-                                                        <span>THROUGH LOTTOLADS' INSURANCE ARRANGEMENTS</span>
-                                                    </h2>
-                                                </div>
-                                            </div>
-                                            <!-- Jackpots Guaranteed -->
-    
-                                        </div>
-    
+                    <div class="main-content__rightSection main-content--myaccount">
+                        <div class="main-content__rightInner">
+                                
+                            <div class="myAccount">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-tabs__item" role="presentation">
+                                                <img src="images/my-account.svg" alt="My Account Icon">
+                                                <button class="nav-tabs__link active" id="heading1-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#heading1" type="button" role="tab" aria-controls="heading1"
+                                                    aria-selected="true">My Account</button>
+                                            </li>
+                                            <li class="nav-tabs__item">
+                                                <img src="images/deposit.svg" alt="Deposit Icon">
+                                                <button class="nav-tabs__link" id="heading2-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#heading2" type="button" role="tab" aria-controls="heading2"
+                                                    aria-selected="true">Deposit</button>
+                                            </li>
+                                            <li class="nav-tabs__item">
+                                                <img src="images/withdraw.svg" alt="Withdraw Icon">
+                                                <button class="nav-tabs__link" id="heading3-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#heading3" type="button" role="tab" aria-controls="heading3"
+                                                    aria-selected="true">Withdraw</button>
+                                            </li>
+                                            <li class="nav-tabs__item">
+                                                <img src="images/wager-history.svg" alt="Wager History Icon">
+                                                <button class="nav-tabs__link" id="heading3-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#heading3" type="button" role="tab" aria-controls="heading3"
+                                                    aria-selected="true">Wager History</button>
+                                            </li>
+                                            <li class="nav-tabs__item">
+                                                <img src="images/verify-email.svg" alt="Verify Email Icon">
+                                                <button class="nav-tabs__link" id="heading3-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#heading3" type="button" role="tab" aria-controls="heading3"
+                                                    aria-selected="true">Verify Email</button>
+                                            </li>
+                                            <li class="nav-tabs__item">
+                                                <img src="images/transactional-history.svg" alt="Transactional History Icon">
+                                                <button class="nav-tabs__link" id="heading3-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#heading3" type="button" role="tab" aria-controls="heading3"
+                                                    aria-selected="true">Transactional History</button>
+                                            </li>
+                                            <li class="nav-tabs__item">
+                                                <img src="images/bonus-bets.svg" alt="Bonus Bets Icon">
+                                                <button class="nav-tabs__link" id="heading3-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#heading3" type="button" role="tab" aria-controls="heading3"
+                                                    aria-selected="true">Bonus Bets</button>
+                                            </li>
+                                            <li class="nav-tabs__item">
+                                                <img src="images/contact-us.svg" alt="Contact Us Icon">
+                                                <button class="nav-tabs__link" id="heading3-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#heading3" type="button" role="tab" aria-controls="heading3"
+                                                    aria-selected="true">Contact Us</button>
+                                            </li>
+                                        </ul>
                                     </div>
+                                    <div class="col-md-8"></div>
                                 </div>
-    
                             </div>
-                            <div class="tab-pane fade" id="heading2" role="tabpanel" aria-labelledby="heading2-tab">...
-                            </div>
-                            <div class="tab-pane fade" id="heading3" role="tabpanel" aria-labelledby="heading3-tab">...
-                            </div>
+                            
                         </div>
-    
-    
+                        
                     </div>
     
                 </div>
@@ -899,12 +779,9 @@
       </div>
     </div>
   </div>
-  
 
     <script src="js/jquery.min.js"></script>
-
     <script src="js/bootstrap.bundle.min.js"></script>
-
-    
+  
 </body>
 </html>

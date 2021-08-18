@@ -188,9 +188,10 @@ a {
 /* Sidebar */
 .sidebar {
   background-color: #F6F8FF;
-  padding: 40px 10px;
+  height: 100%;
+  padding: 40px 15px;
   border-radius: 60px 60px 0 0;
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 .sidebar__myAccount-button {
@@ -300,7 +301,7 @@ a {
   font-family: HKGrotesk-Medium;
   color: #F6F8FF;
   opacity: 0.5;
-  margin-right: 8px;
+  margin-right: 10px;
   margin-bottom: 12px;
 }
 
@@ -324,7 +325,7 @@ a {
   border-radius: 8px;
   margin-bottom: 12px;
   font-family: HKGrotesk-Bold;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .jackpot--badgeBig {
@@ -335,7 +336,7 @@ a {
 
 .jackpot__time {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 4px 15px;
+  padding: 4px 10px;
   color: #FFF;
   font-size: 14px;
   text-transform: uppercase;
@@ -469,13 +470,19 @@ a {
 /* Main Content */
 .main-content__rightSection {
   position: relative;
-  padding-bottom: 20px;
+  height: 100%;
+  padding-bottom: 0;
 }
 
 .main-content__rightInner {
-  padding: 40px 65px 28px 65px;
-  background-color: #f6f8ff;
   position: relative;
+  background-color: #f6f8ff;
+  height: 100%;
+  padding: 40px 65px 28px 65px;
+}
+
+.main-content--bottomStake {
+  height: calc(100% - 117px);
 }
 
 .main-content__heading {
@@ -491,6 +498,7 @@ a {
 
 .main-content--leftColumn {
   width: 21.5%;
+  padding-top: 15px;
 }
 
 .main-content--rightColumn {
@@ -555,6 +563,14 @@ a {
   color: #000000;
   font-family: HKGrotesk-Bold;
   border-bottom: 2px solid #623DEF;
+}
+
+.tab-content {
+  height: calc(100% - 46px);
+}
+
+.tab-content > .tab-pane {
+  height: 100%;
 }
 
 .downloadApp {
@@ -934,6 +950,72 @@ a {
 
 .mt-130 {
   margin-top: 130px;
+}
+
+.modal, .modal-backdrop {
+  position: absolute !important;
+}
+
+.modal-backdrop {
+  height: 100% !important;
+  background-color: #6C829C;
+}
+
+.kenoNumberSelectionDialog {
+  height: calc(100% - 155px);
+}
+
+.kenoNumContent {
+  border-radius: 16px 16px 0 0;
+  background-color: #FFFFFF;
+  border: 0;
+  height: 100%;
+}
+
+.kenoNumContent .modal-body {
+  padding: 1.5rem;
+}
+
+.kenoNumContent__btnSave, .kenoNumContent__btnCancel {
+  background-color: #603BEE;
+  font-size: 26px;
+  padding: 15px 90px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: HKGrotesk-Bold;
+  margin: .25rem 1rem;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
+
+.kenoNumContent__btnSave:hover, .kenoNumContent__btnCancel:hover {
+  color: #fff;
+  box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.15);
+  transform: translate(0, -7px);
+  -webkit-transform: translate(0, -5px);
+  -moz-transform: translate(0, -5px);
+  -o-transform: translate(0, -5px);
+}
+
+.kenoNumContent__btnCancel {
+  background-color: rgba(96, 59, 238, 0.1);
+  color: #603BEE;
+}
+
+.kenoNumContent__btnCancel:hover {
+  color: #603BEE;
+}
+
+#kenoNumberSelection .modal-footer {
+  position: fixed;
+  bottom: 0;
+  width: 78.5%;
+  background-color: #fff;
+  justify-content: center;
+  padding: 30px 20px 47px 20px;
+  border: 0;
 }
 
 .signinSection {
@@ -1687,7 +1769,7 @@ a {
 .gameResults {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px 0 rgba(53, 110, 158, 0.08);
   padding: 15px 140px 120px 140px;
 }
 
@@ -1976,6 +2058,33 @@ a {
   min-height: 40px;
 }
 
+.gamesCategory--big {
+  padding: 20px 8px;
+}
+
+.gamesCategory__blueBorder {
+  border: 1px solid #3DABFF;
+}
+
+.gamesCategory__orangeBorder {
+  border: 1px solid #F47217;
+}
+
+.gamesCategory__purpleBorder {
+  border: 1px solid #D63DFF;
+}
+
+.gamesCategory--modal {
+  border-radius: 22px !important;
+  padding: 20px 12px 15px 12px !important;
+  margin-right: 30px !important;
+  width: 28.3% !important;
+}
+
+.gamesCategory--modal:last-child {
+  margin-right: 0 !important;
+}
+
 .gamesCategory__badge {
   border-radius: 8px;
   padding: 5px;
@@ -2257,6 +2366,10 @@ a {
   border: 1px solid rgba(150, 157, 181, 0.2);
   background-color: #fff;
   color: #928EA1;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
 }
 
 .slider-wrapper .slider .slide a {
@@ -2284,10 +2397,115 @@ a {
   color: #fff;
 }
 
-.modal, .modal-backdrop {
-  position: absolute !important;
+/* Keno Number Selection Modal */
+.kenoNumSelection p {
+  font-size: 16px;
+  color: #928EA1;
+  font-family: HKGrotesk-SemiBold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
-.modal-backdrop {
-  height: 100% !important;
+.kenoNumSelection ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.kenoNumSelection ul li a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  margin: 0 8px 6px 0;
+  border-radius: 100%;
+  text-align: center;
+  color: #5D35F7;
+  font-family: HKGrotesk-SemiBold;
+  background-color: rgba(90, 52, 234, 0.1);
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
+
+.kenoNumSelection ul li a:hover {
+  box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.2);
+  transform: translate(0, -2px);
+  background-color: #5A34EA;
+  color: #fff;
+}
+
+.kenoNumSelection__active a {
+  background-color: #5A34EA !important;
+  color: #fff !important;
+}
+
+/* Selected Number */
+#numberSelected {
+  display: none;
+}
+
+.numberSelected {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.numberSelected__inner {
+  background-color: #9C55BB;
+  width: 187px;
+  height: 187px;
+  color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 15px 62px 0 rgba(32, 15, 94, 0.33);
+}
+
+.numberSelected__inner h3 {
+  font-size: 71px;
+  font-family: HKGrotesk-SemiBold;
+  margin: 0;
+}
+
+/* My Account & Settings */
+.myAccount .nav-tabs {
+  display: block;
+  margin-top: 100px;
+  border-top: 0;
+}
+
+.myAccount .nav-tabs .active {
+  background-color: #DDE5FF;
+  border: 0;
+}
+
+.myAccount .nav-tabs__item {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.myAccount .nav-tabs__item img {
+  margin-right: 12px;
+}
+
+.myAccount .nav-tabs__link {
+  text-align: left;
+  color: #1A0F54;
+  font-size: 32px;
+  font-family: HKGrotesk-Medium;
+  border-radius: 12px;
+  margin: 8px 0;
+  padding: .6rem .5rem;
 }

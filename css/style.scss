@@ -184,9 +184,10 @@ a{
 
 .sidebar{
     background-color: #F6F8FF;
-    padding: 40px 10px;
+    height: 100%;
+    padding: 40px 15px;
     border-radius: 60px 60px 0 0;
-    margin-top: 15px;
+    margin-top: 0;
 
     &__myAccount-button{
         background-color: #F6C358;
@@ -286,7 +287,7 @@ a{
             font-family:$HK-medium;
             color: #F6F8FF;
             opacity: 0.5;
-            margin-right: 8px;
+            margin-right: 10px;
             margin-bottom: 12px;
             }
         }
@@ -312,7 +313,7 @@ a{
         border-radius: 8px;
         margin-bottom: 12px;
         font-family:$HK-Bold;
-        margin-right: 8px;
+        margin-right: 10px;
         }
         &--badgeBig{
             font-size: 17px;
@@ -321,7 +322,7 @@ a{
         }    
     &__time{
         background-color: rgba($color: #FFF, $alpha: 0.10);
-        padding: 4px 15px;
+        padding: 4px 10px;
         color: #FFF;
         font-size: 14px;
         text-transform: uppercase;
@@ -433,16 +434,21 @@ a{
 
 
 /* Main Content */
-.main-content{
+.main-content {
 
     &__rightSection{
         position: relative;
-        padding-bottom: 20px;
+        height: 100%;
+        padding-bottom: 0;
     }
     &__rightInner{
-        padding: 40px 65px 28px 65px;
-        background-color: #f6f8ff;
         position: relative;
+        background-color: #f6f8ff;
+        height: 100%;
+        padding: 40px 65px 28px 65px;
+    }
+    &--bottomStake {
+        height: calc(100% - 117px);
     }
     &__heading{
         margin-top: 20px;
@@ -455,6 +461,7 @@ a{
     }
     &--leftColumn{
         width: 21.5%;
+        padding-top: 15px;
     }
     &--rightColumn{
         width: 78.5%;
@@ -477,7 +484,6 @@ a{
 }
 
 /* Nav Tabs */
-
 .nav-tabs{
     display: flex;
     flex-wrap: wrap;
@@ -510,6 +516,12 @@ a{
         color: #000000;
         font-family:$HK-Bold;
         border-bottom: 2px solid #623DEF;
+    }
+}
+.tab-content {
+    height: calc(100% - 46px);
+    > .tab-pane {
+        height: 100%;
     }
 }
 
@@ -861,6 +873,65 @@ a{
 }
 .mt-130{
     margin-top: 130px;
+}
+.modal, .modal-backdrop {
+    position: absolute !important;
+}
+.modal-backdrop{
+    height: 100% !important;
+    background-color: #6C829C;
+}
+.kenoNumberSelectionDialog{
+    height: calc(100% - 155px);
+}
+.kenoNumContent{
+    border-radius: 16px 16px 0 0;
+    background-color: #FFFFFF;
+    border: 0;
+    height: 100%;
+    .modal-body{
+        padding: 1.5rem;
+    }
+    &__btnSave{
+        background-color: #603BEE;
+        font-size: 26px;
+        padding: 15px 90px;
+        border-radius: 8px;
+        color: #fff;
+        font-family: $HK-Bold;
+        margin: .25rem 1rem;
+        transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        &:hover{
+            color: #fff;
+            box-shadow: 0px 3px 10px 0 rgba($color: #000000, $alpha: 0.15);
+            transform: translate(0, -7px);
+            -webkit-transform: translate(0, -5px);
+            -moz-transform: translate(0, -5px);
+            -o-transform: translate(0, -5px);
+        }
+    }
+    &__btnCancel{
+        @extend .kenoNumContent__btnSave;
+        background-color: rgba(96, 59, 238, 0.10);
+        color: #603BEE;
+        &:hover{
+            color: #603BEE;
+        }
+    }
+}
+#kenoNumberSelection{
+    .modal-footer{
+        position: fixed;
+        bottom: 0;
+        width: 78.5%;
+        background-color: #fff;
+        justify-content: center;
+        padding: 30px 20px 47px 20px;
+        border: 0;
+    }
 }
 .signinSection{
     padding: 40px 0 80px 0;
@@ -1546,7 +1617,7 @@ a{
 .gameResults{
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 16px 0 rgba($color: #000000, $alpha: 0.08);
+    box-shadow: 0 4px 16px 0 rgba(53,110,158,0.08);
     padding: 15px 140px 120px 140px;
     &__header{
         display: flex;
@@ -1799,6 +1870,27 @@ a{
             }
         }
     }
+    &--big{
+        padding: 20px 8px;
+    }
+    &__blueBorder{
+        border: 1px solid #3DABFF;
+    }
+    &__orangeBorder{
+        border: 1px solid #F47217;
+    }
+    &__purpleBorder{
+        border: 1px solid #D63DFF;
+    }
+    &--modal{
+        border-radius: 22px !important;
+        padding: 20px 12px 15px 12px !important;
+        margin-right: 30px !important;
+        width: 28.3% !important;
+        &:last-child{
+            margin-right: 0 !important;
+        }
+    }
     &__badge{
         border-radius: 8px;
         padding: 5px;
@@ -2041,7 +2133,6 @@ a{
 
 
 /* Months Slider */
-
 .slider-wrapper {
     width: 100%;
     margin: 3em auto;
@@ -2061,6 +2152,10 @@ a{
         border: 1px solid rgba(150,157,181,0.2);
         background-color: #fff;
         color: #928EA1;
+        transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
         a{
             display: block;
             color: #928EA1;
@@ -2086,10 +2181,113 @@ a{
   }
   
 
-
-.modal, .modal-backdrop {
-    position: absolute !important;
+/* Keno Number Selection Modal */
+.kenoNumSelection{
+    p{
+        font-size: 16px;
+        color: #928EA1;
+        font-family: $HK-semibold;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        li{
+            a{
+                display: block;
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                font-size: 14px;
+                margin: 0 8px 6px 0;
+                border-radius: 100%;
+                text-align: center;
+                color: #5D35F7;
+                font-family: $HK-semibold;
+                background-color: rgba($color: #5A34EA, $alpha: 0.10);
+                transition: all .3s ease-in;
+                -webkit-transition: all .3s ease-in;
+                -moz-transition: all .3s ease-in;
+                -o-transition: all .3s ease-in;
+                &:hover{
+                    box-shadow: 0px 1px 6px 0 rgba($color: #000000, $alpha: 0.20);
+                    transform: translate(0, -2px);
+                    background-color: #5A34EA;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &__active{
+        a{
+            background-color: #5A34EA !important;
+            color: #fff !important;
+        }
+    }
 }
-.modal-backdrop{
-    height: 100% !important;
+
+/* Selected Number */
+#numberSelected{
+    display: none;
+}
+.numberSelected{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    &__inner{
+        background-color: #9C55BB;
+        width: 187px;
+        height: 187px;
+        color: #fff;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        box-shadow: 0 15px 62px 0 rgba($color: #200F5E, $alpha: 0.33);
+        h3{
+            font-size: 71px;
+            font-family: $HK-semibold;
+            margin: 0;
+        }
+    }
+}
+
+
+/* My Account & Settings */
+.myAccount{
+    .nav-tabs{
+        display: block;
+        margin-top: 100px;
+        border-top: 0;
+        .active{
+            background-color: #DDE5FF;
+            border: 0;
+        }
+        &__item{
+            display: flex;
+            text-align: left;
+            align-items: center;
+            img{
+                margin-right: 12px;
+            }
+        }
+        &__link{
+            text-align: left;
+            color: #1A0F54;
+            font-size: 32px;
+            font-family: $HK-medium;
+            border-radius: 12px;
+            margin: 8px 0;
+            padding: .6rem .5rem;
+        }
+    }
 }
