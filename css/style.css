@@ -130,7 +130,7 @@ a {
   background-color: #DDE5FF;
   border-radius: 11px;
   font-size: 18px;
-  color: #1A0D49;
+  color: #1A0F54;
   padding: 10px 34px;
   border: 4px solid #DDE5FF;
   font-family: HKGrotesk-SemiBold;
@@ -150,7 +150,7 @@ a {
 .header-top--outline:hover {
   background-color: #DDE5FF;
   border-color: #DDE5FF;
-  color: #1A0D49;
+  color: #1A0F54;
 }
 
 .header-top--user {
@@ -160,7 +160,7 @@ a {
 .header-top--user:hover {
   background-color: #DDE5FF;
   border-color: #DDE5FF;
-  color: #1A0D49;
+  color: #1A0F54;
 }
 
 .header-top--btnDropdown {
@@ -174,7 +174,7 @@ a {
 .header-top--btnDropdown:hover {
   background-color: transparent;
   border-color: #DDE5FF;
-  color: #1A0D49;
+  color: #1A0F54;
 }
 
 .header-top--btnDropdown::after {
@@ -260,7 +260,7 @@ a {
 
 .nextDraw__btn-yellow {
   background-color: #F6C358;
-  color: #1A0D49;
+  color: #1A0F54;
   font-size: 12px;
   font-family: HKGrotesk-Bold;
   padding: 6px 24px;
@@ -403,7 +403,7 @@ a {
 /* Divisions */
 .divisions {
   display: flex;
-  margin: 0 -5px 30px -5px;
+  margin: 0 -5px 38px -5px;
 }
 
 .divisions__inner {
@@ -423,7 +423,7 @@ a {
 }
 
 .divisions__inner p {
-  color: #1A0D49;
+  color: #1A0F54;
   font-size: 12px;
   font-family: HKGrotesk-Medium;
   margin: 0;
@@ -483,6 +483,10 @@ a {
 
 .main-content--bottomStake {
   height: calc(100% - 117px);
+}
+
+.main-content--myAccount {
+  padding: 50px 0 0 65px;
 }
 
 .main-content__heading {
@@ -1202,7 +1206,7 @@ a {
 .fundsModalContent .modal-body p {
   margin: 0;
   font-size: 22px;
-  color: #1A0D49;
+  color: #1A0F54;
   font-family: HKGrotesk-Bold;
   text-align: center;
 }
@@ -1237,7 +1241,7 @@ a {
 
 .fundsModalContent__btnOkay {
   background-color: #F6C358;
-  color: #1A0D49;
+  color: #1A0F54;
   border-radius: 27px;
   font-size: 17px;
   font-family: HKGrotesk-Bold;
@@ -1249,7 +1253,7 @@ a {
 }
 
 .fundsModalContent__btnOkay:hover {
-  color: #1A0D49;
+  color: #1A0F54;
   box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.15);
   transform: translate(0, -7px);
   -webkit-transform: translate(0, -5px);
@@ -1573,7 +1577,7 @@ a {
   width: 55px;
   height: 55px;
   line-height: 55px;
-  color: #1A0D49;
+  color: #1A0F54;
   font-size: 17px;
   border-radius: 9px;
   text-align: center;
@@ -1956,7 +1960,7 @@ a {
   margin-left: 15px;
   margin-right: 22px;
   padding: 4px 22px 4px 12px;
-  color: #1A0D49;
+  color: #1A0F54;
   background-color: #F6C358;
 }
 
@@ -2263,7 +2267,7 @@ a {
 
 .lotteryGames--bgYellow {
   background-color: #F6C358 !important;
-  color: #1A0D49 !important;
+  color: #1A0F54 !important;
 }
 
 .lotteryGames__button {
@@ -2287,7 +2291,7 @@ a {
   margin-left: 15px;
   margin-right: 22px;
   padding: 4px 22px 4px 12px;
-  color: #1A0D49;
+  color: #1A0F54;
   background-color: #F6C358;
 }
 
@@ -2479,9 +2483,16 @@ a {
 }
 
 /* My Account & Settings */
+.myAccount {
+  height: 100%;
+}
+
+.myAccount--inner {
+  height: 100%;
+}
+
 .myAccount .nav-tabs {
   display: block;
-  margin-top: 100px;
   border-top: 0;
 }
 
@@ -2503,9 +2514,304 @@ a {
 .myAccount .nav-tabs__link {
   text-align: left;
   color: #1A0F54;
-  font-size: 32px;
+  font-size: 28px;
   font-family: HKGrotesk-Medium;
   border-radius: 12px;
-  margin: 8px 0;
+  margin: 3px 0;
   padding: .6rem .5rem;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
+
+.myAccount .nav-tabs__link:hover {
+  background-color: #DDE5FF;
+  border: 0;
+}
+
+.myAccount__leftColumn {
+  padding: 80px 55px 43px 0;
+}
+
+.myAccount__rightColumn {
+  background-color: #FFFFFF;
+  border-radius: 71px 0 0 0;
+  height: 100%;
+  padding: 50px 0 50px 110px;
+}
+
+.myAccount__rightColumn h2 {
+  font-size: 38px;
+  font-family: HKGrotesk-Medium;
+  margin-bottom: 54px;
+}
+
+.myAccount__rightColumn .tab-content {
+  height: calc(100% - 49px);
+}
+
+.myAccount__btnLogout {
+  background-color: #F6C358;
+  color: #1A0F54;
+  font-size: 27px;
+  font-family: HKGrotesk-Medium;
+  border-radius: 48px;
+  margin-top: 130px;
+  padding: 18px 105px;
+}
+
+.myAccount__btnLogout:hover {
+  background-color: #5A34EA;
+  color: #fff;
+}
+
+/* Account Accordians */
+.accountAccordian__collapseBg {
+  background-color: #DDE5FF;
+  border-radius: 16px 0 0 16px;
+  padding: 25px 18px;
+  margin-bottom: 40px;
+}
+
+.accountAccordian__btnYellow {
+  background-color: #F6C358;
+  color: #1A0F54;
+  font-size: 25px;
+  font-family: HKGrotesk-Bold;
+  text-transform: uppercase;
+  min-width: 330px;
+  border-radius: 8px;
+  padding: 13px 15px;
+}
+
+/* Change Password */
+.accountForm {
+  padding: 15px 0 5px 10px;
+}
+
+.accountForm__button {
+  background-color: #F6C358;
+  color: #1A0F54;
+  text-transform: uppercase;
+  border-radius: 27px;
+  font-size: 22px;
+  font-family: HKGrotesk-Bold;
+  width: 100%;
+}
+
+.accountForm__button:hover {
+  background-color: #5A34EA;
+  color: #fff;
+}
+
+.accountForm label {
+  color: #1A0F54;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: HKGrotesk-SemiBold;
+  margin-bottom: 4px;
+}
+
+.accountForm .form-control {
+  border-radius: 27px;
+  border: 0;
+  height: 55px;
+  padding: .375rem 1.5rem;
+}
+
+.accountForm .form-control:focus {
+  box-shadow: none;
+}
+
+.accountForm__bgGray {
+  background-color: #ECECEC;
+}
+
+.accountForm--saveBtn {
+  width: auto;
+  padding: 13px 48px;
+  font-size: 22px;
+  border-radius: 38px;
+  margin-top: 10px;
+}
+
+/* Verify Account */
+.verifyAccount {
+  padding: 30px 0 0 0;
+}
+
+.verifyAccount p {
+  color: #1A0F54;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.verifyAccount__allow {
+  margin: 25px 0;
+}
+
+.verifyAccount__uploadDoc {
+  margin: 85px 0 0 0;
+}
+
+.verifyAccount__uploadDoc label {
+  color: #1A0F54;
+  font-size: 20px;
+  font-family: HKGrotesk-SemiBold;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.verifyAccount__badge {
+  background-color: #F6C358;
+  border-radius: 7px;
+  width: 100%;
+  display: inline-block;
+  font-size: 22px;
+  font-family: HKGrotesk-Bold;
+  text-transform: uppercase;
+  padding: 6px;
+  text-align: center;
+}
+
+.verifyAccount__btnUpload {
+  background-color: #F6C358;
+  border-radius: 27xp;
+  color: #1A0F54;
+  font-size: 23px;
+  font-family: HKGrotesk-Bold;
+  text-transform: uppercase;
+  margin: 30px 0 15px 0;
+  padding: 12px 78px;
+  border-radius: 35px;
+}
+
+.verifyAccount__btnUpload:hover {
+  background-color: #5A34EA;
+  color: #fff;
+}
+
+.verifyAccount__fileUpload {
+  background-color: #FFFFFF;
+  border-radius: 27px;
+  display: inline-block;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.verifyAccount__fileUpload img {
+  margin-right: 20px;
+}
+
+/* Deposit Method */
+.depositMethod {
+  margin: 20px 0 0 0;
+}
+
+/* Account Common Form */
+.accountCommonForm {
+  text-align: center;
+  background-color: #DDE5FF;
+  border-radius: 16px 0 0 0;
+  padding: 25px 18px;
+  height: 100%;
+}
+
+.accountCommonForm__form {
+  margin: 93px 0 0 0;
+}
+
+.accountCommonForm__form label {
+  font-size: 28px;
+  font-family: HKGrotesk-Medium;
+  margin-bottom: 20px;
+}
+
+.accountCommonForm__form .form-control {
+  border-radius: 32px;
+  border: 0;
+  height: 72px;
+  padding: .375rem 1.5rem;
+}
+
+.accountCommonForm__form .form-control:focus {
+  box-shadow: none;
+}
+
+.accountCommonForm--button {
+  background-color: #F6C358;
+  border-radius: 53px;
+  font-size: 28px;
+  font-family: HKGrotesk-SemiBold;
+  padding: 12px 20px;
+  min-width: 485px;
+}
+
+.accountCommonForm--button:hover {
+  background-color: #5A34EA;
+  color: #fff;
+}
+
+.accountCommonForm__note {
+  margin-top: 100px;
+}
+
+.accountCommonForm__note p {
+  color: #1A0F54;
+  font-size: 27px;
+  font-family: HKGrotesk-Medium;
+  line-height: 37px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+/* Contact Us */
+.contactUs {
+  background-color: #DDE5FF;
+  padding: 38px 95px 0 95px;
+  border-radius: 16px 16px 0 0;
+  height: 100%;
+  margin-right: 70px;
+}
+
+.contactUs__form .form-control {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  height: 55px;
+  color: #1A0F54;
+  font-size: 18px;
+  border: 3px solid #E6E4FD;
+  padding: 6px 18px;
+}
+
+.contactUs__form .form-control:focus {
+  box-shadow: none;
+}
+
+.contactUs__button {
+  background-color: #F6C358;
+  color: #1A0F54;
+  font-size: 27px;
+  font-family: HKGrotesk-Medium;
+  border-radius: 48px;
+  padding: 18px;
+  min-width: 378px;
+}
+
+.contactUs__button:hover {
+  background-color: #5A34EA;
+  color: #fff;
+}
+
+.contactUs__note p {
+  color: #6D7278;
+  font-size: 20px;
+  font-family: HKGrotesk-Medium;
+  text-align: center;
+  margin: 0;
+}
+
+.contactUs textarea {
+  height: auto !important;
 }
