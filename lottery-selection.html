@@ -357,35 +357,10 @@
 
                                             <div class="repeat">
                                                 <h2>Repeat</h2>
-                                                <!-- <ul>
-                                                    <li>
-                                                        <a href="javascript:void(0)">
-                                                            1<br>
-                                                            <span>week</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0)" class="repeat--active">
-                                                            2<br>
-                                                            <span>weeks</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0)">
-                                                            4<br>
-                                                            <span>weeks</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0)">
-                                                            8<br>
-                                                            <span>weeks</span>
-                                                        </a>
-                                                    </li>
-                                                </ul> -->
-                                                
-                                                <div class="row">
-
+                                            
+                                                <div id="radioRepeat">
+                                                <div class="row g-2">
+                                                    
                                                     <div class="col-md-3">
                                                 <div class="form-check">
                                                     1<br>
@@ -398,7 +373,7 @@
                                                 </div>
 
                                                 <div class="col-md-3">
-                                                  <div class="form-check">
+                                                  <div class="form-check highlight">
                                                     2<br>
                                                     <span>weeks</span>
                                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
@@ -431,12 +406,14 @@
                                                    </div>
 
                                                 </div> 
+                                            </div>
                                             
                                             </div>
 
                                             <div class="gamesCategory">
-                                                <ul>
-                                                    <li>
+                                                <div class="row g-3">
+                                                    <div class="col-md-4">
+                                                        <div class="gamesCategory__inner">
                                                         <img src="images/snowflake.svg" alt="Snowflake" class="img-fluid">
                                                         <div class="gamesCategory__badge">
                                                             62
@@ -447,8 +424,10 @@
                                                         <div class="gamesCategory__badge">
                                                             18
                                                         </div>
-                                                    </li>
-                                                    <li>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="gamesCategory__inner">
                                                         <img src="images/fire.svg" alt="Fire Icon" class="img-fluid">
                                                         <div class="gamesCategory__badge gamesCategory--orangeBadge">
                                                             62
@@ -459,8 +438,10 @@
                                                         <div class="gamesCategory__badge gamesCategory--orangeBadge">
                                                             18
                                                         </div>
-                                                    </li>
-                                                    <li>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="gamesCategory__inner">
                                                         <img src="images/star2.svg" alt="Star Icon" class="img-fluid">
                                                         <div class="gamesCategory__badge gamesCategory--purpleBadge">
                                                             62
@@ -471,8 +452,9 @@
                                                         <div class="gamesCategory__badge gamesCategory--purpleBadge">
                                                             18
                                                         </div>
-                                                    </li>
-                                                </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <!-- Games Category ends here -->
 
@@ -1847,6 +1829,18 @@
      });
 
 });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+  //change colour when radio is selected
+  $('#radioRepeat input:radio').change(function() {
+    // Only remove the class in the specific `box` that contains the radio
+    $('div.highlight').removeClass('highlight');
+    $(this).closest('.form-check').addClass('highlight');
+  });
+});
+
     </script>
     
 </body>

@@ -196,6 +196,9 @@
   .verifyAccount__badge {
     font-size: 18px;
   }
+  .repeat .col-md-3 {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -313,11 +316,11 @@
   .lotteryGames--button2 {
     margin-left: 0;
   }
-  .repeat ul li a {
-    width: 95px;
-  }
   .tab-content {
     height: auto;
+  }
+  .gamesCategory__inner {
+    padding: 10px 10px 15px 10px;
   }
 }
 
@@ -577,6 +580,12 @@
   }
   .year h3::before, .year h3::after {
     width: 44%;
+  }
+  .repeat .col-md-3 {
+    width: 50%;
+  }
+  .gamesCategory .col-md-4 {
+    width: 33.33333333%;
   }
 }
 

@@ -1827,46 +1827,6 @@ a{
         margin-bottom: 20px;
         text-transform: uppercase;
     }
-    ul{
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        li{
-            margin: 0 10px 10px 0;
-            width: 25%;
-            &:last-child{
-                margin-right: 0;
-            }
-            a{
-                display: block;
-                border-radius: 8px;
-                color: #6C829C;
-                font-size: 29px;
-                border: 1px solid #F3F2FE;
-                text-align: center;
-                padding: 22px 10px;
-                line-height: 25px;
-                font-family: $HK-medium;
-                transition: all .3s ease-in;
-                -webkit-transition: all .3s ease-in;
-                -moz-transition: all .3s ease-in;
-                -o-transition: all .3s ease-in;
-                span{
-                    font-size: 15px;
-                    font-family: $HK-regular;
-                }
-                &:hover{
-                    border: 1.5px solid #5D35F6;
-                    color: #5D35F6;
-                }
-            }
-        }
-    }
-    &--active{
-        border: 1.5px solid #5D35F6 !important;
-        color: #5D35F6 !important;
-    }
     .form-check{
         border: 1px solid #F3F2FE;
         padding: 21px 10px;
@@ -1877,6 +1837,14 @@ a{
         font-size: 29px;
         font-family: $HK-medium;
         line-height: 22px;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        &:hover{
+            border: 1px solid #5D35F6;
+            color: #5D35F6;
+        }
         span{
             font-size: 15px;
             font-family: $HK-regular;
@@ -1894,62 +1862,43 @@ a{
             opacity: 0;
             position: absolute;
             top: 0;
-            &:checked{
-                ~ .form-check{
-                    border: 1px solid #5D35F6 !important;
-                }
-            }
         }
     }
 }
-
+.highlight{
+    border: 1px solid #5D35F6 !important;
+    color: #5D35F6 !important;
+}
 
 /* Games Category */
 
 .gamesCategory{
-    ul{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        li{
-            margin-right: 20px;
+    &__inner{
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px 20px 15px 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        img{
             margin-bottom: 20px;
-            width: 30.2%;
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 20px 20px 15px 20px;
-            text-align: center;
-            &:last-child{
-                margin-right: 0;
-            }
-            img{
-                margin-bottom: 20px;
-                min-height: 40px;
-            }
+            min-height: 40px;
         }
     }
     &--big{
         padding: 20px 8px;
     }
-    &__blueBorder{
-        border: 1px solid #3DABFF;
+    &--blueBorder{
+        border: 1px solid rgba($color: #3DABFF, $alpha: 0.25);
     }
-    &__orangeBorder{
-        border: 1px solid #F47217;
+    &--orangeBorder{
+        border: 1px solid rgba($color: #F47217, $alpha: 0.25);
     }
-    &__purpleBorder{
-        border: 1px solid #D63DFF;
+    &--purpleBorder{
+        border: 1px solid rgba($color: #D63DFF, $alpha: 0.25);
     }
     &--modal{
         border-radius: 22px !important;
         padding: 20px 12px 15px 12px !important;
-        margin-right: 30px !important;
-        width: 28.3% !important;
-        &:last-child{
-            margin-right: 0 !important;
-        }
     }
     &__badge{
         border-radius: 8px;

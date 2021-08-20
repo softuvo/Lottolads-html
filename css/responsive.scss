@@ -267,6 +267,11 @@
             font-size: 18px;
         }
     }
+    .repeat{
+        .col-md-3{
+            width: 50%;
+        }
+    }
 }
 
 
@@ -409,17 +414,13 @@
             margin-left: 0;
         }
     }
-    .repeat{
-        ul{
-            li{
-                a{
-                    width: 95px;
-                }
-            }
-        }
-    }
     .tab-content{
         height: auto;
+    }
+    .gamesCategory{
+        &__inner{
+            padding: 10px 10px 15px 10px;
+        }
     }
 }
 
@@ -724,6 +725,16 @@
             &::before, &::after{
                 width: 44%;
             }
+        }
+    }
+    .repeat{
+        .col-md-3{
+            width: 50%;
+        }
+    }
+    .gamesCategory{
+        .col-md-4{
+            width: 33.33333333%;
         }
     }
 }
