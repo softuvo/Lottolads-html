@@ -195,7 +195,7 @@ a{
     &__myAccount-button{
         background-color: #F6C358;
         color: $primary-color;
-        font-size: 25px;
+        font-size: 22px;
         font-family:$HK-medium;
         border-radius: 12px;
         border: 6px solid #FCDB95;
@@ -217,10 +217,11 @@ a{
     background-color: #5A34EA;
     border-radius: 12px;
     margin-bottom: 25px;
+    position: relative;
         
         h2{
             color: #fff;
-            font-size: 27px;
+            font-size: 23px;
             font-family:$HK-semibold;
             margin-bottom: 5px;
         }
@@ -231,11 +232,15 @@ a{
             text-transform: uppercase;
             margin-bottom: 20px;
             opacity: 0.60;
+            line-height: 16px;
         }
         &__text{
             padding: 15px;
         }
         &__img{
+            position: absolute;
+            bottom: 0;
+            right: 18px;
             img{
                 margin-top: -5px;
                 height: 178px;

@@ -82,9 +82,6 @@
   .gameResults {
     padding: 15px 20px 80px 20px;
   }
-  .gamesCategory ul li {
-    width: 29%;
-  }
   .addGame {
     margin: 20px 0;
   }
@@ -125,6 +122,9 @@
   .nextDraw__text {
     padding: 15px 0 0 15px;
   }
+  .nextDraw__img {
+    position: static;
+  }
   .nextDraw__img img {
     margin-left: -25px;
   }
@@ -153,12 +153,6 @@
   }
   .numbersList__header h3, .numbersList__header h4 {
     font-size: 18px;
-  }
-  .gamesCategory ul {
-    display: block;
-  }
-  .gamesCategory ul li {
-    width: 100%;
   }
   .main-content--myAccount {
     padding: 50px 0 0 35px;
@@ -322,6 +316,17 @@
   .gamesCategory__inner {
     padding: 10px 10px 15px 10px;
   }
+  .nextDraw__img {
+    position: absolute;
+    right: 0;
+  }
+  .nextDraw__img img {
+    height: 155px;
+  }
+  .nextDraw__btn-yellow {
+    margin-bottom: 15px;
+    padding: 5px 12px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -393,9 +398,11 @@
   }
   .nextDraw__img {
     text-align: center;
+    position: static;
   }
   .nextDraw__img img {
     margin: 0;
+    height: 178px;
   }
   .jackpot {
     padding: 15px;
@@ -560,12 +567,6 @@
   .lotteryGames--button2 {
     margin-left: 13px;
   }
-  .gamesCategory ul {
-    display: flex;
-  }
-  .gamesCategory ul li {
-    width: 31%;
-  }
   .lotteryDivision__header {
     display: flex;
     text-align: left;
@@ -724,12 +725,6 @@
   }
   .lotteryGames--button2 {
     margin-left: 0;
-  }
-  .gamesCategory ul {
-    display: block;
-  }
-  .gamesCategory ul li {
-    width: 100%;
   }
   .numbers--padding {
     padding: 2px 12px;

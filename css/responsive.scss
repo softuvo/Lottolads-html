@@ -104,13 +104,6 @@
     .gameResults{
         padding: 15px 20px 80px 20px;
     }
-    .gamesCategory{
-        ul{
-            li{
-                width: 29%;
-            }
-        }
-    }
     .addGame{
         margin: 20px 0;
     }
@@ -170,6 +163,7 @@
             padding: 15px 0 0 15px;
         }
         &__img{
+            position: static;
             img{
                 margin-left: -25px;
             }
@@ -206,14 +200,6 @@
         &__header{
             h3, h4{
                 font-size: 18px;
-            }
-        }
-    }
-    .gamesCategory{
-        ul{
-            display: block;
-            li{
-                width: 100%;
             }
         }
     }
@@ -422,6 +408,19 @@
             padding: 10px 10px 15px 10px;
         }
     }
+    .nextDraw{
+        &__img{
+            position: absolute;
+            right: 0;
+            img{
+                height: 155px;
+            }
+        }
+        &__btn-yellow{
+            margin-bottom: 15px;
+            padding: 5px 12px;
+        }
+    }
 }
 
 @media (min-width: 768px)
@@ -501,8 +500,10 @@
         }
         &__img{
             text-align: center;
+            position: static;
             img{
                 margin: 0;
+                height: 178px;
             }
         }
     }
@@ -696,14 +697,6 @@
         }
         &--button2{
             margin-left: 13px;
-        }
-    }
-    .gamesCategory{
-        ul{
-            display: flex;
-            li{
-                width: 31%;
-            }
         }
     }
     .lotteryDivision{
@@ -904,14 +897,6 @@
         }
         &--button2{
             margin-left: 0;
-        }
-    }
-    .gamesCategory{
-        ul{
-            display: block;
-            li{
-                width: 100%;
-            }
         }
     }
     .numbers{
