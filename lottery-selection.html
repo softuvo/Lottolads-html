@@ -227,14 +227,14 @@
                                                 <div class="numbers__text">
                                                     6 Games
                                                 </div>
-                                                <a href="javascript:void(0)"><div class="numbers__icon">
+                                                <a href="javascript:void(0)"><div class="numbers__icon" onclick="decrement()">
                                                     <img src="images/minus.svg" alt="Minus Icon">
                                                 </div></a>
-                                                <a href="javascript:void(0)"><div class="numbers__icon numbers--lightBg">
+                                                <a href="javascript:void(0)" onclick="increment()"><div class="numbers__icon numbers--lightBg">
                                                     <img src="images/plus.svg" alt="Plus Icon">
                                                 </div></a>
-                                                <a href="javascript:void(0)"><div class="numbers__icon numbers--yellowBg numbers--padding">
-                                                    $10.00
+                                                <a href="javascript:void(0)"><div class="numbers__icon numbers--yellowBg numbers--padding" id="counting">
+                                                    
                                                 </div></a>
                                             </div>
 
@@ -365,19 +365,19 @@
                                                 <div class="form-check">
                                                     1<br>
                                                     <span>week</span>
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                    <input class="form-check-input" type="radio" name="weeks" id="1-week">
+                                                    <label class="form-check-label" for="1-week">
                                                       1 week
                                                     </label>
                                                   </div>
                                                 </div>
 
                                                 <div class="col-md-3">
-                                                  <div class="form-check highlight">
+                                                  <div class="form-check activeWeek">
                                                     2<br>
                                                     <span>weeks</span>
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input class="form-check-input" type="radio" name="weeks" id="2-weeks" checked>
+                                                    <label class="form-check-label" for="2-weeks">
                                                       2 weeks
                                                     </label>
                                                   </div>
@@ -387,8 +387,8 @@
                                                     <div class="form-check">
                                                         4<br>
                                                     <span>weeks</span>
-                                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                                      <label class="form-check-label" for="flexRadioDefault3">
+                                                      <input class="form-check-input" type="radio" name="weeks" id="4-weeks">
+                                                      <label class="form-check-label" for="4-weeks">
                                                         4 weeks
                                                       </label>
                                                     </div>
@@ -398,8 +398,8 @@
                                                     <div class="form-check">
                                                         8<br>
                                                     <span>weeks</span>
-                                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                                                      <label class="form-check-label" for="flexRadioDefault4">
+                                                      <input class="form-check-input" type="radio" name="weeks" id="8-weeks">
+                                                      <label class="form-check-label" for="8-weeks">
                                                         8 weeks
                                                       </label>
                                                     </div>
@@ -570,27 +570,87 @@
                                     </div>
                                     <!-- Year ends here -->
 
-                                    <div class="slider-wrapper slider-one">
-                                        <div class="slider">
-                                          <div class="slide"><a href="javascript:void(0)">July</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Aug</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Sep</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Oct</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Nov</a></div>
-                                          <div class="slide active"><a href="javascript:void(0)">Dec</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Jan</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Feb</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Mar</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Apr</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">May</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">June</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">July</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Aug</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Sep</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Oct</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Nov</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Dec</a></div>
-                                        </div>
+                                    <div class="monthSlider">
+                                        <ul class="items" id="radioMonthMyTickets">
+                                          <li class="item form-check">Aug
+                                            <input class="form-check-input" type="radio" name="months" id="aug">
+                                                <label class="form-check-label" for="aug">
+                                                    Aug
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Sep
+                                            <input class="form-check-input" type="radio" name="months" id="sep">
+                                                <label class="form-check-label" for="sep">
+                                                    Sep
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Oct
+                                            <input class="form-check-input" type="radio" name="months" id="oct">
+                                                <label class="form-check-label" for="oct">
+                                                    Oct
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Nov
+                                            <input class="form-check-input" type="radio" name="months" id="nov">
+                                                <label class="form-check-label" for="nov">
+                                                    Nov
+                                                </label>
+                                          </li>
+                                          <li class="item form-check monthSlider--active">Dec
+                                            <input class="form-check-input" type="radio" name="months" id="dec" checked>
+                                                <label class="form-check-label" for="dec">
+                                                    Dec
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Jan
+                                            <input class="form-check-input" type="radio" name="months" id="jan">
+                                                <label class="form-check-label" for="jan">
+                                                    Jan
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Feb
+                                            <input class="form-check-input" type="radio" name="months" id="feb">
+                                                <label class="form-check-label" for="feb">
+                                                    Feb
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Mar
+                                            <input class="form-check-input" type="radio" name="months" id="mar">
+                                                <label class="form-check-label" for="mar">
+                                                    Mar
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Apr
+                                            <input class="form-check-input" type="radio" name="months" id="apr">
+                                                <label class="form-check-label" for="apr">
+                                                    Apr
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">May
+                                            <input class="form-check-input" type="radio" name="months" id="may">
+                                                <label class="form-check-label" for="may">
+                                                    May
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">June
+                                            <input class="form-check-input" type="radio" name="months" id="june">
+                                                <label class="form-check-label" for="june">
+                                                    June
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">July
+                                            <input class="form-check-input" type="radio" name="months" id="july">
+                                                <label class="form-check-label" for="july">
+                                                    July
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Aug
+                                            <input class="form-check-input" type="radio" name="months" id="aug">
+                                                <label class="form-check-label" for="aug">
+                                                    Aug
+                                                </label>
+                                          </li>
+                                        </ul>
                                       </div>
                                       <!-- Month Slider ends here -->
 
@@ -724,27 +784,87 @@
                                     </div>
                                     <!-- Year ends here -->
 
-                                    <div class="slider-wrapper slider-one">
-                                        <div class="slider">
-                                          <div class="slide"><a href="javascript:void(0)">July</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Aug</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Sep</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Oct</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Nov</a></div>
-                                          <div class="slide active"><a href="javascript:void(0)">Dec</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Jan</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Feb</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Mar</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Apr</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">May</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">June</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">July</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Aug</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Sep</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Oct</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Nov</a></div>
-                                          <div class="slide"><a href="javascript:void(0)">Dec</a></div>
-                                        </div>
+                                    <div class="monthSlider">
+                                        <ul class="items" id="radioMonthResults">
+                                          <li class="item form-check">Aug
+                                            <input class="form-check-input" type="radio" name="monthsR" id="augR">
+                                                <label class="form-check-label" for="augR">
+                                                    Aug
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Sep
+                                            <input class="form-check-input" type="radio" name="monthsR" id="sepR">
+                                                <label class="form-check-label" for="sepR">
+                                                    Sep
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Oct
+                                            <input class="form-check-input" type="radio" name="monthsR" id="octR">
+                                                <label class="form-check-label" for="octR">
+                                                    Oct
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Nov
+                                            <input class="form-check-input" type="radio" name="monthsR" id="novR">
+                                                <label class="form-check-label" for="novR">
+                                                    Nov
+                                                </label>
+                                          </li>
+                                          <li class="item form-check monthSlider--activeR">Dec
+                                            <input class="form-check-input" type="radio" name="monthsR" id="decR" checked>
+                                                <label class="form-check-label" for="decR">
+                                                    Dec
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Jan
+                                            <input class="form-check-input" type="radio" name="monthsR" id="janR">
+                                                <label class="form-check-label" for="janR">
+                                                    Jan
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Feb
+                                            <input class="form-check-input" type="radio" name="monthsR" id="febR">
+                                                <label class="form-check-label" for="febR">
+                                                    Feb
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Mar
+                                            <input class="form-check-input" type="radio" name="monthsR" id="marR">
+                                                <label class="form-check-label" for="marR">
+                                                    Mar
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Apr
+                                            <input class="form-check-input" type="radio" name="monthsR" id="aprR">
+                                                <label class="form-check-label" for="aprR">
+                                                    Apr
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">May
+                                            <input class="form-check-input" type="radio" name="monthsR" id="mayR">
+                                                <label class="form-check-label" for="mayR">
+                                                    May
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">June
+                                            <input class="form-check-input" type="radio" name="monthsR" id="juneR">
+                                                <label class="form-check-label" for="juneR">
+                                                    June
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">July
+                                            <input class="form-check-input" type="radio" name="monthsR" id="julyR">
+                                                <label class="form-check-label" for="julyR">
+                                                    July
+                                                </label>
+                                          </li>
+                                          <li class="item form-check">Aug
+                                            <input class="form-check-input" type="radio" name="monthsR" id="augR">
+                                                <label class="form-check-label" for="augR">
+                                                    Aug
+                                                </label>
+                                          </li>
+                                        </ul>
                                       </div>
                                       <!-- Month Slider ends here -->
 
@@ -1798,7 +1918,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/m-slider.js"></script>
+    <script src="js/month-slider.js"></script>
     <script>
         $(document).ready(function(){
     
@@ -1836,12 +1956,51 @@
   //change colour when radio is selected
   $('#radioRepeat input:radio').change(function() {
     // Only remove the class in the specific `box` that contains the radio
-    $('div.highlight').removeClass('highlight');
-    $(this).closest('.form-check').addClass('highlight');
+    $('div.activeWeek').removeClass('activeWeek');
+    $(this).closest('.form-check').addClass('activeWeek');
+  });
+});
+
+$(document).ready(function() {
+  //change colour when radio is selected
+  $('#radioMonthMyTickets input:radio').change(function() {
+    // Only remove the class in the specific `box` that contains the radio
+    $('li.monthSlider--active').removeClass('monthSlider--active');
+    $(this).closest('.form-check').addClass('monthSlider--active');
+  });
+});
+
+$(document).ready(function() {
+  //change colour when radio is selected
+  $('#radioMonthResults input:radio').change(function() {
+    // Only remove the class in the specific `box` that contains the radio
+    $('li.monthSlider--activeR').removeClass('monthSlider--activeR');
+    $(this).closest('.form-check').addClass('monthSlider--activeR');
   });
 });
 
     </script>
+
+<script>
+    //initialising a variable name data
+  
+var data = 10;
+  
+  //printing default value of data that is 0 in h2 tag
+  document.getElementById("counting").innerText = "$" + data + ".00";
+    
+  //creation of increment function
+  function increment() {
+      data = data + 1;
+      document.getElementById("counting").innerText = "$" + data + ".00";
+  }
+  //creation of decrement function
+  function decrement() {
+      data = data - 1;
+      document.getElementById("counting").innerText = "$" + data + ".00";
+  }
+    </script>
+    
     
 </body>
 </html>

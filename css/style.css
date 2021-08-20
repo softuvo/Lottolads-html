@@ -1606,7 +1606,7 @@ a {
   flex-wrap: wrap;
 }
 
-.spendPerDraw ul li a {
+.spendPerDraw ul li {
   border: 1px solid #F3F2FE;
   width: 55px;
   height: 55px;
@@ -1623,10 +1623,29 @@ a {
   -webkit-transition: all .3s ease-in;
   -moz-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
+  position: relative;
+  padding: 0;
 }
 
-.spendPerDraw ul li a:hover {
-  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.2);
+.spendPerDraw ul li:hover {
+  background-color: #5A34EA;
+  color: #fff;
+}
+
+.spendPerDraw ul li .form-check-input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.spendPerDraw ul li label {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
 
 .spendPerDraw--w100 {
@@ -1634,7 +1653,16 @@ a {
   color: #928EA1 !important;
 }
 
+.spendPerDraw--w100:hover {
+  color: #fff !important;
+}
+
 .spendPerDraw--active {
+  background-color: #5A34EA;
+  color: #fff !important;
+}
+
+.spendPerDraw--activeD {
   background-color: #5A34EA;
   color: #fff !important;
 }
@@ -2062,7 +2090,7 @@ a {
   top: 0;
 }
 
-.highlight {
+.activeWeek {
   border: 1px solid #5D35F6 !important;
   color: #5D35F6 !important;
 }
@@ -2363,15 +2391,22 @@ a {
   right: 0;
 }
 
-/* Months Slider */
-.slider-wrapper {
-  width: 100%;
-  margin: 3em auto;
-  max-width: 1500px;
-  margin-top: 0;
+/* Month Slider */
+.monthSlider {
+  position: relative;
 }
 
-.slider-wrapper .slider .slide {
+.monthSlider ul {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.monthSlider ul li {
   position: relative;
   display: inline-block;
   width: 136px;
@@ -2387,31 +2422,33 @@ a {
   -webkit-transition: all .3s ease-in;
   -moz-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
+  padding: 0;
 }
 
-.slider-wrapper .slider .slide a {
-  display: block;
-  color: #928EA1;
+.monthSlider ul li .form-check-input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
 }
 
-.slider-wrapper .slider .slide a:hover {
-  color: #fff;
+.monthSlider ul li label {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
 
-.slider-wrapper .slider .slide:hover {
+.monthSlider--active {
   background-color: #6A46F5 !important;
-  border-color: #6A46F5 !important;
   color: #fff !important;
 }
 
-.slider-wrapper .slider .active {
+.monthSlider--activeR {
   background-color: #6A46F5 !important;
-  border-color: #6A46F5 !important;
   color: #fff !important;
-}
-
-.slider-wrapper .slider .active a {
-  color: #fff;
 }
 
 /* Keno Number Selection Modal */

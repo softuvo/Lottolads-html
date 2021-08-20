@@ -232,13 +232,13 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="numbers">
-                                                <div class="numbers__text">
-                                                    10 Numbers
+                                                <div class="numbers__text" id="counting">
+                                                    
                                                 </div>
-                                                <a href="javascript:void(0)"><div class="numbers__icon">
+                                                <a href="javascript:void(0)"><div class="numbers__icon" onclick="decrement()">
                                                     <img src="images/minus.svg" alt="Minus Icon">
                                                 </div></a>
-                                                <a href="javascript:void(0)"><div class="numbers__icon numbers--lightBg">
+                                                <a href="javascript:void(0)" onclick="increment()"><div class="numbers__icon numbers--lightBg">
                                                     <img src="images/plus.svg" alt="Plus Icon">
                                                 </div></a>
                                                 <a href="javascript:void(0)"><div class="numbers__icon numbers--yellowBg">
@@ -290,13 +290,47 @@
                                             <div class="spendPerDraw">
                                                 <h3>Spend per DRAW</h3>
 
-                                                <ul>
-                                                    <li><a href="javascript:void(0)">$1</a></li>
-                                                    <li><a href="javascript:void(0)" class="spendPerDraw--active">$2</a></li>
-                                                    <li><a href="javascript:void(0)">$10</a></li>
-                                                    <li><a href="javascript:void(0)">$20</a></li>
-                                                    <li><a href="javascript:void(0)" class="spendPerDraw--w100">Other</a></li>
-                                                </ul>
+                                                
+                                                    <ul id="radioSpend">
+                                                        <li class="form-check">
+                                                            $1
+                                                                <input class="form-check-input" type="radio" name="spendPerDraw" id="$1">
+                                                                <label class="form-check-label" for="$1">
+                                                                    $1
+                                                                </label>
+                                                        </li>
+                                                        <li class="form-check spendPerDraw--active">
+                                                            $2
+                                                            <input class="form-check-input" type="radio" name="spendPerDraw" id="$2" checked>
+                                                            <label class="form-check-label" for="$2">
+                                                                $2
+                                                            </label>
+                                                        </li>
+                                                        <li class="form-check">
+                                                            $10
+                                                            <input class="form-check-input" type="radio" name="spendPerDraw" id="$10">
+                                                            <label class="form-check-label" for="$10">
+                                                                $10
+                                                            </label>
+                                                        </li>
+                                                        <li class="form-check">
+                                                            $20
+                                                            <input class="form-check-input" type="radio" name="spendPerDraw" id="$20">
+                                                            <label class="form-check-label" for="$20">
+                                                                $20
+                                                            </label>
+                                                        </li>
+                                                        <li class="form-check spendPerDraw--w100">
+                                                            Other
+                                                            <input class="form-check-input" type="radio" name="spendPerDraw" id="other">
+                                                            <label class="form-check-label" for="other">
+                                                                Other
+                                                            </label>
+                                                        </li>
+    
+                                                    </ul>
+                                                
+
 
                                             </div>
                                             <!-- Spend per draw section ends here -->
@@ -304,12 +338,42 @@
                                             <div class="spendPerDraw">
                                                 <h3>Number of Draws</h3>
 
-                                                <ul>
-                                                    <li><a href="javascript:void(0)">1</a></li>
-                                                    <li><a href="javascript:void(0)">3</a></li>
-                                                    <li><a href="javascript:void(0)">5</a></li>
-                                                    <li><a href="javascript:void(0)">20</a></li>
-                                                    <li><a href="javascript:void(0)" class="spendPerDraw--active spendPerDraw--w100">55</a></li>
+                                                <ul id="radioDraws">
+                                                    <li class="form-check">
+                                                        1
+                                                        <input class="form-check-input" type="radio" name="numOfDraws" id="1">
+                                                        <label class="form-check-label" for="1">
+                                                            1
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-check">
+                                                        3
+                                                        <input class="form-check-input" type="radio" name="numOfDraws" id="3">
+                                                        <label class="form-check-label" for="3">
+                                                            3
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-check">
+                                                        5
+                                                        <input class="form-check-input" type="radio" name="numOfDraws" id="5">
+                                                        <label class="form-check-label" for="5">
+                                                            5
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-check">
+                                                        20
+                                                        <input class="form-check-input" type="radio" name="numOfDraws" id="20">
+                                                        <label class="form-check-label" for="20">
+                                                            20
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-check spendPerDraw--activeD spendPerDraw--w100">
+                                                        55
+                                                        <input class="form-check-input" type="radio" name="numOfDraws" id="55">
+                                                        <label class="form-check-label" for="55">
+                                                            55
+                                                        </label>
+                                                    </li>
                                                 </ul>
 
                                             </div>
@@ -1926,6 +1990,47 @@
        $('#numberSelected').fadeOut(); 
    }, 2000);
 });
+    </script>
+
+<script>
+    $(document).ready(function() {
+//change colour when radio is selected
+$('#radioSpend input:radio').change(function() {
+// Only remove the class in the specific `box` that contains the radio
+$('li.spendPerDraw--active').removeClass('spendPerDraw--active');
+$(this).closest('.form-check').addClass('spendPerDraw--active');
+});
+});
+
+$(document).ready(function() {
+//change colour when radio is selected
+$('#radioDraws input:radio').change(function() {
+// Only remove the class in the specific `box` that contains the radio
+$('li.spendPerDraw--activeD').removeClass('spendPerDraw--activeD');
+$(this).closest('.form-check').addClass('spendPerDraw--activeD');
+});
+});
+
+</script>
+
+<script>
+    //initialising a variable name data
+  
+var data = 10;
+  
+  //printing default value of data that is 0 in h2 tag
+  document.getElementById("counting").innerText = data + " Numbers";
+    
+  //creation of increment function
+  function increment() {
+      data = data + 1;
+      document.getElementById("counting").innerText = data + " Numbers";
+  }
+  //creation of decrement function
+  function decrement() {
+      data = data - 1;
+      document.getElementById("counting").innerText = data + " Numbers";
+  }
     </script>
 
 
