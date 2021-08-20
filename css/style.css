@@ -728,7 +728,7 @@ a {
 .footer__inner {
   display: flex;
   margin: 0 -10px;
-  padding: 0 115px;
+  padding: 0 50px;
 }
 
 .footer h6 {

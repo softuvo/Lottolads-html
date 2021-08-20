@@ -1,3 +1,13 @@
+@media only screen and (max-width: 1690px) {
+  .downloadApp__button {
+    font-size: 32px;
+  }
+  .downloadApp__button span {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   .gameResults--padding {
     padding: 25px 50px 40px 50px;
