@@ -253,9 +253,16 @@
                                                         <li><a href="javascript:void(0)" class="lotteryGames--bgYellow">34</a></li>
                                                     </ul>
                                                 </div>
+                                                <div id="checkToggle">
                                                     <button class="lotteryGames__button">
-                                                        <img src="images/bonus-icon2.svg" alt="Bonus Icon">
-                                                        Powerplay</button>
+                                                        Powerplay
+                                                        <label class="switch">
+                                                            <input type="checkbox" name="powerplay">
+                                                            <img src="images/bonus-icon2.svg" alt="Bonus Icon" class="slideToggle">
+                                                        </label>
+                                                    </button>
+                                                </div>
+
                                                     <div class="lotteryGames__icon">
                                                         <a href="javascript:void(0)"><img src="images/repeat2.svg" alt="Repeat Icon"></a>
                                                     </div>    
@@ -1978,6 +1985,16 @@ $(document).ready(function() {
     $(this).closest('.form-check').addClass('monthSlider--activeR');
   });
 });
+
+$(document).ready(function() {
+  //change colour when radio is selected
+  $('#checkToggle input:checkbox').change(function() {
+    // Only remove the class in the specific `box` that contains the radio
+    $('.toggleBtn').removeClass('toggleBtn');
+    $(this).closest('.lotteryGames__button').addClass('toggleBtn');
+  });
+});
+
 
     </script>
 

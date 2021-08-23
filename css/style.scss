@@ -77,6 +77,9 @@ a{
 .pr-0{
     padding-right: 0;
 }
+.mr-60{
+    margin-right: 60px;
+}
 
 
 /* Top Header */
@@ -1359,7 +1362,7 @@ a{
     background-color: #fff;
     border-radius: 8px;
     padding: 40px 40px 20px 40px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     &__header{
         display: flex;
         justify-content: space-between;
@@ -1376,6 +1379,14 @@ a{
             font-family:$HK-semibold;
         }
     }
+    &__footer
+    {
+        @extend .numbersList__header;
+        margin-bottom: 0;
+        h3, h4{
+            margin: 0;
+        }
+    }
     &--padding{
         padding: 30px 25px;
     }
@@ -1389,8 +1400,8 @@ a{
             a{
                 background-color: #5A34EA;
                 display: block;
-                width: 46px;
-                height: 46px;
+                width: 45px;
+                height: 45px;
                 line-height: 46px;
                 color: #fff;
                 font-size: 19px;
@@ -1837,6 +1848,23 @@ a{
             left: auto;
         }
     }
+    &--wagerHistory{
+        padding: 0;
+        box-shadow: unset;
+        margin: 55px 60px 0 0;
+    }
+    &--bgPinkLight{
+        background-color: rgba($color: #E02020, $alpha: 0.11);
+        border-color: rgba($color: #E02020, $alpha: 0.11);
+    }
+    &--bgGreenLight{
+        background-color: rgba($color: #16BD92, $alpha: 0.11);
+        border-color: rgba($color: #16BD92, $alpha: 0.11);
+    }
+    &--bgWhite{
+        background-color: #fff;
+        border-color: #fff;
+    }
 }
 
 /* Repeat */
@@ -2105,8 +2133,30 @@ a{
             position: absolute;
             left: -26px;
             top: -6px;
+            -webkit-transition: .4s;
+            transition: .4s;
         }
+        input{
+            opacity: 0;
+        }
+        label{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        input:checked + .slideToggle {
+            -webkit-transform: translateX(115px);
+            -ms-transform: translateX(115px);
+            transform: translateX(115px);
+        }
+        
     }
+    .toggleBtn {
+        color: $primary-color;
+    }
+    
     &--button2{
         margin-left: 15px;
         margin-right: 22px;
@@ -2350,7 +2400,7 @@ a{
         &__link{
             text-align: left;
             color: #1A0F54;
-            font-size: 28px;
+            font-size: 25px;
             font-family: $HK-medium;
             border-radius: 12px;
             margin: 3px 0;
@@ -2374,7 +2424,7 @@ a{
         height: 100%;
         padding: 50px 0 50px 110px;
         h2{
-            font-size: 38px;
+            font-size: 32px;
             font-family: $HK-medium;
             margin-bottom: 54px;
         }
@@ -2408,7 +2458,7 @@ a{
     &__btnYellow{
         background-color: #F6C358;
         color: $primary-color;
-        font-size: 25px;
+        font-size: 22px;
         font-family: $HK-Bold;
         text-transform: uppercase;
         min-width: 330px;
@@ -2466,8 +2516,8 @@ a{
     padding: 30px 0 0 0;
     p{
         color: $primary-color;
-        font-size: 22px;
-        line-height: 35px;
+        font-size: 20px;
+        line-height: 32px;
     }
     &__allow{
         margin: 25px 0;
@@ -2526,6 +2576,37 @@ a{
     margin: 20px 0 0 0;
 }
 
+/* Wager History */
+#wagerHistory{
+    .nav-tabs{
+        display: flex;
+        &__link{
+            text-align: center;
+        }
+    }
+    .tab-content>.tab-pane{
+        height: auto;
+    }
+} 
+.wagerHistoryKenoSection{
+    margin: 30px 60px 0 0;
+    h3{
+        color: $primary-color;
+    }
+    &--bgPinkLight{
+        background-color: rgba($color: #E02020, $alpha: 0.11);
+        ul{
+            min-height: 130px;
+        }
+    }
+    &--bgGreenLight{
+        background-color: rgba($color: #16BD92, $alpha: 0.11);
+        ul{
+            min-height: 130px;
+        }   
+    }
+}
+
 /* Account Common Form */
 .accountCommonForm{
     text-align: center;
@@ -2536,7 +2617,7 @@ a{
     &__form{
         margin: 93px 0 0 0;
         label{
-            font-size: 28px;
+            font-size: 25px;
             font-family: $HK-medium;
             margin-bottom: 20px;
         }
@@ -2566,14 +2647,48 @@ a{
         margin-top: 100px;
         p{
             color: $primary-color;
-            font-size: 27px;
+            font-size: 24px;
             font-family: $HK-medium;
-            line-height: 37px;
+            line-height: 32px;
             text-align: left;
-            margin-bottom: 32px;
+            margin-bottom: 25px;
         }
     }
 }
+
+/* Transactional History */
+.transactionalHistorySection{
+    background-color: #DDE5FF;
+    border-radius: 16px 0 0 0;
+    padding: 45px 75px;
+    height: 100%;
+    border: 1px solid #E6E4FD;
+    &__inner{
+        background-color: #fff;
+        padding: 10px;
+        margin-bottom: 22px;
+        h4{
+            color: #8E8E8E;
+            font-size: 24px;
+            font-family: $HK-medium;
+            line-height: 27px;
+            margin-bottom: 25px;
+            span{
+                color: $primary-color;
+                font-size: 15px;
+            }
+        }
+        h5{
+            color: $primary-color;
+            font-size: 20px;
+            span{
+                color: #8E8E8E;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
 
 /* Contact Us */
 .contactUs{
@@ -2622,3 +2737,5 @@ a{
         height: auto !important;
     }
 }
+
+

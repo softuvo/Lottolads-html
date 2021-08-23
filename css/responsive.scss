@@ -31,6 +31,9 @@
             }
         }
     }
+    .transactionalHistorySection{
+        padding: 30px;
+    }
 }
 
 @media only screen and (max-width: 1440px){
@@ -433,6 +436,20 @@
             padding: 5px 12px;
         }
     }
+    .transactionalHistorySection{
+        &__inner{
+            padding-bottom: 0;
+            .col-md-9, .col-md-3{
+                width: 100%;
+            }
+            h5{
+                margin-bottom: 20px;
+            }
+            .text-center{
+                text-align: left !important;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px)
@@ -742,6 +759,17 @@
             width: 33.33333333%;
         }
     }
+    .myAccount{
+        .col-md-4, .col-md-8{
+            width: 100%;
+        }
+        &__btnLogout{
+            margin-top: 25px;
+        }
+        &--inner{
+            height: auto;
+        }
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -834,9 +862,69 @@
                 font-size: 16px !important;
             }
         }
+        &__result{
+            p{
+                margin: 7px 0 0 0;
+            }
+        }
     }  
     .modal, .modal-backdrop{
         position: fixed !important;
+    }
+    .myAccount{
+        &__leftColumn{
+            padding-top: 0;
+        }
+        &__rightColumn{
+            padding: 30px;
+            border-radius: 15px;
+            h2{
+                font-size: 27px;
+            }
+        }
+    }
+    .accountAccordian{
+        &__collapseBg{
+            border-radius: 15px;
+        }
+    }
+    .mr-60{
+        margin-right: 0;
+    }
+    .gameResults{
+        &--wagerHistory{
+            margin: 0;
+        }
+    }
+    .accountCommonForm{
+        border-radius: 15px;
+        &__form{
+            margin: 40px 0 0 0;
+        }
+        &__note{
+            margin-top: 40px;
+        }
+    }
+    .contactUs{
+        margin-right: 0;
+        padding: 38px 35px 20px 35px;
+    }
+    .transactionalHistorySection{
+        border-radius: 16px;
+    }
+    .gameResults--wagerHistory{   
+        padding: 20px 0;
+    }
+    .wagerHistoryKenoSection{
+        margin: 20px 0;
+    }
+    .gameResults--wagerHistory{
+        ul{
+            li{
+                display: block;
+                padding: 15px;
+            }
+        }
     }
 }
 
@@ -925,6 +1013,7 @@
     .gameResults{
         &__inner{
             display: block;
+            margin: 10px 0;
         }
         &--big{
             margin-bottom: 10px !important;
@@ -939,6 +1028,51 @@
     }
     .year{
         margin-top: 15px;
+    }
+    .accountCommonForm{
+        &--button{
+            font-size: 22px;
+        }
+        &__note{
+            p{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        &__form{
+            label{
+                font-size: 20px;
+            }
+            .form-control{
+                height: 60px;
+            }
+        }
+    }
+    .myAccount{
+        &__rightColumn{
+            padding: 25px;
+        }
+        &__leftColumn{
+            padding: 30px 0 40px 0;
+        }
+        &__btnLogout{
+            font-size: 24px;
+            padding: 12px;
+        }
+    }
+    .contactUs{
+        &__button{
+            min-width: auto;
+            width: 100%;
+            font-size: 24px;
+            padding: 15px;
+        }
+        &__note{
+            p{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
     }
 }
 

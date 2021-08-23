@@ -464,11 +464,279 @@
 
                                                 <div class="tab-pane fade" id="withdraw" role="tabpanel" aria-labelledby="withdraw-tab">
                                                     <h2>Withdraw</h2>
+
+                                                    <div class="accountAccordian" id="withdrawalAccordian">
+
+                                                        <div class="accountAccordian__collapseBg">
+                                                        <button class="btn accountAccordian__btnYellow" type="button" data-bs-toggle="collapse" data-bs-target="#withdrawalMethod" aria-expanded="false" aria-controls="withdrawalMethod">
+                                                            Withdrawal Method
+                                                        </button>                                        
+    
+                                                        <div class="collapse" id="withdrawalMethod" data-bs-parent="#withdrawalAccordian"> 
+                                                            
+                                                            <div class="depositMethod">
+                                                                <a href="javascript:void(0)"><img src="images/paypal-withdraw.png" alt="Paypal Withdrawal"></a>
+                                                                <a href="javascript:void(0)"><img src="images/crypto-withdrawal.png" alt="Crypto Currency Withdrawal"></a>
+                                                            </div>
+    
+                                                        </div>
+                                                        </div>
+                                                        <!-- Withdraw Collapse ends here -->
+                                                        </div>
+
                                                 </div>
                                                 <!-- Withdraw tab ends here -->
 
                                                 <div class="tab-pane fade" id="wagerHistory" role="tabpanel" aria-labelledby="wagerHistory-tab">
                                                     <h2>Wager History</h2>
+
+                                                    <ul class="nav nav-tabs mr-60">
+                                                        <li class="nav-tabs__item" role="presentation">
+                                                            
+                                                            <button class="nav-tabs__link active" id="wagerHistoryLotteries-tab" data-bs-toggle="tab"
+                                                                data-bs-target="#wagerHistoryLotteries" type="button" role="tab" aria-controls="wagerHistoryLotteries"
+                                                                aria-selected="true">Lotteries</button>
+                                                        </li>
+                                                        <li class="nav-tabs__item">
+                                                           
+                                                            <button class="nav-tabs__link" id="wagerHistoryKeno-tab" data-bs-toggle="tab"
+                                                                data-bs-target="#wagerHistoryKeno" type="button" role="tab" aria-controls="wagerHistoryKeno"
+                                                                aria-selected="true">Keno</button>
+                                                        </li>
+                                                        </ul>
+                                                        <div class="tab-content">
+
+                                                            <div class="tab-pane fade show active" id="wagerHistoryLotteries" role="tabpanel" aria-labelledby="wagerHistoryLotteries-tab">
+                                                               
+                                                                <div class="gameResults gameResults--wagerHistory">
+                        
+                                                                    <ul>
+                                                                        <li class="gameResults--bgPinkLight">
+                                                                            <div class="gameResults__date gameResults--dateBig gameResults--bgWhite">
+                                                                                <span>27</span><br>
+                                                                                Dec
+                                                                            </div>
+                                                                            <div class="gameResults__result">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-7">
+                                                                                        <p class="gameResults__bigP">Friday · Draw 1241</p>
+                                                                                    </div>
+                                                                                    <div class="col-md-5">
+                                                                                        <p class="gameResults__bigP">Return · $0</p>
+                                                                                    </div>
+                                                                                </div>
+                        
+                                                                                <div class="gameResults__inner">
+                                                                                <ul class="gameResults__list gameResults--big">
+                                                                                    <li><a href="javascript:void(0)">11</a></li>
+                                                                                    <li><a href="javascript:void(0)">17</a></li>
+                                                                                    <li><a href="javascript:void(0)">48</a></li>
+                                                                                    <li><a href="javascript:void(0)">51</a></li>
+                                                                                    <li><a href="javascript:void(0)">62</a></li>
+                                                                                    <li><a href="javascript:void(0)">62</a></li>
+                                                                                    <li><a href="javascript:void(0)" class="gameResults--bgYellow">23</a></li>                                     
+                                                                                    <li><a href="javascript:void(0)" class="gameResults--bgYellow">7</a></li>                                     
+                                                                                </ul>
+                                                                                <button class="gameResults__button gameResults--button2">
+                                                                                    <img src="images/bonus-icon3.svg" alt="Bonus Icon">
+                                                                                    Insurance</button>
+                                                                            </div>
+                                                                        </li>
+                        
+                                                                        <li class="gameResults--bgGreenLight">
+                                                                            <div class="gameResults__date gameResults--dateBig gameResults--bgWhite">
+                                                                                <span>27</span><br>
+                                                                                Dec
+                                                                            </div>
+                                                                            <div class="gameResults__result">
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-7">
+                                                                                        <p class="gameResults__bigP">Wednesday · Draw 1240</p>
+                                                                                    </div>
+                                                                                    <div class="col-md-5">
+                                                                                        <p class="gameResults__bigP">Return · $100</p>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="gameResults__inner">
+                                                                                    <ul class="gameResults__list gameResults--big">
+                                                                                        <li><a href="javascript:void(0)">11</a></li>
+                                                                                        <li><a href="javascript:void(0)">17</a></li>
+                                                                                        <li><a href="javascript:void(0)">48</a></li>
+                                                                                        <li><a href="javascript:void(0)">51</a></li>
+                                                                                        <li><a href="javascript:void(0)">62</a></li>
+                                                                                        <li><a href="javascript:void(0)">62</a></li>
+                                                                                        <li><a href="javascript:void(0)" class="gameResults--bgYellow">23</a></li>                                     
+                                                                                        <li><a href="javascript:void(0)" class="gameResults--bgYellow">7</a></li>                                     
+                                                                                    </ul>
+                                                                                    <button class="gameResults__button">
+                                                                                        <img src="images/bonus-icon2.svg" alt="Bonus Icon">
+                                                                                        Insurance</button>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </li>
+                        
+                                                                        <li class="gameResults--bgPinkLight">
+                                                                            <div class="gameResults__date gameResults--dateBig gameResults--bgWhite">
+                                                                                <span>27</span><br>
+                                                                                Dec
+                                                                            </div>
+                                                                            <div class="gameResults__result">
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-7">
+                                                                                        <p class="gameResults__bigP">Monday · Draw 1239</p>
+                                                                                    </div>
+                                                                                    <div class="col-md-5">
+                                                                                        <p class="gameResults__bigP">Return · $0</p>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="gameResults__inner">
+                                                                                    <ul class="gameResults__list gameResults--big">
+                                                                                        <li><a href="javascript:void(0)">11</a></li>
+                                                                                        <li><a href="javascript:void(0)">17</a></li>
+                                                                                        <li><a href="javascript:void(0)">48</a></li>
+                                                                                        <li><a href="javascript:void(0)">51</a></li>
+                                                                                        <li><a href="javascript:void(0)">62</a></li>
+                                                                                        <li><a href="javascript:void(0)">62</a></li>
+                                                                                        <li><a href="javascript:void(0)" class="gameResults--bgYellow">23</a></li>                                     
+                                                                                        <li><a href="javascript:void(0)" class="gameResults--bgYellow">7</a></li>                                     
+                                                                                    </ul>
+                                                                                    <button class="gameResults__button">
+                                                                                        <img src="images/bonus-icon2.svg" alt="Bonus Icon">
+                                                                                        Insurance</button>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </li>
+                    
+                        
+                                                                    </ul>
+                                                                    
+                                                                </div>
+                                                                <!-- Wager History Lotteries end here -->
+
+                                                            </div>
+
+                                                            <div class="tab-pane fade" id="wagerHistoryKeno" role="tabpanel" aria-labelledby="wagerHistoryKeno-tab">
+                                                                
+                                                                <div class="wagerHistoryKenoSection">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="numbersList numbersList--padding wagerHistoryKenoSection--bgPinkLight">
+                                                                                <div class="numbersList__header">
+                                                                                    <h3>Draw</h3>
+                                                                                    <h4>78</h4>
+                                                                                </div>
+                                                                                <ul class="justify-content-start">
+                                                                                <li>
+                                                                                   <a href="javascript:void(0)" class="numbersList--bgYellow">8</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgOrange">15</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgOrange">16</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgPink">37</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)">44</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgPink">34</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgGray">22</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgGray">23</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgPurple">80</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgGreen">77</a>
+                                                                                 </li>
+                                                                                </ul>
+                                                                                <div class="numbersList__footer">
+                                                                                    <h3>Return</h3>
+                                                                                    <h4>$0</h4>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="numbersList numbersList--padding wagerHistoryKenoSection--bgPinkLight">
+                                                                                <div class="numbersList__header">
+                                                                                    <h3>Draw</h3>
+                                                                                    <h4>80</h4>
+                                                                                </div>
+                                                                                <ul class="justify-content-start">
+                                                                                <li>
+                                                                                   <a href="javascript:void(0)" class="numbersList--bgYellow">1</a>
+                                                                                </li>
+                                                                                
+                                                                                </ul>
+                                                                                <div class="numbersList__footer">
+                                                                                    <h3>Return</h3>
+                                                                                    <h4>$0</h4>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+
+                                                                            <div class="numbersList numbersList--padding wagerHistoryKenoSection--bgGreenLight">
+                                                                                <div class="numbersList__header">
+                                                                                    <h3>Draw</h3>
+                                                                                    <h4>79</h4>
+                                                                                </div>
+                                                                                <ul class="justify-content-start">
+                                                                                <li>
+                                                                                   <a href="javascript:void(0)" class="numbersList--bgYellow">8</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgOrange">15</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgOrange">16</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgPink">37</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)">44</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgPink">34</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgGray">22</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgGray">23</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgPurple">80</a>
+                                                                                 </li>
+                                                                                 <li>
+                                                                                    <a href="javascript:void(0)" class="numbersList--bgGreen">77</a>
+                                                                                 </li>
+                                                                                </ul>
+                                                                                <div class="numbersList__footer">
+                                                                                    <h3>Return</h3>
+                                                                                    <h4>$8</h4>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+
+                                                        </div>
                                                 </div>
                                                 <!-- Wager History tab ends here -->
 
@@ -505,6 +773,55 @@
 
                                                 <div class="tab-pane fade" id="transactionalHistory" role="tabpanel" aria-labelledby="transactionalHistory-tab">
                                                     <h2>Transactional History</h2>
+
+                                                    <div class="transactionalHistorySection">
+
+                                                        <div class="transactionalHistorySection__inner">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-md-9">
+                                                            <h4>Monday 09 September 2020<br>
+                                                                <span>15:24:04 GMT</span>
+                                                            </h4>
+
+                                                            <h5>Bank Transfer ******XXXX<br>
+                                                                ID XXXXXXX
+                                                            </h5>
+
+                                                        </div>
+                                                        <div class="col-md-3 text-center">
+                                                            <h5>
+                                                                Withdrawal<br>
+                                                                -$50.00<br>
+                                                                <span>$60.00</span>
+                                                            </h5>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+
+                                                        <div class="transactionalHistorySection__inner">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-md-9">
+                                                            <h4>Monday 07 September 2020<br>
+                                                                <span>12:24:04 GMT</span>
+                                                            </h4>
+
+                                                            <h5>Paypal Joh* ***@*******.com<br>
+                                                                ID XXXXXXX
+                                                            </h5>
+
+                                                        </div>
+                                                        <div class="col-md-3 text-center">
+                                                            <h5>
+                                                                Withdrawal<br>
+                                                                +$80.00<br>
+                                                                <span>$50.00</span>
+                                                            </h5>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+
+                                                    </div>
+
                                                 </div>
                                                 <!-- Transactional History tab ends here -->
 

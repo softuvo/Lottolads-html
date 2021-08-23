@@ -71,6 +71,10 @@ a {
   padding-right: 0;
 }
 
+.mr-60 {
+  margin-right: 60px;
+}
+
 /* Top Header */
 .header-top {
   padding: 6px 0;
@@ -1492,26 +1496,34 @@ a {
   background-color: #fff;
   border-radius: 8px;
   padding: 40px 40px 20px 40px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.numbersList__header {
+.numbersList__header, .numbersList__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.numbersList__header h3 {
+.numbersList__header h3, .numbersList__footer h3 {
   color: #FFBA03;
   font-size: 22px;
   font-family: HKGrotesk-SemiBold;
 }
 
-.numbersList__header h4 {
+.numbersList__header h4, .numbersList__footer h4 {
   color: #1A0F54;
   font-size: 22px;
   font-family: HKGrotesk-SemiBold;
+}
+
+.numbersList__footer {
+  margin-bottom: 0;
+}
+
+.numbersList__footer h3, .numbersList__footer h4 {
+  margin: 0;
 }
 
 .numbersList--padding {
@@ -1529,8 +1541,8 @@ a {
 .numbersList ul li a {
   background-color: #5A34EA;
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 45px;
+  height: 45px;
   line-height: 46px;
   color: #fff;
   font-size: 19px;
@@ -2031,6 +2043,27 @@ a {
   left: auto;
 }
 
+.gameResults--wagerHistory {
+  padding: 0;
+  box-shadow: unset;
+  margin: 55px 60px 0 0;
+}
+
+.gameResults--bgPinkLight {
+  background-color: rgba(224, 32, 32, 0.11);
+  border-color: rgba(224, 32, 32, 0.11);
+}
+
+.gameResults--bgGreenLight {
+  background-color: rgba(22, 189, 146, 0.11);
+  border-color: rgba(22, 189, 146, 0.11);
+}
+
+.gameResults--bgWhite {
+  background-color: #fff;
+  border-color: #fff;
+}
+
 /* Repeat */
 .repeat {
   background-color: #fff;
@@ -2326,6 +2359,30 @@ a {
   position: absolute;
   left: -26px;
   top: -6px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.lotteryGames__button input {
+  opacity: 0;
+}
+
+.lotteryGames__button label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lotteryGames__button input:checked + .slideToggle {
+  -webkit-transform: translateX(115px);
+  -ms-transform: translateX(115px);
+  transform: translateX(115px);
+}
+
+.lotteryGames .toggleBtn {
+  color: #1A0F54;
 }
 
 .lotteryGames--button2 {
@@ -2581,7 +2638,7 @@ a {
 .myAccount .nav-tabs__link {
   text-align: left;
   color: #1A0F54;
-  font-size: 28px;
+  font-size: 25px;
   font-family: HKGrotesk-Medium;
   border-radius: 12px;
   margin: 3px 0;
@@ -2609,7 +2666,7 @@ a {
 }
 
 .myAccount__rightColumn h2 {
-  font-size: 38px;
+  font-size: 32px;
   font-family: HKGrotesk-Medium;
   margin-bottom: 54px;
 }
@@ -2644,7 +2701,7 @@ a {
 .accountAccordian__btnYellow {
   background-color: #F6C358;
   color: #1A0F54;
-  font-size: 25px;
+  font-size: 22px;
   font-family: HKGrotesk-Bold;
   text-transform: uppercase;
   min-width: 330px;
@@ -2710,8 +2767,8 @@ a {
 
 .verifyAccount p {
   color: #1A0F54;
-  font-size: 22px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .verifyAccount__allow {
@@ -2776,6 +2833,43 @@ a {
   margin: 20px 0 0 0;
 }
 
+/* Wager History */
+#wagerHistory .nav-tabs {
+  display: flex;
+}
+
+#wagerHistory .nav-tabs__link {
+  text-align: center;
+}
+
+#wagerHistory .tab-content > .tab-pane {
+  height: auto;
+}
+
+.wagerHistoryKenoSection {
+  margin: 30px 60px 0 0;
+}
+
+.wagerHistoryKenoSection h3 {
+  color: #1A0F54;
+}
+
+.wagerHistoryKenoSection--bgPinkLight {
+  background-color: rgba(224, 32, 32, 0.11);
+}
+
+.wagerHistoryKenoSection--bgPinkLight ul {
+  min-height: 130px;
+}
+
+.wagerHistoryKenoSection--bgGreenLight {
+  background-color: rgba(22, 189, 146, 0.11);
+}
+
+.wagerHistoryKenoSection--bgGreenLight ul {
+  min-height: 130px;
+}
+
 /* Account Common Form */
 .accountCommonForm {
   text-align: center;
@@ -2790,7 +2884,7 @@ a {
 }
 
 .accountCommonForm__form label {
-  font-size: 28px;
+  font-size: 25px;
   font-family: HKGrotesk-Medium;
   margin-bottom: 20px;
 }
@@ -2826,11 +2920,49 @@ a {
 
 .accountCommonForm__note p {
   color: #1A0F54;
-  font-size: 27px;
+  font-size: 24px;
   font-family: HKGrotesk-Medium;
-  line-height: 37px;
+  line-height: 32px;
   text-align: left;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
+}
+
+/* Transactional History */
+.transactionalHistorySection {
+  background-color: #DDE5FF;
+  border-radius: 16px 0 0 0;
+  padding: 45px 75px;
+  height: 100%;
+  border: 1px solid #E6E4FD;
+}
+
+.transactionalHistorySection__inner {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 22px;
+}
+
+.transactionalHistorySection__inner h4 {
+  color: #8E8E8E;
+  font-size: 24px;
+  font-family: HKGrotesk-Medium;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.transactionalHistorySection__inner h4 span {
+  color: #1A0F54;
+  font-size: 15px;
+}
+
+.transactionalHistorySection__inner h5 {
+  color: #1A0F54;
+  font-size: 20px;
+}
+
+.transactionalHistorySection__inner h5 span {
+  color: #8E8E8E;
+  font-size: 15px;
 }
 
 /* Contact Us */
