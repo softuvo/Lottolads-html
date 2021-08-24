@@ -98,6 +98,9 @@
   .addGame {
     margin: 20px 0;
   }
+  .contactUs {
+    padding: 38px 35px 0 35px;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -352,11 +355,24 @@
   .transactionalHistorySection__inner .text-center {
     text-align: left !important;
   }
+  .contactUs {
+    margin-right: 38px;
+  }
+  .contactUs__button {
+    width: 100%;
+    padding: 13px;
+  }
 }
 
 @media (min-width: 768px) {
   .main-content__offset {
     margin-left: 3.333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-deposit {
+    max-width: 885px;
   }
 }
 
@@ -622,6 +638,46 @@
   .myAccount--inner {
     height: auto;
   }
+  .depositPopup .modal-content {
+    padding: 40px;
+  }
+  .depositModalOuter__form h3 {
+    font-size: 35px;
+  }
+  .depositModalOuter__formInner {
+    padding: 40px 30px;
+  }
+  .bitpayDeposit h3 {
+    font-size: 38px;
+  }
+  .bitpayDeposit__wallet {
+    text-align: center;
+  }
+  .bitpayDeposit__wallet .col-md-4, .bitpayDeposit__wallet .col-md-8 {
+    width: 100%;
+  }
+  .bitpayDeposit__walletAddress {
+    margin-top: 30px;
+  }
+  .bitpayDeposit__walletAddress .form-control {
+    font-size: 20px;
+  }
+  .bitpayDeposit__acceptedCurrencies h4 {
+    font-size: 24px;
+  }
+  .bitpayDeposit__minDeposit p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .verifiedEmail__content {
+    margin: 30px 0;
+  }
+  .verifiedEmail h3 {
+    font-size: 32px;
+  }
+  .accountCommonForm .offset-md-2 {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -748,6 +804,9 @@
     display: block;
     padding: 15px;
   }
+  .expiry {
+    margin-bottom: 45px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -849,7 +908,7 @@
     padding: 25px;
   }
   .myAccount__leftColumn {
-    padding: 30px 0 40px 0;
+    padding: 0 0 40px 0;
   }
   .myAccount__btnLogout {
     font-size: 24px;
@@ -864,6 +923,51 @@
   .contactUs__note p {
     font-size: 18px;
     line-height: 22px;
+  }
+  .accountAccordian__btnYellow {
+    min-width: auto;
+    width: 100%;
+  }
+  .depositModalOuter__button {
+    width: 100%;
+    min-width: auto;
+  }
+  .depositModalOuter__formInner {
+    margin-bottom: 20px;
+  }
+  .depositModalOuter__btnGo {
+    width: 100%;
+    min-width: auto;
+  }
+  .depositPopup .modal-content {
+    padding: 30px 15px;
+  }
+  .verifiedEmail h3 {
+    font-size: 27px;
+  }
+  .verifyAccount__uploadDoc label {
+    font-size: 15px;
+  }
+  .verifyAccount__btnUpload {
+    width: 100%;
+  }
+  .accountForm--saveBtn {
+    width: 100%;
+  }
+  .divisions__inner h6, .divisions__inner p {
+    font-size: 15px;
+  }
+  .sidebar__myAccount-button {
+    font-size: 22px;
+  }
+  #bitpayDeposit .modal-content {
+    padding: 30px 15px;
+  }
+  .bitpayDeposit__walletAddress label {
+    font-size: 24px;
+  }
+  .bitpayDeposit__walletAddress .form-control {
+    font-size: 16px;
   }
 }
 

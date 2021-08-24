@@ -75,6 +75,19 @@ a {
   margin-right: 60px;
 }
 
+.form-check-input {
+  border-color: #643EF1;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: #643EF1;
+  border-color: #643EF1;
+}
+
 /* Top Header */
 .header-top {
   padding: 6px 0;
@@ -790,6 +803,7 @@ a {
   justify-content: center;
   display: flex;
   padding-left: 0;
+  align-items: center;
 }
 
 .footer__paymentMethods ul li a {
@@ -1284,6 +1298,218 @@ a {
 
 .signupStep2--terms {
   margin-top: 145px;
+}
+
+.depositPopup .modal-content {
+  background-color: #fff;
+  padding: 60px 165px 100px 165px;
+}
+
+.depositPopup .modal-body {
+  padding: 0;
+}
+
+.depositModalOuter__form h3 {
+  text-align: center;
+  font-size: 45px;
+  color: #643EF1;
+  font-family: HKGrotesk-Bold;
+  margin-bottom: 25px;
+}
+
+.depositModalOuter__form label {
+  color: #6C829C;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: HKGrotesk-Bold;
+}
+
+.depositModalOuter__form .form-control {
+  border-color: #E6E4FD;
+  border-radius: 5px;
+  color: #75416B;
+  font-family: HKGrotesk-SemiBold;
+  font-size: 18px;
+  height: 62px;
+}
+
+.depositModalOuter__form .form-control:focus {
+  box-shadow: none;
+}
+
+.depositModalOuter__formInner {
+  background-color: #DDE5FF;
+  border-radius: 16px;
+  padding: 70px 75px 25px 75px;
+  margin-bottom: 40px;
+}
+
+.depositModalOuter__formGroup {
+  margin-bottom: 45px;
+}
+
+.depositModalOuter__cardType {
+  background-color: #fff;
+  text-align: center;
+  line-height: 61px;
+  border-radius: 5px;
+  margin-top: 26px;
+}
+
+.depositModalOuter__button {
+  background-color: #643EF1;
+  min-width: 332px;
+  padding: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-family: HKGrotesk-Bold;
+  border-radius: 24px;
+}
+
+.depositModalOuter__button:hover {
+  color: #fff;
+  background-color: #F6C358;
+  color: #1A0F54;
+}
+
+.depositModalOuter .form-check {
+  margin-top: 15px;
+}
+
+.depositModalOuter__depositSuccess {
+  text-align: center;
+}
+
+.depositModalOuter--depositSuccess {
+  padding: 70px 25px 125px 25px;
+}
+
+.depositModalOuter .progress {
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  height: 10px;
+  margin: 20px 0 45px 0;
+}
+
+.depositModalOuter h4 {
+  font-size: 22px;
+  font-family: HKGrotesk-Medium;
+  color: #282222;
+  margin-bottom: 20px;
+}
+
+.depositModalOuter p {
+  color: #282222;
+  font-size: 15px;
+  font-family: HKGrotesk-Medium;
+}
+
+.depositModalOuter__buttons {
+  margin-top: 80px;
+}
+
+.depositModalOuter__btnGo {
+  background-color: #16BD92;
+  font-size: 16px;
+  border-radius: 32px;
+  min-width: 366px;
+  padding: 13px;
+  font-family: HKGrotesk-Medium;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.depositModalOuter__btnGo:hover {
+  color: #fff;
+}
+
+.depositModalOuter--btnTry {
+  background-color: #FA6400;
+}
+
+#bitpayDeposit .modal-content {
+  padding: 70px 50px 100px 50px;
+}
+
+.bitpayDeposit {
+  margin: 50px 0;
+}
+
+.bitpayDeposit h3 {
+  font-size: 49px;
+  color: #643EF1;
+  font-family: HKGrotesk-Bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bitpayDeposit__wallet {
+  background-color: #DDE5FF;
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.bitpayDeposit__walletAddress label {
+  color: #643EF1;
+  font-size: 30px;
+  font-family: HKGrotesk-Medium;
+}
+
+.bitpayDeposit__walletAddress .form-control {
+  border-radius: 38px;
+  height: 76px;
+  color: #000000;
+  font-size: 23px;
+  font-family: HKGrotesk-Medium;
+  border-color: transparent;
+}
+
+.bitpayDeposit__minDeposit {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background-color: #8EA5EF;
+  border-radius: 11px;
+  margin-bottom: 40px;
+}
+
+.bitpayDeposit__minDeposit img {
+  margin-right: 20px;
+}
+
+.bitpayDeposit__minDeposit p {
+  color: #000000;
+  font-size: 23px;
+  font-family: HKGrotesk-Bold;
+  margin: 0;
+}
+
+.bitpayDeposit__acceptedCurrencies {
+  text-align: center;
+  background-color: #DDE5FF;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.bitpayDeposit__acceptedCurrencies h4 {
+  color: #643EF1;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: HKGrotesk-Medium;
+}
+
+.bitpayDeposit__acceptedCurrencies ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bitpayDeposit__acceptedCurrencies ul li {
+  margin: 5px;
 }
 
 /* Terms & Conditions Popup */
@@ -2571,6 +2797,7 @@ a {
 
 .kenoNumSelection--super__active a {
   background-color: #F6C358 !important;
+  color: #fff !important;
 }
 
 /* Selected Number */
@@ -2662,7 +2889,7 @@ a {
   background-color: #FFFFFF;
   border-radius: 71px 0 0 0;
   height: 100%;
-  padding: 50px 0 50px 110px;
+  padding: 50px 0 43px 110px;
 }
 
 .myAccount__rightColumn h2 {
@@ -2801,7 +3028,7 @@ a {
 
 .verifyAccount__btnUpload {
   background-color: #F6C358;
-  border-radius: 27xp;
+  border-radius: 27px;
   color: #1A0F54;
   font-size: 23px;
   font-family: HKGrotesk-Bold;
@@ -2905,12 +3132,26 @@ a {
   border-radius: 53px;
   font-size: 28px;
   font-family: HKGrotesk-SemiBold;
-  padding: 12px 20px;
-  min-width: 485px;
+  padding: 12px 84px;
+  margin-bottom: 10px;
 }
 
 .accountCommonForm--button:hover {
   background-color: #5A34EA;
+  color: #fff;
+}
+
+.accountCommonForm--btnFull {
+  min-width: 485px;
+}
+
+.accountCommonForm--btnReset {
+  background-color: #6D7278;
+  color: #fff;
+}
+
+.accountCommonForm--btnReset:hover {
+  background-color: #6D7278;
   color: #fff;
 }
 
@@ -2925,6 +3166,25 @@ a {
   line-height: 32px;
   text-align: left;
   margin-bottom: 25px;
+}
+
+.verifiedEmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.verifiedEmail h3 {
+  color: #1A0F54;
+  font-size: 38px;
+  font-family: HKGrotesk-Medium;
+}
+
+.verifiedEmail p {
+  color: #6D7278;
+  font-size: 20px;
+  font-family: HKGrotesk-Medium;
 }
 
 /* Transactional History */

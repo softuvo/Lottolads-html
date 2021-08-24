@@ -450,8 +450,8 @@
                                                         <div class="collapse" id="depositMethod" data-bs-parent="#depositAccordian"> 
                                                             
                                                             <div class="depositMethod">
-                                                                <a href="javascript:void(0)"><img src="images/paypal-deposit.png" alt="Paypal Deposit"></a>
-                                                                <a href="javascript:void(0)"><img src="images/bitpay-deposit.png" alt="Bitpay Deposit"></a>
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#depositPopup"><img src="images/paypal-deposit.png" alt="Paypal Deposit" class="img-fluid"></a>
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#bitpayDeposit"><img src="images/bitpay-deposit.png" alt="Bitpay Deposit" class="img-fluid"></a>
                                                             </div>
     
                                                         </div>
@@ -475,8 +475,8 @@
                                                         <div class="collapse" id="withdrawalMethod" data-bs-parent="#withdrawalAccordian"> 
                                                             
                                                             <div class="depositMethod">
-                                                                <a href="javascript:void(0)"><img src="images/paypal-withdraw.png" alt="Paypal Withdrawal"></a>
-                                                                <a href="javascript:void(0)"><img src="images/crypto-withdrawal.png" alt="Crypto Currency Withdrawal"></a>
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#withdrawPopup"><img src="images/paypal-withdraw.png" alt="Paypal Withdrawal" class="img-fluid"></a>
+                                                                <a href="javascript:void(0)"><img src="images/crypto-withdrawal.png" alt="Crypto Currency Withdrawal" class="img-fluid"></a>
                                                             </div>
     
                                                         </div>
@@ -753,7 +753,7 @@
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                             <div class="mb-3">
-                                                                <button class="btn accountCommonForm--button">
+                                                                <button class="btn accountCommonForm--button accountCommonForm--btnFull">
                                                                     Send verification
                                                                 </button>
                                                             </div>
@@ -767,6 +767,47 @@
                                                     </div>
                                                     </div>
                                                     <!-- Verify Email form ends here -->
+
+                                                    <!-- <div class="accountCommonForm">
+
+                                                        <div class="row">
+                                                            <div class="col-md-8 offset-md-2">
+                                                        <form class="accountCommonForm__form">
+                                                            <div class="mb-4">
+                                                                <label>Please enter 6 letter code we sent</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <button class="btn accountCommonForm--button">
+                                                                    Enter
+                                                                </button>
+                                                                <button class="btn accountCommonForm--button accountCommonForm--btnReset">
+                                                                    Reset
+                                                                </button>
+                                                            </div>
+                                                        </form>
+
+                                                        <div class="accountCommonForm__note">
+                                                            <p>Note: Email must be verified before deposits can be made!</p>
+                                                            <p>Note: Please allow up to 15 minute to receive the verification email!</p>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div> -->
+                                                    <!-- Verify Code ends here -->
+
+                                                    <!-- <div class="accountCommonForm">
+
+                                                        <div class="verifiedEmail">
+                                                            <div class="verifiedEmail__content">
+                                                            <h3>You Have verifyied your Email!
+                                                            </h3>
+                                                            <p>Your email is shown in the 'Account' section</p>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div> -->
+                                                    <!-- Verified Email ends here -->
 
                                                 </div>
                                                 <!-- Verify Email tab ends here -->
@@ -838,7 +879,7 @@
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                             <div class="mb-3">
-                                                                <button class="btn accountCommonForm--button">
+                                                                <button class="btn accountCommonForm--button accountCommonForm--btnFull">
                                                                     Redeem Now!
                                                                 </button>
                                                             </div>
@@ -1612,6 +1653,331 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal for Deposit -->
+<div class="modal fade depositPopup" id="depositPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="depositPopupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          
+          <div class="depositModalOuter">
+                <form class="depositModalOuter__form">
+                    <div class="depositModalOuter__formInner">
+                    <h3>Deposit</h3>
+
+                    <div class="depositModalOuter__formGroup row">
+                        <div class="col-md-4">
+                        <label>Amount</label>
+                        <input type="text" value="$170.00" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="depositModalOuter__formGroup row">
+                        <div class="col-md-8">
+                        <label>Card Number</label>
+                        <input type="text" value="1234 5678 3456 2456" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="depositModalOuter__cardType">
+                                <img src="images/Visa.svg" alt="Visa Card">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="depositModalOuter__formGroup row">
+                        <div class="col-md-12">
+                        <label>Card Holder Name</label>
+                        <input type="text" value="John Doe" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 expiry">
+                        <label>Expire Date</label>
+                        <input type="text" value="05    /    21" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <label>CVV</label>
+                            <input type="text" value="123" class="form-control text-center">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Save Card
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+                
+                    <div class="text-center">
+                        <button type="button" class="btn depositModalOuter__button" data-bs-toggle="modal" data-bs-target="#depositSuccess">
+                            Secure Deposit
+                        </button>
+                    </div>
+               
+
+                </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Bitpay Deposit -->
+<div class="modal fade depositPopup" id="bitpayDeposit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bitpayDepositLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          
+          <div class="bitpayDeposit">
+                <h3>BitPay Deposit</h3>
+
+                <div class="bitpayDeposit__wallet">
+                    <div class="row align-items-end g-0">
+                        <div class="col-md-4">
+                            <img src="images/scan.svg" alt="Scan" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="bitpayDeposit__walletAddress">
+                                <label>Your wallet address</label>
+                                <input type="text" class="form-control" value="34NMXG1m6nFuG1NLFYAri5dEhZxHqBRy4E">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bitpayDeposit__minDeposit">
+                    <img src="images/exclamation.svg" alt="Exclamation Icon">
+                    <p>Minimum deposit 500 μBTC = 0.5 mBTC</p>
+                </div>
+
+                <div class="bitpayDeposit__acceptedCurrencies">
+                    <h4>
+                        Cryptocurrencies accepted
+                    </h4>
+
+                    <ul>
+                        <li><img src="images/Bitcoin-large.svg" alt="Bitcoin Icon" class="img-fluid"></li>
+                        <li><img src="images/Etherium-large.svg" alt="Etherium Icon" class="img-fluid"></li>
+                        <li><img src="images/BitcoinCash-large.svg" alt="Bitcoin Cash Icon" class="img-fluid"></li>
+                        <li><img src="images/xrp-large.svg" alt="Xrp Icon" class="img-fluid"></li>
+                        <li><img src="images/D-large.svg" alt="D Icon" class="img-fluid"></li>
+                    </ul>
+
+                </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Deposit Successful -->
+<div class="modal fadee depositPopup" id="depositSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="depositSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          
+          <div class="depositModalOuter">
+                
+                    <div class="depositModalOuter__formInner depositModalOuter--depositSuccess">
+                    <div class="depositModalOuter__depositSuccess">
+
+                        <img src="images/check.svg" alt="Check Icon">
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4>Deposit Successful!</h4>
+                        <p>$XX.XX<br>
+                            has been deposited into your account</p>
+
+                            <div class="depositModalOuter__buttons">
+                            <a href="lottery-selection.html" class="btn depositModalOuter__btnGo">Go to Lotteries</a>
+                            <a href="keno-number-selection.html" class="btn depositModalOuter__btnGo">Go to Keno</a>
+                            </div>
+
+                    </div>
+                    </div>
+   
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal for Deposit UnSuccessful -->
+<div class="modal fadee depositPopup" id="depositUnsuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="depositUnsuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          
+          <div class="depositModalOuter">
+                
+                    <div class="depositModalOuter__formInner depositModalOuter--depositSuccess">
+                    <div class="depositModalOuter__depositSuccess">
+
+                        <img src="images/Cross.svg" alt="Check Icon">
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4>Deposit Unsuccesful</h4>
+
+                            <div class="depositModalOuter__buttons">
+                            <a href="my-account.html" class="btn depositModalOuter__btnGo depositModalOuter--btnTry">Try Again</a>
+                            </div>
+
+                    </div>
+                    </div>
+   
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal for Withdrawal -->
+<div class="modal fade depositPopup" id="withdrawPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="withdrawPopupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          
+          <div class="depositModalOuter">
+                <form class="depositModalOuter__form">
+                    <div class="depositModalOuter__formInner">
+                    <h3>Withdraw</h3>
+
+                    <div class="depositModalOuter__formGroup row">
+                        <div class="col-md-12">
+                        <label>AMOUNT (min. $10.00 withdrawal)</label>
+                        </div>
+                        <div class="col-md-4">
+                        <input type="text" value="$26.50" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="depositModalOuter__formGroup row">
+                        <div class="col-md-8">
+                        <label>BSB</label>
+                        <input type="text" value="456 456" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="depositModalOuter__formGroup row">
+                        <div class="col-md-8">
+                        <label>Account Number</label>
+                        <input type="text" value="3456456" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="depositModalOuter__formGroup row">
+                        <div class="col-md-12">
+                        <label>Account Holder Name</label>
+                        <input type="text" value="John Doe" class="form-control">
+                        </div>
+                    </div>
+
+                   
+                </div>
+                
+                    <div class="text-center">
+                        <button type="button" class="btn depositModalOuter__button" data-bs-toggle="modal" data-bs-target="#withdrawUnsuccess">
+                            Secure Withdraw
+                        </button>
+                    </div>
+               
+
+                </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal for Withdrawal Successful -->
+<div class="modal fadee depositPopup" id="withdrawSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="withdrawSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          
+          <div class="depositModalOuter">
+                
+                    <div class="depositModalOuter__formInner depositModalOuter--depositSuccess">
+                    <div class="depositModalOuter__depositSuccess">
+
+                        <img src="images/check.svg" alt="Check Icon">
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4>Withdrawal Successful!</h4>
+                        <p>$XX.XX<br>
+                            has been withdrawn from your account</p>
+
+                            <div class="depositModalOuter__buttons">
+                            <a href="lottery-selection.html" class="btn depositModalOuter__btnGo">Go to Lotteries</a>
+                            <a href="keno-number-selection.html" class="btn depositModalOuter__btnGo">Go to Keno</a>
+                            </div>
+
+                    </div>
+                    </div>
+   
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal for Withdrawal UnSuccessful -->
+<div class="modal fadee depositPopup" id="withdrawUnsuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="withdrawUnsuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          
+          <div class="depositModalOuter">
+                
+                    <div class="depositModalOuter__formInner depositModalOuter--depositSuccess">
+                    <div class="depositModalOuter__depositSuccess">
+
+                        <img src="images/Cross.svg" alt="Check Icon">
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h4>Withdrawal Unsuccesful</h4>
+
+                            <div class="depositModalOuter__buttons">
+                            <a href="my-account.html" class="btn depositModalOuter__btnGo depositModalOuter--btnTry">Try Again</a>
+                            </div>
+
+                    </div>
+                    </div>
+   
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
 
 
 
