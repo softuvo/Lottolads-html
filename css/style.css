@@ -1999,6 +1999,7 @@ a {
   -ms-transform: translateX(175px);
   transform: translateX(175px);
   background: url("../images/zap-black.svg") no-repeat center center #F6C358;
+  background-size: 20px;
 }
 
 .playGameButtons--toggleBtn {
