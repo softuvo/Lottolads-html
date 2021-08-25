@@ -125,7 +125,7 @@ a{
         padding: 0 !important;
         min-width: 7rem !important;
         margin-top: -7px !important;
-        margin-left: 27px !important;
+        margin-left: 30px !important;
         li{
             a{
                 font-size: 15px !important;
@@ -461,6 +461,9 @@ a{
         position: relative;
         height: 100%;
         padding-bottom: 0;
+        .modal, .modal-backdrop {
+            position: absolute !important;
+        }
     }
     &__rightInner{
         position: relative;
@@ -899,9 +902,7 @@ a{
 .mt-130{
     margin-top: 130px;
 }
-.modal, .modal-backdrop {
-    position: absolute !important;
-}
+
 .modal-backdrop{
     height: 100% !important;
     background-color: #6C829C;
@@ -1756,7 +1757,7 @@ a{
         background-color: #F6C358;
         border: 1px solid #F6C358;
         border-radius: 8px;
-        padding: 14px 30px;
+        padding: 13px 30px;
         min-width: 393px;
         color: $primary-color;
         font-size: 18px;
@@ -1774,14 +1775,50 @@ a{
         font-size: 20px;
         color: #F6C358;
         background-color: transparent;
-        padding: 6px 20px 6px 45px;
+        padding: 6px 30px;
         position: relative;
-        margin-left: 30px;
-        img{
+        margin-left: 42px;
+        input{
+            opacity: 0;
             position: absolute;
-            left: -30px;
-            top: -9px;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            cursor: pointer;
         }
+        label{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .slideToggle{
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            position: absolute;
+            left: -42px;
+            top: -9px;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border: 2px solid #fff;
+            background: url('../images/zap-white.svg') no-repeat center center #F6C358;
+            background-size: 20px;
+        }
+        input:checked + .slideToggle {
+            -webkit-transform: translateX(175px);
+            -ms-transform: translateX(175px);
+            transform: translateX(175px);
+            background: url('../images/zap-black.svg') no-repeat center center #F6C358;
+        }
+        
+    }
+    &--toggleBtn {
+        color: $primary-color;
+        background-color: #F6C358;
     }
 }
 
@@ -2027,14 +2064,53 @@ a{
         font-size: 14px;
         color: #F6C358;
         background-color: transparent;
-        padding: 4px 12px 4px 22px;
+        padding: 4px 20px;
         position: relative;
-        margin-left: 38px;
-        img{
+        margin-left: 25px;
+        -webkit-transition: .4s;
+        transition: .4s;
+        input{
+            opacity: 0;
             position: absolute;
-            left: -26px;
-            top: -6px;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            cursor: pointer;
         }
+        label{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .slideToggle{
+            width: 42px;
+            height: 42px;
+            border-radius: 14px;
+            position: absolute;
+            left: -25px;
+            top: -6px;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border: 2px solid #fff;
+            background: url('../images/zap-white.svg') no-repeat center center #F6C358;
+        }
+        input:checked + .slideToggle {
+            -webkit-transform: translateX(115px);
+            -ms-transform: translateX(115px);
+            transform: translateX(115px);
+            background: url('../images/zap-black.svg') no-repeat center center #F6C358;
+        }
+        
+    }
+    &--toggleBtn {
+        color: $primary-color;
+        background-color: #F6C358;
+        margin-left: 10px;
+        margin-right: 15px;
     }
     &--button2{
         margin-left: 15px;
@@ -2297,8 +2373,7 @@ a{
                     line-height: 41px;
                     background-color: #5A34EA;
                     border-radius: 100%;
-                    margin-right: 5px;
-                    margin-bottom: 5px;
+                    margin: 2px 5px 2px 0;
                     font-size: 15px;
                     font-family: $HK-semibold;
                     text-align: center;
@@ -2325,18 +2400,20 @@ a{
         font-size: 14px;
         color: #F6C358;
         background-color: transparent;
-        padding: 4px 12px 4px 22px;
+        padding: 4px 20px;
         position: relative;
-        margin-left: 38px;
-        img{
-            position: absolute;
-            left: -26px;
-            top: -6px;
-            -webkit-transition: .4s;
+        margin-left: 25px;
+        -webkit-transition: .4s;
             transition: .4s;
-        }
         input{
             opacity: 0;
+            position: absolute;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            cursor: pointer;
         }
         label{
             position: absolute;
@@ -2345,15 +2422,31 @@ a{
             width: 100%;
             height: 100%;
         }
+        .slideToggle{
+            width: 42px;
+            height: 42px;
+            border-radius: 14px;
+            position: absolute;
+            left: -25px;
+            top: -6px;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border: 2px solid #fff;
+            background: url('../images/zap-white.svg') no-repeat center center #F6C358;
+        }
         input:checked + .slideToggle {
             -webkit-transform: translateX(115px);
             -ms-transform: translateX(115px);
             transform: translateX(115px);
+            background: url('../images/zap-black.svg') no-repeat center center #F6C358;
         }
         
     }
-    .toggleBtn {
+    &--toggleBtn {
         color: $primary-color;
+        background-color: #F6C358;
+        margin-left: 10px;
+        margin-right: 15px;
     }
     
     &--button2{
@@ -2368,7 +2461,7 @@ a{
         }
     }
     &__icon{
-        margin-left: 20px;
+        margin-left: 28px;
     }
 }
 
@@ -2488,61 +2581,72 @@ a{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
         li{
-            a{
-                display: block;
-                width: 44px;
-                height: 44px;
-                line-height: 44px;
-                font-size: 14px;
-                margin: 0 8px 6px 0;
-                border-radius: 100%;
-                text-align: center;
-                color: #5D35F7;
-                font-family: $HK-semibold;
-                background-color: rgba($color: #5A34EA, $alpha: 0.10);
-                transition: all .3s ease-in;
-                -webkit-transition: all .3s ease-in;
-                -moz-transition: all .3s ease-in;
-                -o-transition: all .3s ease-in;
+            display: block;
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 14px;
+            margin: 0 8px 6px 0;
+            border-radius: 100%;
+            text-align: center;
+            color: #5D35F7;
+            font-family: $HK-semibold;
+            padding: 0;
+            background-color: rgba($color: #5A34EA, $alpha: 0.10);
+            transition: all .3s ease-in;
+            -webkit-transition: all .3s ease-in;
+            -moz-transition: all .3s ease-in;
+            -o-transition: all .3s ease-in;
+            position: relative;
                 &:hover{
                     box-shadow: 0px 1px 6px 0 rgba($color: #000000, $alpha: 0.20);
                     transform: translate(0, -2px);
                     background-color: #5A34EA;
                     color: #fff;
                 }
+            .form-check-input{
+                opacity: 0;
+                position: absolute;
+                top: 0;
             }
-        }
-    }
-    &__active{
-        a{
-            background-color: #5A34EA !important;
-            color: #fff !important;
+            label{
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+            }
         }
     }
     &--super{
         ul{
             li{
-                a{
-                    background-color: rgba($color: #F6C358, $alpha: 0.10);
-                    color: #DB9F21;
-                    &:hover{
-                        background-color: #F6C358 !important;
-                    }
+                background-color: rgba($color: #F6C358, $alpha: 0.10);
+                color: #DB9F21;
+                &:hover{
+                    background-color: #F6C358 !important;
                 }
             }
         }
         p{
             margin-top: 15px;
         }
-        &__active{
-            a{
-                background-color: #F6C358 !important;
-                color: #fff !important;
-            }
-        }
     }
+}
+.activePowerball{
+    background-color: #5D35F6 !important;
+    color: #fff !important;
+}
+.activeSupernumber{
+    background-color: #F6C358 !important;
+    color: #fff !important;
+}
+.activeKenoNum{
+    background-color: #5D35F6 !important;
+    color: #fff !important;
 }
 
 /* Selected Number */
@@ -2830,6 +2934,12 @@ a{
             box-shadow: none;
         }
         }
+        h3{
+            font-size: 30px;
+            font-family: $HK-medium;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
     }
     &--button{
         background-color: #F6C358;
@@ -2845,6 +2955,10 @@ a{
     }
     &--btnFull{
         min-width: 485px;
+    }
+    &--btnContinue{
+        padding: 12px 35px;
+        margin-top: 50px;
     }
     &--btnReset{
         background-color: #6D7278;
@@ -2966,3 +3080,35 @@ a{
 }
 
 
+
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}

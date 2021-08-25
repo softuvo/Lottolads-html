@@ -537,9 +537,14 @@
                                                                                     <li><a href="javascript:void(0)" class="gameResults--bgYellow">23</a></li>                                     
                                                                                     <li><a href="javascript:void(0)" class="gameResults--bgYellow">7</a></li>                                     
                                                                                 </ul>
-                                                                                <button class="gameResults__button gameResults--button2">
-                                                                                    <img src="images/bonus-icon3.svg" alt="Bonus Icon">
-                                                                                    Insurance</button>
+                                                                                <div class="checkInsurance">
+                                                                                    <button class="gameResults__button"> 
+                                                                                        Insurance
+                                                                                            <input type="checkbox" name="insurance" disabled>
+                                                                                            <div class="slideToggle"></div>
+                                                                                            <label class="switch"> </label>
+                                                                                    </button>
+                                                                                </div>
                                                                             </div>
                                                                         </li>
                         
@@ -570,9 +575,14 @@
                                                                                         <li><a href="javascript:void(0)" class="gameResults--bgYellow">23</a></li>                                     
                                                                                         <li><a href="javascript:void(0)" class="gameResults--bgYellow">7</a></li>                                     
                                                                                     </ul>
-                                                                                    <button class="gameResults__button">
-                                                                                        <img src="images/bonus-icon2.svg" alt="Bonus Icon">
-                                                                                        Insurance</button>
+                                                                                    <div class="checkInsurance">
+                                                                                        <button class="gameResults__button gameResults--toggleBtn"> 
+                                                                                            Insurance
+                                                                                                <input type="checkbox" name="insurance" checked disabled>
+                                                                                                <div class="slideToggle"></div>
+                                                                                                <label class="switch"> </label>
+                                                                                        </button>
+                                                                                    </div>
                                                                                     </div>
                                                                             </div>
                                                                         </li>
@@ -604,9 +614,14 @@
                                                                                         <li><a href="javascript:void(0)" class="gameResults--bgYellow">23</a></li>                                     
                                                                                         <li><a href="javascript:void(0)" class="gameResults--bgYellow">7</a></li>                                     
                                                                                     </ul>
-                                                                                    <button class="gameResults__button">
-                                                                                        <img src="images/bonus-icon2.svg" alt="Bonus Icon">
-                                                                                        Insurance</button>
+                                                                                    <div class="checkInsurance">
+                                                                                        <button class="gameResults__button gameResults--toggleBtn"> 
+                                                                                            Insurance
+                                                                                                <input type="checkbox" name="insurance" checked disabled>
+                                                                                                <div class="slideToggle"></div>
+                                                                                                <label class="switch"> </label>
+                                                                                        </button>
+                                                                                    </div>
                                                                                     </div>
                                                                             </div>
                                                                         </li>
@@ -767,6 +782,26 @@
                                                     </div>
                                                     </div>
                                                     <!-- Verify Email form ends here -->
+
+                                                    <!-- <div class="accountCommonForm">
+
+                                                        <div class="row">
+                                                            <div class="col-md-8 offset-md-2">
+                                                        <form class="accountCommonForm__form">
+                                                            <div class="mb-4">
+                                                                <h3>Thank you for verifying your Account</h3>
+                                                                
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <button class="btn accountCommonForm--button accountCommonForm--btnContinue">
+                                                                    Continue verification process
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                        </div>
+                                                    </div>
+                                                    </div> -->
+                                                    <!-- Thankyou for verification ends here -->
 
                                                     <!-- <div class="accountCommonForm">
 
@@ -1996,6 +2031,13 @@ $('#file-upload2').change(function() {
   $(this).prev('label').text(file);
 });
 
+$('.checkInsurance input:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $(this).parent().addClass("gameResults--toggleBtn");
+    } else {
+        $(this).parent().removeClass("gameResults--toggleBtn");
+    }
+});
 
     </script>
 

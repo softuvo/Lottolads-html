@@ -35,3 +35,5 @@ const move = (e) => {
 	slider.addEventListener('mouseup', end);
 	slider.addEventListener('touchend', end);
 })();
+
+

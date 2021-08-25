@@ -377,6 +377,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .logo img {
+    margin-bottom: 15px;
+  }
   .header-top {
     text-align: center;
     margin-top: 8px;
@@ -602,9 +605,6 @@
   .lotteryGames__numbers {
     margin-bottom: 0;
   }
-  .lotteryGames__button {
-    margin-left: 38px;
-  }
   .lotteryGames--button2 {
     margin-left: 13px;
   }
@@ -690,6 +690,9 @@
   .main-content--columnSix {
     width: 100%;
   }
+  .main-content__rightSection .modal, .main-content__rightSection .modal-backdrop {
+    position: fixed !important;
+  }
   .pr-0 {
     padding-right: calc(var(--bs-gutter-x) * .5);
   }
@@ -756,9 +759,6 @@
   .gameResults__result p {
     margin: 7px 0 0 0;
   }
-  .modal, .modal-backdrop {
-    position: fixed !important;
-  }
   .myAccount__leftColumn {
     padding-top: 0;
   }
@@ -810,6 +810,9 @@
 }
 
 @media only screen and (max-width: 575px) {
+  .logo img {
+    margin-bottom: 0;
+  }
   .header-top__navigation {
     display: block;
   }
@@ -887,6 +890,9 @@
   }
   .gameResults__button {
     margin-left: 25px;
+  }
+  .gameResults--toggleBtn {
+    margin-left: 0;
   }
   .year {
     margin-top: 15px;
@@ -968,6 +974,9 @@
   }
   .bitpayDeposit__walletAddress .form-control {
     font-size: 16px;
+  }
+  .lotteryGames--toggleBtn {
+    margin-left: 0;
   }
 }
 
