@@ -1,3 +1,24 @@
+@media (min-width: 768px) {
+  .main-content__offset {
+    margin-left: 3.333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-deposit {
+    max-width: 885px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-funds {
+    max-width: 365px;
+  }
+  .kenoNumberSelectionDialog {
+    max-width: 470px;
+  }
+}
+
 @media only screen and (max-width: 1690px) {
   .downloadApp__button {
     font-size: 32px;
@@ -84,7 +105,7 @@
     width: auto;
   }
   .numbersList {
-    padding: 20px 20px 0px 20px;
+    padding: 20px;
   }
   .nextGame__text {
     font-size: 18px;
@@ -95,11 +116,34 @@
   .gameResults {
     padding: 15px 20px 80px 20px;
   }
+  .gameResults--wagerHistory {
+    margin: 10px 60px 0 0;
+  }
   .addGame {
     margin: 20px 0;
   }
   .contactUs {
     padding: 38px 35px 0 35px;
+  }
+  .myAccount__rightColumn {
+    padding: 50px 0 43px 60px;
+  }
+  .myAccount__btnLogout {
+    padding: 18px;
+    width: 100%;
+  }
+  .accountForm .col-md-6 {
+    width: 100%;
+  }
+  .accountForm--saveBtn {
+    padding: 13px 15px;
+    width: 100%;
+  }
+  .verifyAccount .col-md-7 {
+    width: 100%;
+  }
+  .verifyAccount__uploadDoc label {
+    display: block;
   }
 }
 
@@ -212,6 +256,32 @@
 }
 
 @media only screen and (max-width: 1199px) {
+  #showSidebar {
+    display: inline-block;
+  }
+  #sidebar {
+    top: 98px;
+    right: -100%;
+    position: fixed;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 60px);
+  }
+  .sidebar {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 50px 15px;
+    max-height: 92%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    box-shadow: -5px 3px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  .sidebar--btnClose {
+    display: block;
+  }
   .signinSection__terms {
     margin: 50px 20px 0 20px;
   }
@@ -232,13 +302,11 @@
     line-height: 17px;
   }
   .divisions {
-    display: block;
-    margin: 0;
+    margin: 0 -5px 0 -5px;
   }
   .divisions__inner {
     padding: 10px;
-    width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 5px 10px 5px;
   }
   .divisions--innerBig {
     padding: 10px;
@@ -248,6 +316,13 @@
   }
   .main-content__rightInner {
     padding: 30px;
+  }
+  .main-content--rightColumn {
+    width: 100%;
+  }
+  .main-content--leftColumn {
+    padding-top: 0;
+    width: 390px;
   }
   .main-content__heading h2 {
     font-size: 20px;
@@ -266,9 +341,6 @@
   }
   .jackpot__price {
     font-size: 18px;
-  }
-  .jackpot__text {
-    display: block;
   }
   .numbers {
     display: block;
@@ -326,22 +398,30 @@
   .lotteryGames--button2 {
     margin-left: 0;
   }
+  .lotteryGames--toggleBtn {
+    margin-left: 0;
+  }
   .tab-content {
     height: auto;
   }
   .gamesCategory__inner {
     padding: 10px 10px 15px 10px;
   }
+  .nextDraw h2 {
+    font-size: 23px;
+  }
+  .nextDraw h5 {
+    font-size: 12px;
+  }
   .nextDraw__img {
     position: absolute;
-    right: 0;
   }
   .nextDraw__img img {
     height: 155px;
   }
   .nextDraw__btn-yellow {
     margin-bottom: 15px;
-    padding: 5px 12px;
+    font-size: 14px;
   }
   .transactionalHistorySection__inner {
     padding-bottom: 0;
@@ -362,17 +442,24 @@
     width: 100%;
     padding: 13px;
   }
-}
-
-@media (min-width: 768px) {
-  .main-content__offset {
-    margin-left: 3.333333%;
+  .accountForm {
+    padding-top: 30px;
   }
-}
-
-@media (min-width: 992px) {
-  .modal-deposit {
-    max-width: 885px;
+  .accountCommonForm .col-md-8 {
+    width: 100%;
+  }
+  .accountCommonForm .offset-md-2 {
+    margin-left: 0;
+  }
+  .accountCommonForm__form .form-control {
+    height: 65px;
+  }
+  .gameResults--wagerHistory {
+    margin: 10px 10px 0 0;
+    padding: 15px 20px 80px 0px;
+  }
+  .wagerHistoryKenoSection {
+    margin: 30px 45px 0 0;
   }
 }
 
@@ -381,7 +468,6 @@
     margin-bottom: 15px;
   }
   .header-top {
-    text-align: center;
     margin-top: 8px;
   }
   .header-top__inner {
@@ -428,42 +514,20 @@
   .nextDraw__badge {
     font-size: 12px;
   }
-  .nextDraw .col-md-7, .nextDraw .col-md-5 {
-    width: 100%;
-  }
   .nextDraw__btn-yellow {
-    padding: 6px 12px;
-    width: 100%;
     font-size: 15px;
   }
   .nextDraw__text {
-    text-align: center;
     padding: 15px;
-  }
-  .nextDraw__img {
-    text-align: center;
-    position: static;
   }
   .nextDraw__img img {
     margin: 0;
     height: 178px;
   }
-  .jackpot {
-    padding: 15px;
-  }
-  .jackpot img {
-    width: 60%;
-  }
-  .jackpot .col-md-3, .jackpot .col-md-9 {
-    width: 100%;
-  }
   .jackpot__text {
-    display: block;
-    text-align: center;
     margin-top: 15px;
   }
   .jackpot__price {
-    text-align: center;
     font-size: 18px;
   }
   .kenoNextGame__winningDetails {
@@ -483,15 +547,6 @@
   .jackpotsGuaranteed__inner h2 {
     line-height: 35px;
   }
-  .divisions {
-    display: block;
-    margin: 0;
-  }
-  .divisions__inner {
-    width: 100%;
-    margin: 0 0 15px 0;
-    text-align: center;
-  }
   .divisions__inner h6 {
     font-size: 14px;
   }
@@ -505,7 +560,7 @@
     padding: 15px;
   }
   .downloadApp .col-md-3, .downloadApp .col-md-5, .downloadApp .col-md-4 {
-    width: 100%;
+    width: 100% !important;
   }
   .downloadApp__button {
     font-size: 24px;
@@ -591,6 +646,17 @@
   .main-content__lotteryPlay .col-md-5, .main-content__lotteryPlay .col-md-4, .main-content__lotteryPlay .col-md-3 {
     width: 100%;
   }
+  .main-content--btnShow {
+    position: absolute;
+    top: 15px;
+    right: 13px;
+  }
+  .main-content__offset {
+    margin-left: 0;
+  }
+  .main-content--columnSix {
+    width: 58%;
+  }
   .gameMatches ul {
     display: block;
     text-align: center;
@@ -607,6 +673,9 @@
   }
   .lotteryGames--button2 {
     margin-left: 13px;
+  }
+  .lotteryGames--toggleBtn {
+    margin-left: 10px;
   }
   .lotteryDivision__header {
     display: flex;
@@ -678,13 +747,16 @@
   .accountCommonForm .offset-md-2 {
     margin-left: 0;
   }
+  #sidebar {
+    top: 100px;
+  }
 }
 
-@media only screen and (max-width: 767px) {
-  .main-content--leftColumn {
+@media only screen and (max-width: 768px) {
+  .main-content--rightColumn {
     width: 100%;
   }
-  .main-content--rightColumn {
+  .main-content--rightColumn .col-md-5, .main-content--rightColumn .col-md-6 {
     width: 100%;
   }
   .main-content--columnSix {
@@ -693,6 +765,12 @@
   .main-content__rightSection .modal, .main-content__rightSection .modal-backdrop {
     position: fixed !important;
   }
+  .divisions--marginBottom {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .pr-0 {
     padding-right: calc(var(--bs-gutter-x) * .5);
   }
@@ -759,6 +837,10 @@
   .gameResults__result p {
     margin: 7px 0 0 0;
   }
+  .gameResults--wagerHistory {
+    margin: 0;
+    padding: 20px 0;
+  }
   .myAccount__leftColumn {
     padding-top: 0;
   }
@@ -774,9 +856,6 @@
   }
   .mr-60 {
     margin-right: 0;
-  }
-  .gameResults--wagerHistory {
-    margin: 0;
   }
   .accountCommonForm {
     border-radius: 15px;
@@ -794,18 +873,56 @@
   .transactionalHistorySection {
     border-radius: 16px;
   }
-  .gameResults--wagerHistory {
-    padding: 20px 0;
-  }
   .wagerHistoryKenoSection {
     margin: 20px 0;
   }
-  .gameResults--wagerHistory ul li {
-    display: block;
-    padding: 15px;
-  }
   .expiry {
     margin-bottom: 45px;
+  }
+  .jackpot .col-md-3 {
+    width: 25%;
+  }
+  .jackpot .col-md-9 {
+    width: 75%;
+  }
+  .jackpot--badgeBig {
+    font-size: 17px;
+    padding: 8px 20px;
+    margin-right: 15px;
+  }
+  .jackpot--textBig p {
+    margin-right: 15px;
+  }
+  .jackpot--timeBig {
+    font-size: 18px;
+    padding: 8px 25px;
+  }
+  .jackpot--priceBig {
+    font-size: 44px;
+    margin-top: 10px;
+  }
+  .downloadApp .col-md-3, .downloadApp .col-md-5 {
+    width: 50%;
+  }
+  .downloadApp__button {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .downloadApp__button span {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .lotteryGames__icon {
+    flex-basis: 100%;
+  }
+  .lotteryGames__icon img {
+    float: right;
+  }
+  .downloadApp .col-md-3, .downloadApp .col-md-5 {
+    width: 100%;
   }
 }
 
@@ -848,9 +965,6 @@
   .playGameButtons__button {
     min-width: auto;
     width: 100%;
-  }
-  .numbersList {
-    padding: 15px 15px 0 15px;
   }
   .pickNumber p {
     padding: 20px 10px;
@@ -911,7 +1025,7 @@
     height: 60px;
   }
   .myAccount__rightColumn {
-    padding: 25px;
+    padding: 20px;
   }
   .myAccount__leftColumn {
     padding: 0 0 40px 0;
@@ -956,6 +1070,7 @@
   }
   .verifyAccount__btnUpload {
     width: 100%;
+    padding: 12px;
   }
   .accountForm--saveBtn {
     width: 100%;
@@ -978,18 +1093,24 @@
   .lotteryGames--toggleBtn {
     margin-left: 0;
   }
-}
-
-@media (min-width: 576px) {
-  .modal-funds {
-    max-width: 365px;
+  .transactionalHistorySection {
+    padding: 15px;
   }
-  .kenoNumberSelectionDialog {
-    max-width: 470px;
+  .contactUs {
+    padding: 20px 15px;
+  }
+  .downloadApp__button {
+    font-size: 35px;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  #sidebar {
+    top: 85px;
+  }
+  .logo img {
+    width: 50%;
+  }
   .signinSection__loginButton {
     min-width: auto;
     width: 100%;
@@ -1038,6 +1159,8 @@
   .gameResults__date {
     padding: 10px;
     margin-right: 0;
+    display: block;
+    line-height: initial;
   }
   .repeat ul li {
     width: 100%;
@@ -1049,8 +1172,8 @@
   .nextGame {
     display: block;
   }
-  .nextGame__text {
-    margin-bottom: 7px;
+  .nextGame--bgGreen {
+    display: flex;
   }
   .lotteryDivision__header {
     padding: 0;
@@ -1070,15 +1193,85 @@
   .lotteryDivision__badge {
     width: 100%;
   }
+  .nav-tabs {
+    border-top: 0;
+    margin-bottom: 15px;
+  }
   .nav-tabs__item {
     flex-basis: 100%;
+  }
+  .nav-tabs__link {
+    padding: 1rem;
   }
   .year h3::before, .year h3::after {
     width: 39%;
   }
+  .verifyAccount__fileUpload {
+    padding: 8px;
+  }
+  .verifyAccount__uploadDoc {
+    margin: 50px 0 0 0;
+  }
+  .verifyAccount__badge {
+    font-size: 16px;
+  }
+  .accountAccordian__btnYellow {
+    padding: 13px 5px;
+    font-size: 17px;
+  }
+  .accountForm {
+    padding: 30px 0 0 0;
+  }
+  .accountForm--saveBtn {
+    font-size: 18px;
+  }
+  .accountForm .form-control {
+    height: 50px;
+  }
+  .accountForm label {
+    font-size: 16px;
+  }
+  .transactionalHistorySection__inner h4, .transactionalHistorySection__inner h5 {
+    font-size: 18px;
+  }
+  .contactUs__button {
+    padding: 12px;
+  }
+  .main-content--btnShow {
+    top: 7px;
+  }
+  .main-content--leftColumn {
+    width: 370px;
+  }
+  .jackpot--big {
+    text-align: center;
+  }
+  .jackpot--big .col-md-3, .jackpot--big .col-md-9 {
+    width: 100%;
+  }
+  .jackpot--big img {
+    width: 50%;
+  }
+  .jackpot--textBig {
+    justify-content: center;
+  }
+  .jackpot--badgeBig {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+  .jackpot--timeBig {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+  .jackpot--priceBig {
+    font-size: 30px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
+  #sidebar {
+    width: 300px;
+  }
   .monthsSliders {
     padding: 0 10px;
   }
@@ -1088,5 +1281,42 @@
   .monthsSliders ul li a {
     width: 100%;
     margin: 4px 0;
+  }
+  .main-content--btnShow {
+    top: 4px;
+    font-size: 16px;
+    padding: 6px 15px;
+  }
+  .divisions {
+    display: block;
+    margin: 0;
+  }
+  .divisions__inner {
+    width: 100%;
+    text-align: center;
+  }
+  .jackpot .col-md-3, .jackpot .col-md-9 {
+    width: 100%;
+  }
+  .jackpot img {
+    width: 50%;
+  }
+  .jackpot__text {
+    justify-content: center;
+  }
+  .jackpot__price {
+    text-align: center;
+  }
+  .jackpot--textBig {
+    display: block;
+  }
+  .jackpot--textBig p {
+    margin-right: 0;
+  }
+  .jackpot--badgeBig {
+    margin-right: 0;
+  }
+  .nextDraw__img {
+    right: 0;
   }
 }

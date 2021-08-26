@@ -26,7 +26,7 @@
                
               <div class="header-top__navigation">
                 <ul> 
-                    <li><a href="index.html">My Account & Settings</a></li>
+                    <li><a href="javascript:void(0)">My Account & Settings</a></li>
                 </ul>
 
                 <div class="header-top__right">
@@ -50,9 +50,15 @@
     <!-- Main Content starts here -->
     <section class="main-content">
         <div class="container-fluid">
+
+            <button class="btn main-content--btnShow" id="showSidebar" onclick="openSidebar()">
+                <i class="fas fa-bars"></i> Sidebar
+            </button>
+
             <div class="row">
-                <div class="col-md-3 main-content--leftColumn">
+                <div class="col-md-3 main-content--leftColumn" id="sidebar">
                     <div class="sidebar">
+                        <button class="btn sidebar--btnClose" onclick="closeSidebar()"><img src="images/close.svg" width="20"></button>
     
                         <div class="nextDraw">
                             <div class="row">
@@ -2040,7 +2046,14 @@ $('.checkInsurance input:checkbox').change(function(){
 });
 
     </script>
-
+<script>
+    function openSidebar() {
+        document.getElementById("sidebar").style.right = "0";
+    }        
+    function closeSidebar() {
+        document.getElementById("sidebar").style.right = "-100%";
+    }
+</script>
   
 </body>
 </html>

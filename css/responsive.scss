@@ -1,3 +1,27 @@
+
+@media (min-width: 768px) {
+    .main-content{
+        &__offset{
+            margin-left: 3.333333%;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .modal-deposit{
+        max-width: 885px;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-funds {
+        max-width: 365px;
+    }
+    .kenoNumberSelectionDialog{
+        max-width: 470px;
+    }
+}
+
 @media only screen and (max-width: 1690px){
     .downloadApp{
         &__button{
@@ -106,7 +130,7 @@
         }
     }
     .numbersList{
-        padding: 20px 20px 0px 20px;
+        padding: 20px;
     }
     .nextGame{
         &__text{
@@ -118,12 +142,44 @@
     }
     .gameResults{
         padding: 15px 20px 80px 20px;
+        &--wagerHistory{
+            margin: 10px 60px 0 0;
+        }
     }
     .addGame{
         margin: 20px 0;
     }
     .contactUs{
         padding: 38px 35px 0 35px;
+    }
+    .myAccount{
+        &__rightColumn{
+            padding: 50px 0 43px 60px;
+        }
+        &__btnLogout{
+            padding: 18px;
+            width: 100%;
+        }
+    }
+    .accountForm{
+        .col-md-6{
+            width: 100%;
+        }
+        &--saveBtn{
+            padding: 13px 15px;
+            width: 100%;
+        }
+    }
+    .verifyAccount{
+        .col-md-7{
+            width: 100%;
+        }
+        &__uploadDoc{
+            label{
+                display: block;
+            }
+        }
+
     }
 }
 
@@ -280,6 +336,33 @@
 
 
 @media only screen and (max-width: 1199px){
+    #showSidebar{
+        display: inline-block;
+    }
+    #sidebar {
+        top: 98px;
+        right: -100%;
+        position: fixed;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        height: calc(100vh - 60px);
+    }
+    .sidebar {
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;        
+        padding: 50px 15px;
+        max-height: 92%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative;
+        box-shadow: -5px 3px 10px 0 rgba(0,0,0,0.2);
+        &--btnClose{
+            display: block;
+        }
+    }
+    
     .signinSection{
         &__terms{
             margin: 50px 20px 0 20px;
@@ -304,12 +387,11 @@
         }
     }
     .divisions{
-        display: block;
-        margin: 0;
+        
+        margin: 0 -5px 0 -5px;
         &__inner{
             padding: 10px;
-            width: 100%;
-            margin: 0 0 10px 0;
+            margin: 0 5px 10px 5px;
         }
         &--innerBig{
             padding: 10px;
@@ -321,6 +403,13 @@
     .main-content{
         &__rightInner{
             padding: 30px;
+        }
+        &--rightColumn{
+            width: 100%;
+        }
+        &--leftColumn{
+            padding-top: 0;
+            width: 390px;
         }
         &__heading{
             h2{
@@ -343,9 +432,6 @@
     .jackpot{
         &__price{
             font-size: 18px;
-        }
-        &__text{
-            display: block;
         }
     }
     .numbers{
@@ -417,6 +503,9 @@
         &--button2{
             margin-left: 0;
         }
+        &--toggleBtn{
+            margin-left: 0;
+        }
     }
     .tab-content{
         height: auto;
@@ -427,16 +516,21 @@
         }
     }
     .nextDraw{
+        h2{
+            font-size: 23px;
+        }
+        h5{
+            font-size: 12px;
+        }
         &__img{
             position: absolute;
-            right: 0;
             img{
                 height: 155px;
             }
         }
         &__btn-yellow{
             margin-bottom: 15px;
-            padding: 5px 12px;
+            font-size: 14px;
         }
     }
     .transactionalHistorySection{
@@ -460,24 +554,32 @@
             padding: 13px;
         }
     }
-}
-
-@media (min-width: 768px)
-{
-.main-content{
-    &__offset{
-        margin-left: 3.333333%;
+    .accountForm{
+        padding-top: 30px;
+    }
+    .accountCommonForm{
+        .col-md-8{
+            width: 100%;
+        }
+        .offset-md-2{
+            margin-left: 0;
+        }
+        &__form{
+            .form-control{
+                height: 65px;
+            }
+        }
+    }
+    .gameResults{
+        &--wagerHistory{
+            margin: 10px 10px 0 0;
+            padding: 15px 20px 80px 0px;
+        }
+    }
+    .wagerHistoryKenoSection{
+        margin: 30px 45px 0 0;
     }
 }
-
-}
-
-@media (min-width: 992px){
-    .modal-deposit{
-        max-width: 885px;
-    }
-}
-
 
 @media only screen and (max-width: 991px){
     .logo{
@@ -486,7 +588,6 @@
         }
     }
     .header-top{
-        text-align: center;
         margin-top: 8px;
         &__inner{
             display: block;
@@ -536,21 +637,13 @@
         &__badge{
             font-size: 12px;
         }
-        .col-md-7, .col-md-5{
-            width: 100%;
-        }
         &__btn-yellow{
-            padding: 6px 12px;
-            width: 100%;
             font-size: 15px;
         }
         &__text{
-            text-align: center;
             padding: 15px;
         }
         &__img{
-            text-align: center;
-            position: static;
             img{
                 margin: 0;
                 height: 178px;
@@ -558,20 +651,10 @@
         }
     }
     .jackpot{
-        img{
-            width: 60%;
-        }
-        padding: 15px;
-        .col-md-3, .col-md-9{
-            width: 100%;
-        }
         &__text{
-            display: block;
-            text-align: center;
             margin-top: 15px;
         }
         &__price{
-            text-align: center;
             font-size: 18px;
         }
     }
@@ -598,12 +681,7 @@
         }
     }
     .divisions{
-        display: block;
-        margin: 0;
         &__inner{
-            width: 100%;
-            margin: 0 0 15px 0;
-            text-align: center;
             h6{
                 font-size: 14px;
             }
@@ -618,7 +696,7 @@
     .downloadApp{
         padding: 15px;
         .col-md-3, .col-md-5, .col-md-4{
-            width: 100%;
+            width: 100% !important;
         }
         &__button{
             font-size: 24px;
@@ -722,6 +800,17 @@
                 width: 100%;
             }
         }
+        &--btnShow{
+            position: absolute;
+            top: 15px;
+            right: 13px;
+        }
+        &__offset{
+            margin-left: 0;
+        }
+        &--columnSix{
+            width: 58%;
+        }
     }
     .gameMatches{
         ul{
@@ -744,6 +833,9 @@
         }
         &--button2{
             margin-left: 13px;
+        }
+        &--toggleBtn{
+            margin-left: 10px;
         }
     }
     .lotteryDivision{
@@ -844,15 +936,18 @@
             margin-left: 0;
         }
     }
+    #sidebar{
+        top: 100px
+    }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     .main-content{
-        &--leftColumn{
-            width: 100%;
-        }
         &--rightColumn{
             width: 100%;
+            .col-md-5, .col-md-6{
+                width: 100%;
+            }
         }
         &--columnSix{
             width: 100%;
@@ -863,6 +958,15 @@
             }
         }
     }
+    .divisions{
+        &--marginBottom{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    
     .pr-0{
         padding-right: calc(var(--bs-gutter-x) * .5);
     }
@@ -946,6 +1050,10 @@
                 margin: 7px 0 0 0;
             }
         }
+        &--wagerHistory{
+            margin: 0;
+            padding: 20px 0;
+        }
     }  
     
     .myAccount{
@@ -968,11 +1076,6 @@
     .mr-60{
         margin-right: 0;
     }
-    .gameResults{
-        &--wagerHistory{
-            margin: 0;
-        }
-    }
     .accountCommonForm{
         border-radius: 15px;
         &__form{
@@ -989,25 +1092,69 @@
     .transactionalHistorySection{
         border-radius: 16px;
     }
-    .gameResults--wagerHistory{   
-        padding: 20px 0;
-    }
     .wagerHistoryKenoSection{
         margin: 20px 0;
-    }
-    .gameResults--wagerHistory{
-        ul{
-            li{
-                display: block;
-                padding: 15px;
-            }
-        }
     }
     .expiry{
         margin-bottom: 45px;
     }
+    .jackpot{
+        .col-md-3{
+            width: 25%;
+        }
+        .col-md-9{
+            width: 75%;
+        }
+        &--badgeBig{
+            font-size: 17px;
+            padding: 8px 20px;
+            margin-right: 15px;
+        }
+        &--textBig{
+            p{
+                margin-right: 15px;
+            }
+        }
+        &--timeBig{
+            font-size: 18px;
+            padding: 8px 25px;
+        }
+        &--priceBig{
+            font-size: 44px;
+            margin-top: 10px;
+        }
+    }
+    .downloadApp{
+        .col-md-3, .col-md-5{
+            width: 50%;
+        }
+        &__button{
+            font-size: 38px;
+            line-height: 38px;
+            span{
+                font-size: 28px;
+                line-height: 28px;
+            }
+        }
+    }
 }
 
+
+@media only screen and (max-width: 640px){
+    .lotteryGames{
+        &__icon{
+            flex-basis: 100%;
+            img{
+                float: right;
+            }
+        }
+    }
+    .downloadApp{
+        .col-md-3,.col-md-5{
+            width: 100%;
+        }
+    }
+}
 
 @media only screen and (max-width: 575px){
     .logo{
@@ -1056,9 +1203,6 @@
             min-width: auto;
             width: 100%;
         }
-    }
-    .numbersList{
-        padding: 15px 15px 0 15px;
     }
     .pickNumber{
         p{
@@ -1138,7 +1282,7 @@
     }
     .myAccount{
         &__rightColumn{
-            padding: 25px;
+            padding: 20px;
         }
         &__leftColumn{
             padding: 0 0 40px 0;
@@ -1199,6 +1343,7 @@
         }
         &__btnUpload{
             width: 100%;
+            padding: 12px;
         }
     }
     .accountForm{
@@ -1238,18 +1383,29 @@
             margin-left: 0;
         }
     }
+    .transactionalHistorySection{
+        padding: 15px;
+    }
+    .contactUs{
+        padding: 20px 15px;
+    }
+    .downloadApp{
+        &__button{
+            font-size: 35px;
+        }
+    }
 }
 
-@media (min-width: 576px){
-.modal-funds {
-    max-width: 365px;
-}
-.kenoNumberSelectionDialog{
-    max-width: 470px;
-}
-}
 
 @media only screen and (max-width: 480px){
+    #sidebar{
+        top: 85px;
+    }
+    .logo{
+        img{
+            width: 50%;
+        }
+    }
     .signinSection{
         &__loginButton{
             min-width: auto;
@@ -1305,6 +1461,8 @@
         &__date{
             padding: 10px;
             margin-right: 0;
+            display: block;
+            line-height: initial;
         }
     }
     .repeat{
@@ -1320,8 +1478,8 @@
     }
     .nextGame{
         display: block;
-        &__text{
-            margin-bottom: 7px;
+        &--bgGreen{
+            display: flex;
         }
     }
     .lotteryDivision{
@@ -1345,8 +1503,13 @@
         }
     }
     .nav-tabs{
+        border-top: 0;
+        margin-bottom: 15px;
         &__item{
             flex-basis: 100%;
+        }
+        &__link{
+            padding: 1rem;
         }
     }
     .year{
@@ -1356,9 +1519,87 @@
             }
         }
     }
+    .verifyAccount{
+        &__fileUpload{
+            padding: 8px;
+        }
+        &__uploadDoc{
+            margin: 50px 0 0 0;
+        }
+        &__badge{
+            font-size: 16px;
+        }
+    }
+    .accountAccordian{
+        &__btnYellow{
+            padding: 13px 5px;
+            font-size: 17px;
+        }
+    }
+    .accountForm{
+        padding: 30px 0 0 0;
+        &--saveBtn{
+            font-size: 18px;
+        }
+        .form-control{
+            height: 50px;
+        }
+        label{
+            font-size: 16px;
+        }
+    }
+    .transactionalHistorySection{
+        &__inner{
+            h4, h5{
+                font-size: 18px;
+            }
+        }
+    }
+    .contactUs{
+        &__button{
+            padding: 12px;
+        }
+    }
+    .main-content{
+        &--btnShow{
+            top: 7px;
+        }
+        &--leftColumn{
+            width: 370px;
+        }
+    }
+    .jackpot{
+        &--big{
+            text-align: center;
+            .col-md-3, .col-md-9{
+                width: 100%;
+            }
+            img{
+                width: 50%;
+            }
+        }
+        &--textBig{
+            justify-content: center;
+        }
+        
+        &--badgeBig{
+            font-size: 15px;
+            padding: 8px 15px;
+        }
+        &--timeBig{
+            font-size: 15px;
+            padding: 8px 15px;
+        }
+        &--priceBig{
+            font-size: 30px;
+        }
+    }
 }
 
 @media only screen and (max-width: 360px){
+    #sidebar{
+        width: 300px;
+    }
     .monthsSliders{
         padding: 0 10px;
         ul{
@@ -1369,6 +1610,49 @@
                     margin: 4px 0;
                 }
             }
+        }
+    }
+    .main-content{
+        &--btnShow{
+            top: 4px;
+            font-size: 16px;
+            padding: 6px 15px;
+        }
+    }
+    .divisions{
+        display: block;
+        margin: 0;
+        &__inner{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .jackpot{
+        .col-md-3, .col-md-9{
+            width: 100%;
+        }
+        img{
+            width: 50%;
+        }
+        &__text{
+            justify-content: center;
+        }
+        &__price{
+            text-align: center;
+        }
+        &--textBig{
+            display: block;
+            p{
+                margin-right: 0;
+            }
+        }
+        &--badgeBig{
+            margin-right: 0;
+        }
+    }
+    .nextDraw{
+        &__img{
+            right: 0;
         }
     }
 }

@@ -113,6 +113,7 @@ a{
             color: $primary-color;
             font-size: 24px;
             font-family:$HK-semibold;
+            cursor: auto;
         }
     }
         }
@@ -198,12 +199,25 @@ a{
 
 /* Sidebar */
 
+#showSidebar{
+    display: none;
+}
+
 .sidebar{
     background-color: #F6F8FF;
     height: 100%;
     padding: 40px 15px;
     border-radius: 60px 60px 0 0;
     margin-top: 0;
+    &--btnClose{
+        display: none;
+        position: absolute;
+        top: -7px;
+        right: -5px;
+        img{
+            width: 50px;
+        }
+    }
 
     &__myAccount-button{
         background-color: #F6C358;
@@ -477,6 +491,21 @@ a{
     &--myAccount{
         padding: 50px 0 0 65px;
     }
+    &--btnShow{
+        color: #fff;
+        background-color: #5A34EA;
+        margin: 10px 0;
+        border-radius: 11px;
+        font-size: 17px;
+        padding: 8px 18px;
+        font-family: $HK-medium;
+        &:hover, &:focus{
+            color: #fff;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
     &__heading{
         margin-top: 20px;
     h2{
@@ -489,6 +518,7 @@ a{
     &--leftColumn{
         width: 21.5%;
         padding-top: 15px;
+        transition: 0.5s;
     }
     &--rightColumn{
         width: 78.5%;
@@ -920,8 +950,8 @@ a{
     }
     &__btnSave{
         background-color: #603BEE;
-        font-size: 26px;
-        padding: 15px 90px;
+        font-size: 22px;
+        padding: 15px 80px;
         border-radius: 8px;
         color: #fff;
         font-family: $HK-Bold;
@@ -1961,6 +1991,11 @@ a{
         font-family: $HK-medium;
         text-transform: uppercase;
         font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 15px;
         span{
             color: #6546FC;
             font-size: 27px;
@@ -1968,6 +2003,7 @@ a{
     }
     &--dateBig{
         font-size: 21px;
+        line-height: 17px;
         span{
             font-size: 32px;
         }
@@ -2003,6 +2039,7 @@ a{
     }
     &--big{
         margin-left: 12px !important;
+        justify-content: flex-start;
         a{
             border-radius: 100% !important;
             width: 54px !important;
@@ -2111,7 +2148,7 @@ a{
         color: $primary-color;
         background-color: #F6C358;
         margin-left: 10px;
-        margin-right: 15px;
+        margin-right: 27px;
     }
     &--button2{
         margin-left: 15px;
@@ -2128,14 +2165,25 @@ a{
         padding: 0;
         box-shadow: unset;
         margin: 55px 60px 0 0;
+        .slideToggle{
+            border-color: transparent;
+            width: 40px;
+            height: 40px;
+        }
     }
     &--bgPinkLight{
         background-color: rgba($color: #E02020, $alpha: 0.11);
         border-color: rgba($color: #E02020, $alpha: 0.11);
+        input:checked + .slideToggle{
+            border: 2px solid #fce7e7;
+        }
     }
     &--bgGreenLight{
         background-color: rgba($color: #16BD92, $alpha: 0.11);
         border-color: rgba($color: #16BD92, $alpha: 0.11);
+        input:checked + .slideToggle{
+            border: 2px solid #e5f8f3;
+        }
     }
     &--bgWhite{
         background-color: #fff;
@@ -2744,7 +2792,7 @@ a{
         font-family: $HK-medium;
         border-radius: 48px;
         margin-top: 130px;
-        padding: 18px 105px;
+        padding: 18px 100px;
         &:hover{
             background-color: #5A34EA;
             color: #fff;
