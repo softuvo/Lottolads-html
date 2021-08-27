@@ -60,6 +60,8 @@ $HK-semibold: HKGrotesk-SemiBold;
 $HK-Bold: HKGrotesk-Bold;
 
 
+
+
 /* Pages CSS */
 body{
     color: $primary-color;
@@ -91,6 +93,45 @@ a{
     border-color: #643EF1;
 }
 
+/* Thin Scrollbar */
+:root {
+    --body-bg-color: #e3e3e3;
+    --scroll-color: #c3bebe;
+    --scroll--hover-color: #c3bebe;
+    --scroll-track-color: #e3dede;
+}
+* {
+    scrollbar-color: #c3bebe #e3dede;
+    scrollbar-width: thin;
+}
+* {
+    &::-webkit-scrollbar-track {
+        background: linear-gradient(to right, var(--scroll-track-color) 0%, var(--scroll-track-color) 100%, var(--scroll-color) 60%, var(--body-bg-color) 61%, var(--body-bg-color) 100%);
+    }
+}
+* {
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+}
+* {
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-color);
+        border-radius: 0;
+    }
+}
+//ScrollBar
+::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,0,0,0.2);
+}
 
 /* Top Header */
 
@@ -470,13 +511,15 @@ a{
 
 /* Main Content */
 .main-content {
-
     &__rightSection{
         position: relative;
         height: 100%;
         padding-bottom: 0;
         .modal, .modal-backdrop {
             position: absolute !important;
+        }
+        .modal-dialog {
+            margin: 5rem auto 12rem;
         }
     }
     &__rightInner{
@@ -494,11 +537,12 @@ a{
     &--btnShow{
         color: #fff;
         background-color: #5A34EA;
-        margin: 10px 0;
+        margin: 0 0 10px 0;
         border-radius: 11px;
         font-size: 17px;
         padding: 8px 18px;
         font-family: $HK-medium;
+        float: right;
         &:hover, &:focus{
             color: #fff;
         }
@@ -897,6 +941,25 @@ a{
 
 /* Modals */
 
+.modal-keno{
+    .modal-backdrop{
+        width: 78.2%;
+        left: inherit;
+        right: 0;
+    }
+    .modal{
+        width: 78.2%;
+        left: inherit;
+        right: 0;
+    }
+    .footer{
+        display: none;
+    }
+    .modal-dialog{
+        margin: 2rem auto 15rem;
+    }
+}
+
 .btn-close{
     background: url('../images/close.svg') center center;
     width: 72px;
@@ -937,14 +1000,10 @@ a{
     height: 100% !important;
     background-color: #6C829C;
 }
-.kenoNumberSelectionDialog{
-    height: calc(100% - 155px);
-}
 .kenoNumContent{
     border-radius: 16px 16px 0 0;
     background-color: #FFFFFF;
     border: 0;
-    height: 100%;
     .modal-body{
         padding: 1.5rem;
     }
@@ -2914,7 +2973,7 @@ a{
     &__fileUpload{
         background-color: #FFFFFF;
         border-radius: 27px;
-        display: inline-block;
+        display: block;
         padding: 10px 25px;
         cursor: pointer;
         img{

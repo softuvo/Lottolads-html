@@ -1226,7 +1226,6 @@
     </div>
   </div>
 
-
   <!-- Modal for Signup -->
 <div class="modal fade" id="signupPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signupPopupLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -1696,7 +1695,7 @@
   </div>
 
   <!-- Modal for Deposit -->
-<div class="modal fade depositPopup" id="depositPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="depositPopupLabel" aria-hidden="true">
+<div class="modal fade depositPopup" id="depositPopup" data-bs-backdrop="true" data-bs-keyboard="false" tabindex="-1" aria-labelledby="depositPopupLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
       <div class="modal-content">
         
@@ -1771,7 +1770,7 @@
   </div>
 
   <!-- Modal for Bitpay Deposit -->
-<div class="modal fade depositPopup" id="bitpayDeposit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bitpayDepositLabel" aria-hidden="true">
+<div class="modal fade depositPopup" id="bitpayDeposit" data-bs-backdrop="true" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bitpayDepositLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
       <div class="modal-content">
         
@@ -1890,7 +1889,7 @@
   </div>
 
    <!-- Modal for Withdrawal -->
-<div class="modal fade depositPopup" id="withdrawPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="withdrawPopupLabel" aria-hidden="true">
+<div class="modal fade depositPopup" id="withdrawPopup" data-bs-backdrop="true" data-bs-keyboard="false" tabindex="-1" aria-labelledby="withdrawPopupLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-deposit">
       <div class="modal-content">
         
@@ -2017,43 +2016,12 @@
       </div>
     </div>
   </div>
-  
 
 
-
-
+    <!-- Scripts start here -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        $('#file-upload1').change(function() {
-  var i = $(this).prev('label').clone();
-  var file = $('#file-upload1')[0].files[0].name;
-  $(this).prev('label').text(file);
-});
-
-$('#file-upload2').change(function() {
-  var i = $(this).prev('label').clone();
-  var file = $('#file-upload2')[0].files[0].name;
-  $(this).prev('label').text(file);
-});
-
-$('.checkInsurance input:checkbox').change(function(){
-    if($(this).is(":checked")) {
-        $(this).parent().addClass("gameResults--toggleBtn");
-    } else {
-        $(this).parent().removeClass("gameResults--toggleBtn");
-    }
-});
-
-    </script>
-<script>
-    function openSidebar() {
-        document.getElementById("sidebar").style.right = "0";
-    }        
-    function closeSidebar() {
-        document.getElementById("sidebar").style.right = "-100%";
-    }
-</script>
+    <script src="js/custom.js"></script>
   
 </body>
 </html>

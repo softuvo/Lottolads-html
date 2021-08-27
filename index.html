@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="css/responsive.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <title>Lottolads | Homepage</title>
   </head>
@@ -52,10 +52,14 @@
     <section class="main-content">
         
         <div class="container-fluid">
-            
+             
+            <div class="row">
+                <div class="col-md-12">
             <button class="btn main-content--btnShow" id="showSidebar" onclick="openSidebar()">
                 <i class="fas fa-bars"></i> Sidebar
             </button>
+                </div>
+            </div>
         
 
             <div class="row">
@@ -1081,16 +1085,10 @@
     </div>
   </div>
   
-
+<!-- Scripts start here -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script>
-    function openSidebar() {
-        document.getElementById("sidebar").style.right = "0";
-    }        
-    function closeSidebar() {
-        document.getElementById("sidebar").style.right = "-100%";
-    }
-</script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>

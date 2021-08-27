@@ -19,6 +19,12 @@
   }
 }
 
+@media only screen and (min-width: 2000px) {
+  .modal-keno .modal-dialog {
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 1690px) {
   .downloadApp__button {
     font-size: 32px;
@@ -50,6 +56,12 @@
 }
 
 @media only screen and (max-width: 1440px) {
+  .modal-keno .modal-backdrop {
+    width: 74.5%;
+  }
+  .modal-keno .modal {
+    width: 74.5%;
+  }
   .downloadApp__button {
     font-size: 24px;
     line-height: 30px;
@@ -256,11 +268,17 @@
 }
 
 @media only screen and (max-width: 1199px) {
+  .modal-keno .modal-backdrop {
+    width: 100%;
+  }
+  .modal-keno .modal {
+    width: 100%;
+  }
   #showSidebar {
     display: inline-block;
   }
   #sidebar {
-    top: 98px;
+    top: 140px;
     right: -100%;
     position: fixed;
     z-index: 999;
@@ -460,6 +478,12 @@
   }
   .wagerHistoryKenoSection {
     margin: 30px 45px 0 0;
+  }
+  #kenoNumberSelection .modal-footer {
+    width: 100%;
+  }
+  #addGames .modal-footer {
+    width: 100%;
   }
 }
 
@@ -771,6 +795,20 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .kenoNumContent__btnSave {
+    font-size: 18px;
+    padding: 13px 60px;
+  }
+  .kenoNumContent__btnCancel {
+    font-size: 18px;
+    padding: 13px 60px;
+  }
+  #kenoNumberSelection .modal-footer {
+    padding: 25px 20px 30px 20px;
+  }
+  #addGames .modal-footer {
+    padding: 25px 20px 30px 20px;
+  }
   .pr-0 {
     padding-right: calc(var(--bs-gutter-x) * .5);
   }
@@ -1105,6 +1143,14 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .kenoNumContent__btnSave {
+    font-size: 17px;
+    padding: 10px 30px;
+  }
+  .kenoNumContent__btnCancel {
+    font-size: 17px;
+    padding: 10px 30px;
+  }
   #sidebar {
     top: 85px;
   }

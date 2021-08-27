@@ -238,13 +238,13 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="numbers">
-                                                <div class="numbers__text" id="counting">
+                                                <div class="numbers__text" id="countings">
                                                     
                                                 </div>
-                                                <a href="javascript:void(0)"><div class="numbers__icon" onclick="decrement()">
+                                                <a href="javascript:void(0)"><div class="numbers__icon" onclick="decrements()">
                                                     <img src="images/minus.svg" alt="Minus Icon">
                                                 </div></a>
-                                                <a href="javascript:void(0)" onclick="increment()"><div class="numbers__icon numbers--lightBg">
+                                                <a href="javascript:void(0)" onclick="increments()"><div class="numbers__icon numbers--lightBg">
                                                     <img src="images/plus.svg" alt="Plus Icon">
                                                 </div></a>
                                                 <a href="javascript:void(0)"><div class="numbers__icon numbers--yellowBg">
@@ -424,7 +424,7 @@
                              
                                     <div class="col-md-8 offset-md-4">
                                         
-                                <button class="playGameButtons__button" id="playBtn">
+                                <button class="playGameButtons__button" id="playBtn" data-bs-toggle="modal" data-bs-target="#kenoNumberSelection">
                                     Play for $110
                                 </button>
                                 
@@ -1537,7 +1537,7 @@
   </div>
 
   <!-- Modal for Insufficient Bonus Bet Funds -->
-<div class="modal fade" id="insufficientFunds" tabindex="-1" aria-labelledby="insufficientFundsLabel" aria-hidden="true">
+<div class="modal fade" id="insufficientFunds" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="insufficientFundsLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-funds">
       <div class="modal-content fundsModalContent">
    
@@ -1553,7 +1553,7 @@
   </div>
 
   <!-- Modal for Insufficient Funds -->
-<div class="modal fade" id="insufficientFunds2" tabindex="-1" aria-labelledby="insufficientFunds2Label" aria-hidden="true">
+<div class="modal fade" id="insufficientFunds2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="insufficientFunds2Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-funds">
       <div class="modal-content fundsModalContent">
    
@@ -1569,8 +1569,8 @@
   </div>
 
   <!-- Modal for Keno Number Selection -->
-<div class="modal fade" id="kenoNumberSelection" tabindex="-1" aria-labelledby="kenoNumberSelectionLabel" aria-hidden="true">
-    <div class="modal-dialog kenoNumberSelectionDialog">
+<div class="modal fade" id="kenoNumberSelection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="kenoNumberSelectionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered kenoNumberSelectionDialog">
       <div class="modal-content kenoNumContent">
    
         <div class="modal-body">
@@ -2191,64 +2191,13 @@
         </div>
         
       </div>
+     
     </div>
     <div class="modal-footer">
         <button type="button" class="btn kenoNumContent__btnCancel" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
         <button type="button" class="btn kenoNumContent__btnSave">Save</button>
       </div>
-  </div>
-
-
-    <!-- Modal for Payment Options -->
-<div class="modal fade" id="paymentOptions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentOptionsLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          
-            <div class="paymentOptions">
-                <h2>Payment Options</h2>
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div class="paymentOptions__cardImg">
-                            <img src="images/paypal-deposit.png" alt="Paypal Deposit" class="img-fluid">
-                        </div>
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="paymentOptions__description">
-                            <h3>Tortor at risus viverra adipiscing at 
-                                in. Tellus rutrum tellus</h3>
-                                <p>Tortor at risus viverra adipiscing at in. Tellus rutrum tellus pellentesque eu. Nec ullamcorper sit amet risus nullam eget felis eget. </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div class="paymentOptions__cardImg">
-                            <img src="images/bitpay-deposit.png" alt="Paypal Deposit" class="img-fluid">
-                        </div>
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="paymentOptions__description">
-                            <h3>Tortor at risus viverra adipiscing at 
-                                in. Tellus rutrum tellus</h3>
-                                <p>Tortor at risus viverra adipiscing at in. Tellus rutrum tellus pellentesque eu. Nec ullamcorper sit amet risus nullam eget felis eget. </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-      </div>
-    </div>
+    
   </div>
 
   <!-- Modal for Terms & Conditions -->
@@ -2439,116 +2388,11 @@
       </div>
     </div>
   </div>
-
   
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(document).ready(function(){
-    
-    $("body").on("click","#bonusBtn",function(){
-         $("#insufficientFunds").modal("show");
-
-         $(".tab-content").addClass("after_modal_appended");
-         //appending modal background inside the blue div
-         $('.modal').appendTo('.main-content__rightSection');   
-         $('.modal-backdrop').appendTo('.main-content__rightSection');   
-   
-         //remove the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
-         $('body').removeClass("modal-open")
-         $('body').css("padding-right","");     
-     });
-
-     $("body").on("click","#playBtn",function(){
-         $("#kenoNumberSelection").modal("show");
-
-         $(".tab-content").addClass("after_modal_appended");
-         //appending modal background inside the blue div
-         $('.modal').appendTo('.main-content__rightSection');   
-         $('.modal-backdrop').appendTo('.main-content__rightSection');   
-   
-         //remove the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
-         $('body').removeClass("modal-open")
-         $('body').css("padding-right","");     
-     });
-
-});
-    </script>
-
-    <script>
-        $('.selectNum').click(function() {
-   $('#numberSelected').toggle();
-   setTimeout(function() { 
-       $('#numberSelected').fadeOut(); 
-   }, 2000);
-});
-    </script>
-
-<script>
-    $(document).ready(function() {
-//change colour when radio is selected
-$('#radioSpend input:radio').change(function() {
-// Only remove the class in the specific `box` that contains the radio
-$('li.spendPerDraw--active').removeClass('spendPerDraw--active');
-$(this).closest('.form-check').addClass('spendPerDraw--active');
-});
-});
-
-$(document).ready(function() {
-//change colour when radio is selected
-$('#radioDraws input:radio').change(function() {
-// Only remove the class in the specific `box` that contains the radio
-$('li.spendPerDraw--activeD').removeClass('spendPerDraw--activeD');
-$(this).closest('.form-check').addClass('spendPerDraw--activeD');
-});
-});
-
-$('.checkBonus input:checkbox').change(function(){
-    if($(this).is(":checked")) {
-        $(this).parent().addClass("playGameButtons--toggleBtn");
-    } else {
-        $(this).parent().removeClass("playGameButtons--toggleBtn");
-    }
-});
-
-$('#checkKenonumber input:checkbox').change(function(){
-    if($(this).is(":checked")) {
-        $(this).parent().addClass("activeKenoNum");
-    } else {
-        $(this).parent().removeClass("activeKenoNum");
-    }
-});
-
-</script>
-
-<script>
-    //initialising a variable name data
-  
-var data = 10;
-  
-  //printing default value of data that is 0 in h2 tag
-  document.getElementById("counting").innerText = data + " Numbers";
-    
-  //creation of increment function
-  function increment() {
-      data = data + 1;
-      document.getElementById("counting").innerText = data + " Numbers";
-  }
-  //creation of decrement function
-  function decrement() {
-      data = data - 1;
-      document.getElementById("counting").innerText = data + " Numbers";
-  }
-    </script>
-<script>
-    function openSidebar() {
-        document.getElementById("sidebar").style.right = "0";
-    }        
-    function closeSidebar() {
-        document.getElementById("sidebar").style.right = "-100%";
-    }
-</script>
+<!-- Scripts start here -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>

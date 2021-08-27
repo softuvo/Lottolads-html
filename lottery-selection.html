@@ -580,7 +580,7 @@
                              
                                 <div class="col-md-8 offset-md-4">
                                     
-                            <button class="playGameButtons__button" id="stakeBtn">
+                            <button class="playGameButtons__button" id="stakeBtn" data-bs-toggle="modal" data-bs-target="#insufficientFunds">
                                 Stake $10.00
                             </button>
                             
@@ -1285,7 +1285,6 @@
     </div>
   </div>
 
-
   <!-- Modal for Signup -->
 <div class="modal fade" id="signupPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signupPopupLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -1503,58 +1502,6 @@
                         <div class="availableGames__downloadButton">
                         <a href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#paymentOptions"><img src="images/download-for-android-big.svg" alt="Download for Android" class="img-fluid"></a>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for Payment Options -->
-<div class="modal fade" id="paymentOptions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentOptionsLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          
-            <div class="paymentOptions">
-                <h2>Payment Options</h2>
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div class="paymentOptions__cardImg">
-                            <img src="images/paypal-deposit.png" alt="Paypal Deposit" class="img-fluid">
-                        </div>
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="paymentOptions__description">
-                            <h3>Tortor at risus viverra adipiscing at 
-                                in. Tellus rutrum tellus</h3>
-                                <p>Tortor at risus viverra adipiscing at in. Tellus rutrum tellus pellentesque eu. Nec ullamcorper sit amet risus nullam eget felis eget. </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div class="paymentOptions__cardImg">
-                            <img src="images/bitpay-deposit.png" alt="Paypal Deposit" class="img-fluid">
-                        </div>
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="paymentOptions__description">
-                            <h3>Tortor at risus viverra adipiscing at 
-                                in. Tellus rutrum tellus</h3>
-                                <p>Tortor at risus viverra adipiscing at in. Tellus rutrum tellus pellentesque eu. Nec ullamcorper sit amet risus nullam eget felis eget. </p>
-                        </div>
-
                     </div>
                 </div>
 
@@ -2613,135 +2560,27 @@
   </div>
   
 
-
+    <!-- Scripts start here -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
     <script src="js/month-slider.js"></script>
-    <script src="js/month-slider2.js"></script>
-
     <script>
-        $(document).ready(function(){
-
-     $("body").on("click","#addBtn",function(){
-         $("#addGames").modal("show");
-
-         $(".tab-content").addClass("after_modal_appended");
-         //appending modal background inside the blue div
-         $('.modal').appendTo('.main-content__rightSection');   
-         $('.modal-backdrop').appendTo('.main-content__rightSection');   
-   
-         //remove the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
-         $('body').removeClass("modal-open")
-         $('body').css("padding-right","");     
-     });
-
-     $("body").on("click","#stakeBtn",function(){
-         $("#insufficientFunds2").modal("show");
-
-         $(".tab-content").addClass("after_modal_appended");
-         //appending modal background inside the blue div
-         $('.modal').appendTo('.main-content__rightSection');   
-         $('.modal-backdrop').appendTo('.main-content__rightSection');   
-   
-         //remove the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
-         $('body').removeClass("modal-open")
-         $('body').css("padding-right","");     
-     });
-
-});
-    </script>
-
-    <script>
+        // Increment and Decrement Number
+        var data = 10;
+        document.getElementById("counting").innerText = "$" + data + ".00";
         
-
-        $(document).ready(function() {
-  //change colour when radio is selected
-  $('#radioRepeat input:radio').change(function() {
-    // Only remove the class in the specific `box` that contains the radio
-    $('div.activeWeek').removeClass('activeWeek');
-    $(this).closest('.form-check').addClass('activeWeek');
-  });
-});
-
-$(document).ready(function() {
-  //change colour when radio is selected
-  $('#radioMonthMyTickets input:radio').change(function() {
-    // Only remove the class in the specific `box` that contains the radio
-    $('li.monthSlider--active').removeClass('monthSlider--active');
-    $(this).closest('.form-check').addClass('monthSlider--active');
-  });
-});
-
-$(document).ready(function() {
-  //change colour when radio is selected
-  $('#radioMonthResults input:radio').change(function() {
-    // Only remove the class in the specific `box` that contains the radio
-    $('li.monthSlider--activeR').removeClass('monthSlider--activeR');
-    $(this).closest('.form-check').addClass('monthSlider--activeR');
-  });
-});
-
-
-$('#checkSupernumber input:checkbox').change(function(){
-    if($(this).is(":checked")) {
-        $(this).parent().addClass("activeSupernumber");
-    } else {
-        $(this).parent().removeClass("activeSupernumber");
-    }
-});
-
-$('#checkPowerball input:checkbox').change(function(){
-    if($(this).is(":checked")) {
-        $(this).parent().addClass("activePowerball");
-    } else {
-        $(this).parent().removeClass("activePowerball");
-    }
-});
-
-$('.checkPowerplay input:checkbox').change(function(){
-    if($(this).is(":checked")) {
-        $(this).parent().addClass("lotteryGames--toggleBtn");
-    } else {
-        $(this).parent().removeClass("lotteryGames--toggleBtn");
-    }
-});
-
-$('.checkInsurance input:checkbox').change(function(){
-    if($(this).is(":checked")) {
-        $(this).parent().addClass("gameResults--toggleBtn");
-    } else {
-        $(this).parent().removeClass("gameResults--toggleBtn");
-    }
-});
-
-
-</script>
-
-<script>
-    //initialising a variable name data
-  
-var data = 10;
-  
-  //printing default value of data that is 0 in h2 tag
-  document.getElementById("counting").innerText = "$" + data + ".00";
-    
-  //creation of increment function
-  function increment() {
-      data = data + 1;
-      document.getElementById("counting").innerText = "$" + data + ".00";
-  }
-  //creation of decrement function
-  function decrement() {
-      data = data - 1;
-      document.getElementById("counting").innerText = "$" + data + ".00";
-  }
-    </script>
-    <script>
-        function openSidebar() {
-            document.getElementById("sidebar").style.right = "0";
-        }        
-        function closeSidebar() {
-            document.getElementById("sidebar").style.right = "-100%";
+        //creation of increment function
+        function increment() {
+            data = data + 1;
+            document.getElementById("counting").innerText = "$" + data + ".00";
+        }
+        //creation of decrement function
+        function decrement() {
+            if(data > 0){
+            data = data - 1;
+            document.getElementById("counting").innerText = "$" + data + ".00";
+            }
         }
     </script>
     
