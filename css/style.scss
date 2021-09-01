@@ -82,6 +82,14 @@ a{
 .mr-60{
     margin-right: 60px;
 }
+button{
+    &:focus{
+        outline: none;
+    }
+    &:focus-visible{
+        outline: none;
+    }
+}
 .form-check-input{
     border-color: #643EF1;
     &:focus{

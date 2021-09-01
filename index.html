@@ -446,7 +446,7 @@
                         <a href="javascript:void(0)">Betting Rules</a>
                         <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#paymentOptions">Payment Options</a>
                         <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#selfExclusionPopup">Self Exclusion</a>
-                        <a href="my-account.html#bonusBets">Bonus Bets</a>
+                        <a href="my-account.html#bonusBets-tab">Bonus Bets</a>
                         <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#responsibleGamblingPopup">Responsible Gambling</a>
                     </li>
                 </ul>
@@ -631,11 +631,11 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <button class="btn signinSection__loginButton">
+                        <button class="btn signinSection__loginButton" type="button" onclick="window.location.href='keno-number-selection.html';">
                             Login
                         </button>
-                        <p>Don't have an account? <a href="javascript:void(0)" class="signinSection__textUppercase">Sign Up</a></p>
-                        <a href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#forgotPassword">Forgot Password</a>
+                        <p>Don't have an account? <a href="javascript:void(0)" class="signinSection__textUppercase" data-bs-toggle="modal" data-bs-target="#signupPopup" data-bs-dismiss="modal">Sign Up</a></p>
+                        <a href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#forgotPassword" data-bs-dismiss="modal">Forgot Password</a>
                     </div>
                 </div>
             </div>
@@ -691,11 +691,11 @@
                     </div>
                     <div class="col-md-5 text-center">
  
-                        <button class="btn signinSection__googleLogin" data-bs-toggle="modal" data-bs-target="#signupStep2Popup">
+                        <button class="btn signinSection__googleLogin" data-bs-toggle="modal" data-bs-target="#signupStep2Popup" data-bs-dismiss="modal">
                             Google
                         </button>
                         <br>
-                        <button class="btn signinSection__facebookLogin" data-bs-toggle="modal" data-bs-target="#signupStep2Popup">
+                        <button class="btn signinSection__facebookLogin" data-bs-toggle="modal" data-bs-target="#signupStep2Popup" data-bs-dismiss="modal">
                             Facebook
                         </button>
                     </div>
@@ -707,7 +707,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="age">
                             <label class="form-check-label" for="age">
-                                I accept that I am at least 18 years or older and accept the <a href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#termsPopup">Terms & Conditions</a>
+                                I accept that I am at least 18 years or older and accept the <a href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#termsPopup" data-bs-dismiss="modal">Terms & Conditions</a>
                             </label>
                           </div>
                           <div class="form-check">
@@ -720,10 +720,10 @@
                         </div> 
 
                           <div class="text-center">
-                        <button class="btn signinSection__loginButton" type="button">
+                        <button class="btn signinSection__loginButton" type="button" onclick="window.location.href='keno-number-selection.html';">
                             Signup
                         </button>
-                        <p>Already have an account? <a href="javascript:void(0)" class="signinSection__textUppercase" data-bs-toggle="modal" data-bs-target="#signinPopup">Login</a></p>
+                        <p>Already have an account? <a href="javascript:void(0)" class="signinSection__textUppercase" data-bs-toggle="modal" data-bs-target="#signinPopup" data-bs-dismiss="modal">Login</a></p>
                         </div>
                     </div>
                 </div>
@@ -769,7 +769,7 @@
                         <button class="btn signinSection__loginButton signinSection--resetButton">
                             Reset Password
                         </button>
-                        <p>Know your Password? <a href="javascript:void(0)" class="signinSection__textUppercase">Login</a></p>
+                        <p>Know your Password? <a href="javascript:void(0)" class="signinSection__textUppercase" data-bs-toggle="modal" data-bs-target="#signinPopup" data-bs-dismiss="modal">Login</a></p>
                     </div>
                 </div>
 
@@ -963,7 +963,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="age2">
                             <label class="form-check-label" for="age2">
-                                I accept that I am at least 18 years or older and accept the <a href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#termsPopup">Terms &amp; Conditions</a>
+                                I accept that I am at least 18 years or older and accept the <a href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#termsPopup" data-bs-dismiss="modal">Terms &amp; Conditions</a>
                             </label>
                           </div>
                           <div class="form-check">
@@ -976,10 +976,10 @@
                         </div> 
 
                           <div class="text-center">
-                        <button class="btn signinSection__loginButton" type="button">
+                        <button class="btn signinSection__loginButton" type="button" onclick="window.location.href='keno-number-selection.html';">
                             Create Account
                         </button>
-                        <p>Already have an account? <a href="javascript:void(0)" class="signinSection__textUppercase" data-bs-toggle="modal" data-bs-target="#signinPopup">Login</a></p>
+                        <p>Already have an account? <a href="javascript:void(0)" class="signinSection__textUppercase" data-bs-toggle="modal" data-bs-target="#signinPopup" data-bs-dismiss="modal">Login</a></p>
                         </div>
                     </div>
                 </div>
@@ -1092,6 +1092,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/custom.js"></script>
+
 
 </body>
 </html>

@@ -1,4 +1,16 @@
+// Link to a tab in another page
+// var url = window.location.href;
+// var activeTab = url.substring(url.indexOf("#") + 1);
+// $(".nav-tabs__link").removeClass("active");
+// $("#" + activeTab).addClass("active");
+// $(".tab-pane").removeClass("active show");
+// $(".tab-pane" + "#" + activeTab).addClass("active show");
+// setTimeout(() => {
+//     $(window).scrollTop(0);
+//   }, 100);
+
 $(document).ready(function(){
+
 
     // Add Class to Body
      $("body").on("click","#playBtn",function() {
@@ -168,3 +180,5 @@ function decrements() {
 document.getElementById("countings").innerText = count + " Numbers";
 }
 }
+
+
