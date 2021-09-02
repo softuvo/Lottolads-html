@@ -2268,7 +2268,6 @@ button:focus-visible {
   border: 1px solid #F3F2FE;
   border-radius: 8px;
   padding: 20px;
-  text-align: center;
   margin-right: 15px;
   color: #928EA1;
   font-family: HKGrotesk-Medium;
@@ -2278,7 +2277,6 @@ button:focus-visible {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 15px;
 }
 
 .gameResults__date span {
@@ -2288,7 +2286,6 @@ button:focus-visible {
 
 .gameResults--dateBig {
   font-size: 21px;
-  line-height: 17px;
 }
 
 .gameResults--dateBig span {
