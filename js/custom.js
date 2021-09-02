@@ -1,17 +1,10 @@
-// Link to a tab in another page
-// var url = window.location.href;
-// var activeTab = url.substring(url.indexOf("#") + 1);
-// $(".nav-tabs__link").removeClass("active");
-// $("#" + activeTab).addClass("active");
-// $(".tab-pane").removeClass("active show");
-// $(".tab-pane" + "#" + activeTab).addClass("active show");
-// setTimeout(() => {
-//     $(window).scrollTop(0);
-//   }, 100);
 
-$(document).ready(function(){
-
-    // Slick Slider
+//Horizontal scroll with mouse drag
+// Slick Slider in tabs
+$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+    $('.monthSlider').slick('setPosition');
+});
+$(document).ready(function() {
     $('.monthSlider').slick({
         infinite: false,
         slidesToShow: 10,
@@ -19,7 +12,42 @@ $(document).ready(function(){
         prevArrow: false,
         nextArrow: false,
         variableWidth: true,
-      });
+    });
+});
+
+// Link to a tab in another page
+function showContact(neg) {
+    $('#contactUs-tab').click();
+    $('body, html').animate({
+        scrollTop: $(".myAccount").offset().top
+    }, 500);
+}
+$(document).ready(function() {
+    if (window.location.href.indexOf("#contactUs") > -1) {
+        showContact();
+    } $('#targetContact').on('click', function(){
+        showContact();
+    });
+});
+
+// Link to a tab in another page
+function showBonus(neg) {
+    $('#bonusBets-tab').click();
+    $('body, html').animate({
+        scrollTop: $(".myAccount").offset().top
+    }, 500);
+}
+$(document).ready(function() {
+    if (window.location.href.indexOf("#bonusBets") > -1) {
+        showBonus();
+    } $('#targetBonus').on('click', function(){
+        showBonus();
+    });
+});
+
+
+$(document).ready(function(){
+      
     // Add Class to Body
      $("body").on("click","#playBtn",function() {
         $("body").addClass("modal-keno");
@@ -163,11 +191,6 @@ $(document).ready(function(){
       });
 
 });
-
-// Slick Slider in tabs
-$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-    $('.monthSlider').slick('setPosition');
-  });
 
 // Sidebar Toggle
  function openSidebar() {
