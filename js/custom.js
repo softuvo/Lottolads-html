@@ -11,7 +11,15 @@
 
 $(document).ready(function(){
 
-
+    // Slick Slider
+    $('.monthSlider').slick({
+        infinite: false,
+        slidesToShow: 10,
+        slidesToScroll: 3,
+        prevArrow: false,
+        nextArrow: false,
+        variableWidth: true,
+      });
     // Add Class to Body
      $("body").on("click","#playBtn",function() {
         $("body").addClass("modal-keno");
@@ -156,6 +164,10 @@ $(document).ready(function(){
 
 });
 
+// Slick Slider in tabs
+$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+    $('.monthSlider').slick('setPosition');
+  });
 
 // Sidebar Toggle
  function openSidebar() {

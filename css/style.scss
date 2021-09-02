@@ -2633,46 +2633,26 @@ button{
 /* Month Slider */
 .monthSlider {
 	position: relative;
-    ul{
-        position: relative;
+    .form-check{
+        padding-left: 0;
+        transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+    }
+    .form-check-input{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+    }
+    label{
+        opacity: 0;
         width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         cursor: pointer;
-        padding: 0;
-        margin-bottom: 50px;
-        li{
-            position: relative;
-            display: inline-block;
-            width: 136px;
-            height: 68px;
-            line-height: 68px;
-            margin: 0 0.5em;
-            text-align: center;
-            border-radius: 8px;
-            border: 1px solid rgba(150,157,181,0.2);
-            background-color: #fff;
-            color: #928EA1;
-            transition: all .3s ease-in;
-            -webkit-transition: all .3s ease-in;
-            -moz-transition: all .3s ease-in;
-            -o-transition: all .3s ease-in;
-            padding: 0;
-            .form-check-input{
-                opacity: 0;
-                position: absolute;
-                top: 0;
-            }
-            label{
-                opacity: 0;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                cursor: pointer;
-            }
-        }
     }
     &--active{
         background-color: #6A46F5 !important;
@@ -2683,8 +2663,7 @@ button{
         color: #fff !important;
     }
 }
-
-  
+ 
 
 /* Keno Number Selection Modal */
 .kenoNumSelection{
@@ -3197,38 +3176,4 @@ button{
     textarea{
         height: auto !important;
     }
-}
-
-
-
-.slider {
-    width: 50%;
-    margin: 100px auto;
-}
-
-.slick-slide {
-  margin: 0px 20px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
-}
-
-.slick-active {
-  opacity: .5;
-}
-
-.slick-current {
-  opacity: 1;
 }
