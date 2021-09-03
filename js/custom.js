@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
 });
 
-// Link to a tab in another page
+// Link to contact us tab in another page
 function showContact(neg) {
     $('#contactUs-tab').click();
     $('body, html').animate({
@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
 });
 
-// Link to a tab in another page
+// Link to bonus bets tab in another page
 function showBonus(neg) {
     $('#bonusBets-tab').click();
     $('body, html').animate({
@@ -42,6 +42,21 @@ $(document).ready(function() {
         showBonus();
     } $('#targetBonus').on('click', function(){
         showBonus();
+    });
+});
+
+// Link to deposit tab in another page
+function showDeposit(neg) {
+    $('#deposit-tab').click();
+    $('body, html').animate({
+        scrollTop: $(".myAccount").offset().top
+    }, 500);
+}
+$(document).ready(function() {
+    if (window.location.href.indexOf("#deposit") > -1) {
+        showDeposit();
+    } $('#targetDeposit').on('click', function(){
+        showDeposit();
     });
 });
 

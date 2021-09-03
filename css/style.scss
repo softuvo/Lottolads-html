@@ -3177,3 +3177,23 @@ button{
         height: auto !important;
     }
 }
+
+
+/* Data Not Found */
+
+.data-not-found{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.data-not-found i{
+    font-size: 100px;
+    color: #eb366c;
+    margin-bottom: 25px;
+}
+.data-not-found h3{
+    color: #212b36;
+}
